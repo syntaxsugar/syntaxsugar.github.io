@@ -6,7 +6,7 @@ AUTHOR = u'Jaromir Fojtu'
 SITENAME = u'SyntaxSugar'
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Prague'
 
 DEFAULT_LANG = u'en'
 
@@ -22,10 +22,24 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('twitter', 'https://twitter.com/syntaxsugar'),
+        ('facebook', 'https://www.facebook.com/paiti'),
+        ('github', 'https://github.com/syntaxsugar'),
+        )
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+THEME = 'pelican-bootstrap3'
+
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
+
+PYGMENTS_STYLE = 'friendly'
+
+DEFAULT_DATE = 'fs'
+
+ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}/index.html'
