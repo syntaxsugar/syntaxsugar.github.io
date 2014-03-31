@@ -35,11 +35,11 @@ DEFAULT_PAGINATION = 10
 THEME = 'pelican-bootstrap3'
 
 DISPLAY_PAGES_ON_MENU = True
-DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = True
 
 PYGMENTS_STYLE = 'friendly'
 
 DEFAULT_DATE = 'fs'
 
-ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}/index.html'
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'

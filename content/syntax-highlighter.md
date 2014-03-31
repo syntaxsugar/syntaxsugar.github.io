@@ -1,5 +1,5 @@
 Title: Syntax Highlighter
-Date: 26.4.2014
+Date: 2014-03-29
 Author: Jaromir Fojtu
 Summary: Pelican - Pygments Syntax Highlighter
 
