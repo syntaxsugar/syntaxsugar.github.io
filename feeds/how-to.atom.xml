@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-03-30T00:00:00+01:00</updated><entry><title>How to disable keyboard shortcut for Lockscreen</title><link href="http://syntaxsugar.github.io/posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/" rel="alternate"></link><updated>2014-03-30T00:00:00+01:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-03-30:posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/</id><summary type="html">&lt;p&gt;&lt;em&gt;System Tools&lt;/em&gt; &amp;gt; &lt;em&gt;System Settings&lt;/em&gt; &amp;gt; &lt;em&gt;Keyboard&lt;/em&gt; &amp;gt; &lt;em&gt;Shortcuts&lt;/em&gt; &amp;gt; &lt;em&gt;System&lt;/em&gt; &amp;gt; &lt;em&gt;Lock Screen&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-03-31T00:00:00+02:00</updated><entry><title>How to import existing code to GitHub</title><link href="http://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/" rel="alternate"></link><updated>2014-03-31T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-03-31:posts/2014/03/how-to-import-existing-code-to-github/</id><summary type="html">&lt;h2&gt;Create the remote repository on &lt;a href="http://github.com/"&gt;GitHub&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="GitHub Create Repository" src="http://syntaxsugar.github.io/images/github_create_repository.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Locally, at the root directory of source code initialize repository&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git init
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Locally, add and commit what I want in my initial repo&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git add .
+git commit -m &lt;span class="s1"&gt;&amp;#39;initial commit&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Atach remote repository with the name &lt;em&gt;origin&lt;/em&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git remote add origin &lt;span class="o"&gt;[&lt;/span&gt;repo URL&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Pull the remote branch&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git pull origin master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Push up master branch&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git push origin master
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="GIT"></category></entry><entry><title>How to disable keyboard shortcut for Lockscreen</title><link href="http://syntaxsugar.github.io/posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/" rel="alternate"></link><updated>2014-03-30T00:00:00+01:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-03-30:posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/</id><summary type="html">&lt;p&gt;&lt;em&gt;System Tools&lt;/em&gt; &amp;gt; &lt;em&gt;System Settings&lt;/em&gt; &amp;gt; &lt;em&gt;Keyboard&lt;/em&gt; &amp;gt; &lt;em&gt;Shortcuts&lt;/em&gt; &amp;gt; &lt;em&gt;System&lt;/em&gt; &amp;gt; &lt;em&gt;Lock Screen&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Ubuntu Keyboard Settings" src="http://syntaxsugar.github.io/images/ubuntu_keyboard.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Works well on &lt;a href="http://releases.ubuntu.com/12.04/"&gt;Ubuntu 12.04&lt;/a&gt; (&lt;em&gt;Precise Pangolin&lt;/em&gt;) with
 GNOME Session Fallback.&lt;/p&gt;</summary><category term="Ubuntu"></category><category term="Gnome"></category></entry></feed>

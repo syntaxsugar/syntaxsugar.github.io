@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>Tags - SyntaxSugar</title>
+    <title>How to import existing code to GitHub - SyntaxSugar</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -12,10 +12,13 @@
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="SyntaxSugar" />
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="SyntaxSugar"/>
-            <meta property="og:url" content="http://syntaxsugar.github.io"/>
-            <meta property="og:description" content="SyntaxSugar"/>
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="How to import existing code to GitHub"/>
+            <meta property="og:url" content="http://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/"/>
+            <meta property="og:description" content="Example, How to local source code add to a new remote git repository without &#39;cloning&#39;"/>
+            <meta property="article:published_time" content="2014-03-31" />
+            <meta property="article:section" content="How to" />
+            <meta property="article:tag" content="GIT" />
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="http://syntaxsugar.github.io/theme/css/bootstrap.min.css" type="text/css"/>
@@ -44,7 +47,7 @@ SyntaxSugar            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li >
+                        <li class="active">
                             <a href="http://syntaxsugar.github.io/category/how-to.html">How to</a>
                         </li>
                         <li >
@@ -63,47 +66,64 @@ SyntaxSugar            </a>
     <div class="row">
         <div class="col-sm-9">
 
-    <section id="tags">
-        <h1>Tags for SyntaxSugar</h1>
-        <div class="panel-group" id="accordion">            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-git">GIT <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-git" class="panel-collapse collapse">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/"
+                       rel="bookmark"
+                       title="Permalink to How to import existing code to GitHub">
+                        How to import existing code to GitHub
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
                     <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2014-03-31T00:00:00">Mon 31 March 2014</time></span> <a href="http://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/">How to import existing code to GitHub</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-gnome">Gnome <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-gnome" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2014-03-30T00:00:00">Sun 30 March 2014</time></span> <a href="http://syntaxsugar.github.io/posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/">How to disable keyboard shortcut for Lockscreen</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-ubuntu">Ubuntu <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-ubuntu" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2014-03-30T00:00:00">Sun 30 March 2014</time></span> <a href="http://syntaxsugar.github.io/posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/">How to disable keyboard shortcut for Lockscreen</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-03-31T00:00:00"> Mon 31 March 2014</time>
+    </span>
 
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://syntaxsugar.github.io/tag/git.html">GIT</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h2>Create the remote repository on <a href="http://github.com/">GitHub</a></h2>
+<p><img alt="GitHub Create Repository" src="http://syntaxsugar.github.io/images/github_create_repository.png" /></p>
+<h2>Locally, at the root directory of source code initialize repository</h2>
+<div class="highlight"><pre>git init
+</pre></div>
+
+
+<h2>Locally, add and commit what I want in my initial repo</h2>
+<div class="highlight"><pre>git add .
+git commit -m <span class="s1">&#39;initial commit&#39;</span>
+</pre></div>
+
+
+<h2>Atach remote repository with the name <em>origin</em></h2>
+<div class="highlight"><pre>git remote add origin <span class="o">[</span>repo URL<span class="o">]</span>
+</pre></div>
+
+
+<h2>Pull the remote branch</h2>
+<div class="highlight"><pre>git pull origin master
+</pre></div>
+
+
+<h2>Push up master branch</h2>
+<div class="highlight"><pre>git push origin master
+</pre></div>
+            </div>
+            <!-- /.entry-content -->
+        </article>
     </section>
+
         </div>
         <div class="col-sm-3 well well-sm" id="sidebar">
 
