@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Jaromir Fojtu'
 SITENAME = u'SyntaxSugar'
-SITEURL = ''
+SITEURL = 'http://localhost:8000'
 
 TIMEZONE = 'Europe/Prague'
 
@@ -16,18 +16,16 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+LINKS = None 
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/syntaxsugar'),
         ('facebook', 'https://www.facebook.com/paiti'),
-        ('github', 'https://github.com/syntaxsugar'),
-        )
+        ('github', 'https://github.com/syntaxsugar'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5 
+
+TAG_CLOUD_MAX_ITEMS = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
