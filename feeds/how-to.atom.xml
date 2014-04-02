@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-03-31T00:00:00+02:00</updated><entry><title>How to import existing code to GitHub</title><link href="http://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/" rel="alternate"></link><updated>2014-03-31T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-03-31:posts/2014/03/how-to-import-existing-code-to-github/</id><summary type="html">&lt;h2&gt;Create the remote repository on &lt;a href="http://github.com/"&gt;GitHub&lt;/a&gt;&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-04-02T00:00:00+02:00</updated><entry><title>How to enable UserDir in Ubuntu 12.04 LTS</title><link href="http://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/" rel="alternate"></link><updated>2014-04-02T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-02:posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/</id><summary type="html">&lt;h2&gt;Configure for userdir&lt;/h2&gt;
+&lt;p&gt;To enable the UserDir configuration on &lt;a href="http://releases.ubuntu.com/12.04/"&gt;Ubuntu 12.04 LTS&lt;/a&gt;, do the following:
+Enable the userdir mod.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo a2enmod userdir
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Edit the userdir configuration file.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo vim /etc/apache2/mods-enabled/userdir.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Change the &lt;em&gt;AllowOverride&lt;/em&gt; line to:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;AllowOverride All
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Change the &lt;em&gt;Options&lt;/em&gt; line to:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Options ExecCGI
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Next, edit the php5 configuration file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo vim /etc/apache2/mods-enabled/php5.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Comment line &lt;em&gt;php_admin_value engine off&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Restart &lt;em&gt;apache2&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo service apache2 restart
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="Apache"></category><category term="Ubuntu"></category></entry><entry><title>How to import existing code to GitHub</title><link href="http://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/" rel="alternate"></link><updated>2014-03-31T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-03-31:posts/2014/03/how-to-import-existing-code-to-github/</id><summary type="html">&lt;h2&gt;Create the remote repository on &lt;a href="http://github.com/"&gt;GitHub&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="GitHub Create Repository" src="http://syntaxsugar.github.io/images/github_create_repository.png" /&gt;&lt;/p&gt;
 &lt;h2&gt;Locally, at the root directory of source code initialize repository&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;git init
