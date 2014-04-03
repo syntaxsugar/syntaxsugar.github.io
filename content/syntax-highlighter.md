@@ -5,7 +5,21 @@ Summary: Pelican - Pygments Syntax Highlighter
 
 # Syntax Highlighter Test
 
-## Java Syntax Highlighter
+* [Java](#java)
+* [JavaScript](#javascript)
+* [PHP](#php)
+* [Ruby](#ruby)
+* [C](#c)
+* [Python](#python)
+    * [Python 2](#python2)
+    * [Python 3](#python3)
+    * [Python console](#python-console)
+    * [Python hl_lines](#python-hl-lines)
+    * [Python linenos](#python-linenos)
+
+
+## <a name="java"></a>Java Syntax Highlighter
+Use `:::java`
 
 	:::java
 	public class HelloWorld {
@@ -14,24 +28,28 @@ Summary: Pelican - Pygments Syntax Highlighter
 		}
 	}
 
-## JavaScript Syntax Highlighter
+## <a name="javascript"></a>JavaScript Syntax Highlighter
+Use `:::javascript`
 
 	:::javascript
 	alert("Hello World");
 
-## PHP Syntax Highlighter
+## <a name="php"></a>PHP Syntax Highlighter
+Use `:::php`
 
 	:::php
 	<?php
 	echo "Hello World!";
 	?>
 
-## Ruby Syntax Highlighter
+## <a name="ruby"></a>Ruby Syntax Highlighter
+Use `:::ruby`
 
 	:::ruby
 	puts "Hello World!"
 
-## C Syntax Highlighter
+## <a name="c"></a>C Syntax Highlighter
+Use `:::c`
 
 	:::c
 	#include <stdio.h>
@@ -42,21 +60,23 @@ Summary: Pelican - Pygments Syntax Highlighter
 		return 0;
 	}
 
-## Python Syntax Highlighter
+## <a name="python"></a>Python Syntax Highlighter
 
-### Python 2
+### <a name="python2"></a>Python 2
+Use `:::python`
 
 	:::python
 	print "Hello World!"
 
-### Python 3
+### <a name="python3"></a>Python 3
+
 Python 3 Lexer
-Use :::python3 or :::py3
+Use `:::python3` or `:::py3`
 
 	:::python3
 	print("Hello World!")
 
-### Python Console
+### <a name="python-console"></a>Python Console
 Use :::pycon
 
 	:::pycon
@@ -73,7 +93,8 @@ Use :::pycon
 	'foobar'
 	>>> 
 
-### Python highlighted lines
+### <a name="python-hl-lines"></a>Python highlighted lines
+
 Use the `:::python hl_lines="4 5"`
 
 	:::python hl_lines="4 5"
@@ -90,20 +111,13 @@ Use the `:::python hl_lines="4 5"`
 						break
 			return instance, created
 
-### Python linenos table
+### <a name="python-linenos"></a>Python linenos table
 
-	:::python linenos
+Use the `#!python`
+
+	#!python
 	def is_foo_or_bar(filename):
 		if filename in ("foo", "bar"):
 			return True
 
 		return False
-
-### Xixi
-
-	#!python
-	from foo import bar
-
-	if name == "__main__":
-		print bar()
-

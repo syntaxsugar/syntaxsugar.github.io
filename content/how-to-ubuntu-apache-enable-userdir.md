@@ -18,12 +18,12 @@ Edit the userdir configuration file.
 	:::bash
 	$ sudo vim /etc/apache2/mods-enabled/userdir.conf
 
-Change the *AllowOverride* line to:
+Change the **AllowOverride** line to:
 
 	:::bash
 	AllowOverride All
 
-Change the *Options* line to:
+Change the **Options** line to:
 
 	:::bash
 	Options ExecCGI
@@ -33,9 +33,9 @@ Next, edit the php5 configuration file:
 	:::bash
 	$ sudo vim /etc/apache2/mods-enabled/php5.conf
 
-Comment line *php_admin_value engine off*.
+Comment line *php_admin_value engine off**
 
-Restart *apache2*
+Restart **apache2**
 
 	:::bash
 	$ sudo service apache2 restart
