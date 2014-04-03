@@ -11,12 +11,12 @@ Enable the userdir mod.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Change the &lt;em&gt;AllowOverride&lt;/em&gt; line to:&lt;/p&gt;
+&lt;p&gt;Change the &lt;strong&gt;AllowOverride&lt;/strong&gt; line to:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;AllowOverride All
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Change the &lt;em&gt;Options&lt;/em&gt; line to:&lt;/p&gt;
+&lt;p&gt;Change the &lt;strong&gt;Options&lt;/strong&gt; line to:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;Options ExecCGI
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -26,8 +26,8 @@ Enable the userdir mod.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Comment line &lt;em&gt;php_admin_value engine off&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Restart &lt;em&gt;apache2&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Comment line &lt;em&gt;php_admin_value engine off&lt;/em&gt;*&lt;/p&gt;
+&lt;p&gt;Restart &lt;strong&gt;apache2&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo service apache2 restart
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="Apache"></category><category term="Ubuntu"></category></entry><entry><title>How to import existing code to GitHub</title><link href="http://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/" rel="alternate"></link><updated>2014-03-31T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-03-31:posts/2014/03/how-to-import-existing-code-to-github/</id><summary type="html">&lt;h2&gt;Create the remote repository on &lt;a href="http://github.com/"&gt;GitHub&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="GitHub Create Repository" src="http://syntaxsugar.github.io/images/github_create_repository.png" /&gt;&lt;/p&gt;
@@ -58,7 +58,23 @@ git commit -m &lt;span class="s1"&gt;&amp;#39;initial commit&amp;#39;&lt;/span&g
 &lt;p&gt;&lt;img alt="Ubuntu Keyboard Settings" src="http://syntaxsugar.github.io/images/ubuntu_keyboard.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Works well on &lt;a href="http://releases.ubuntu.com/12.04/"&gt;Ubuntu 12.04&lt;/a&gt; (&lt;em&gt;Precise Pangolin&lt;/em&gt;) with
 GNOME Session Fallback.&lt;/p&gt;</summary><category term="Ubuntu"></category><category term="Gnome"></category></entry><entry><title>Syntax Highlighter</title><link href="http://syntaxsugar.github.io/posts/2014/03/syntax-highlighter/" rel="alternate"></link><updated>2014-03-29T00:00:00+01:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-03-29:posts/2014/03/syntax-highlighter/</id><summary type="html">&lt;h1&gt;Syntax Highlighter Test&lt;/h1&gt;
-&lt;h2&gt;Java Syntax Highlighter&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#java"&gt;Java&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#javascript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#php"&gt;PHP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#ruby"&gt;Ruby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#c"&gt;C&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#python"&gt;Python&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#python2"&gt;Python 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#python3"&gt;Python 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#python-console"&gt;Python console&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#python-hl-lines"&gt;Python hl_lines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#python-linenos"&gt;Python linenos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a name="java"&gt;&lt;/a&gt;Java Syntax Highlighter&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;:::java&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;HelloWorld&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="o"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
         &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;println&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
@@ -67,24 +83,28 @@ GNOME Session Fallback.&lt;/p&gt;</summary><category term="Ubuntu"></category><c
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;JavaScript Syntax Highlighter&lt;/h2&gt;
+&lt;h2&gt;&lt;a name="javascript"&gt;&lt;/a&gt;JavaScript Syntax Highlighter&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;:::javascript&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello World&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;PHP Syntax Highlighter&lt;/h2&gt;
+&lt;h2&gt;&lt;a name="php"&gt;&lt;/a&gt;PHP Syntax Highlighter&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;:::php&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
 &lt;span class="k"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="cp"&gt;?&amp;gt;&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;Ruby Syntax Highlighter&lt;/h2&gt;
+&lt;h2&gt;&lt;a name="ruby"&gt;&lt;/a&gt;Ruby Syntax Highlighter&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;:::ruby&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;C Syntax Highlighter&lt;/h2&gt;
+&lt;h2&gt;&lt;a name="c"&gt;&lt;/a&gt;C Syntax Highlighter&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;:::c&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
 
 &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -95,20 +115,21 @@ GNOME Session Fallback.&lt;/p&gt;</summary><category term="Ubuntu"></category><c
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;Python Syntax Highlighter&lt;/h2&gt;
-&lt;h3&gt;Python 2&lt;/h3&gt;
+&lt;h2&gt;&lt;a name="python"&gt;&lt;/a&gt;Python Syntax Highlighter&lt;/h2&gt;
+&lt;h3&gt;&lt;a name="python2"&gt;&lt;/a&gt;Python 2&lt;/h3&gt;
+&lt;p&gt;Use &lt;code&gt;:::python&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h3&gt;Python 3&lt;/h3&gt;
+&lt;h3&gt;&lt;a name="python3"&gt;&lt;/a&gt;Python 3&lt;/h3&gt;
 &lt;p&gt;Python 3 Lexer
-Use :::python3 or :::py3&lt;/p&gt;
+Use &lt;code&gt;:::python3&lt;/code&gt; or &lt;code&gt;:::py3&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h3&gt;Python Console&lt;/h3&gt;
+&lt;h3&gt;&lt;a name="python-console"&gt;&lt;/a&gt;Python Console&lt;/h3&gt;
 &lt;p&gt;Use :::pycon&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="go"&gt;Python 2.7.3 (default, Feb 27 2014, 19:58:35) &lt;/span&gt;
 &lt;span class="go"&gt;[GCC 4.6.3] on linux2&lt;/span&gt;
@@ -125,7 +146,7 @@ Use :::python3 or :::py3&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h3&gt;Python highlighted lines&lt;/h3&gt;
+&lt;h3&gt;&lt;a name="python-hl-lines"&gt;&lt;/a&gt;Python highlighted lines&lt;/h3&gt;
 &lt;p&gt;Use the &lt;code&gt;:::python hl_lines="4 5"&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;FooBar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
 
@@ -142,23 +163,17 @@ Use :::python3 or :::py3&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h3&gt;Python linenos table&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;is_foo_or_bar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;h3&gt;&lt;a name="python-linenos"&gt;&lt;/a&gt;Python linenos table&lt;/h3&gt;
+&lt;p&gt;Use the &lt;code&gt;#!python&lt;/code&gt;&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;is_foo_or_bar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;foo&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;bar&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
 
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h3&gt;Xixi&lt;/h3&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
-2
-3
-4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;foo&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;bar&lt;/span&gt;
-
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;bar&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</summary></entry><entry><title>Lorem Ipsum</title><link href="http://syntaxsugar.github.io/posts/2010/12/lorem-ipsum/" rel="alternate"></link><updated>2010-12-03T10:20:00+01:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2010-12-03:posts/2010/12/lorem-ipsum/</id><summary type="html">&lt;h1&gt;Rami tremescere semper&lt;/h1&gt;
 &lt;h2&gt;Vertice amplexus frater corpora aquarum revertitur per&lt;/h2&gt;
