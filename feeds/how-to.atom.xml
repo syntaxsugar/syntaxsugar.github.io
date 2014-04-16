@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-04-02T00:00:00+02:00</updated><entry><title>How to enable UserDir in Ubuntu 12.04 LTS</title><link href="http://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/" rel="alternate"></link><updated>2014-04-02T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-02:posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/</id><summary type="html">&lt;h2&gt;Configure for userdir&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-04-16T18:33:20+02:00</updated><entry><title>Bitbucket Issues - CLI</title><link href="http://syntaxsugar.github.io/posts/2014/04/bitbucket-issues-cli/" rel="alternate"></link><updated>2014-04-16T18:33:20+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-16:posts/2014/04/bitbucket-issues-cli/</id><summary type="html">&lt;p&gt;&lt;a href="https://bitbucket.org/jsmits/bitbucket-issues-cli"&gt;bbi&lt;/a&gt; provides an executable
+called &lt;strong&gt;bbi&lt;/strong&gt;, that can be used to access Bitbuckets issues from CLI.&lt;/p&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Install to $HOME dir, instead of system.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;pip install --user -e -e hg+https://bitbucket.org/jsmits/bitbucket-issues-cli#egg&lt;span class="o"&gt;=&lt;/span&gt;bbi
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Add local BIN to $PATH in &lt;em&gt;.zshrc&lt;/em&gt; / &lt;em&gt;.bashrc&lt;/em&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Local BIN directory&lt;/span&gt;
+&lt;span class="o"&gt;[[&lt;/span&gt; -d &lt;span class="s2"&gt;&amp;quot;$HOME/.local/bin&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;:&lt;span class="nv"&gt;$HOME&lt;/span&gt;/.local/bin
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>How to enable UserDir in Ubuntu 12.04 LTS</title><link href="http://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/" rel="alternate"></link><updated>2014-04-02T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-02:posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/</id><summary type="html">&lt;h2&gt;Configure for userdir&lt;/h2&gt;
 &lt;p&gt;To enable the UserDir configuration on &lt;a href="http://releases.ubuntu.com/12.04/"&gt;Ubuntu 12.04 LTS&lt;/a&gt;, do the following:
 Enable the userdir mod.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo a2enmod userdir
