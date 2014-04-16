@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/shortcuts.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-04-16T16:43:22+02:00</updated><entry><title>Github Shortcuts</title><link href="http://syntaxsugar.github.io/posts/2014/04/github-shortcuts/" rel="alternate"></link><updated>2014-04-16T16:43:22+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-16:posts/2014/04/github-shortcuts/</id><summary type="html">&lt;p&gt;Here are some of the shortcuts I try to use often on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; to help
+reduce the amount of the time I am on there.&lt;/p&gt;
+&lt;h2&gt;Useful Shortcuts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;?&lt;/strong&gt; - To View &lt;strong&gt;help menu&lt;/strong&gt; for shortcuts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;g c&lt;/strong&gt; - To view the &lt;strong&gt;Code&lt;/strong&gt; of the repo.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;g p&lt;/strong&gt; - To View &lt;strong&gt;Pull Requests&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;g i&lt;/strong&gt; - To view &lt;strong&gt;Issues&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Vimium Exception&lt;/h3&gt;
+&lt;p&gt;If you are using Chrome plugin &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; so you must add exception for 
+&lt;a href="https://github.com/"&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This will disable &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;*:&lt;/span&gt;&lt;span class="c1"&gt;//github.com/*&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="Github Shortcuts"></category></entry></feed>
