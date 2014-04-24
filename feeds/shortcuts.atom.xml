@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/shortcuts.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-04-16T16:43:22+02:00</updated><entry><title>Github Shortcuts</title><link href="http://syntaxsugar.github.io/posts/2014/04/github-shortcuts/" rel="alternate"></link><updated>2014-04-16T16:43:22+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-16:posts/2014/04/github-shortcuts/</id><summary type="html">&lt;p&gt;Here are some of the shortcuts I try to use often on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; to help
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/shortcuts.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-04-26T17:57:00+02:00</updated><entry><title>Bitbucket Shortcuts</title><link href="http://syntaxsugar.github.io/posts/2014/04/bitbucket-shortcuts/" rel="alternate"></link><updated>2014-04-26T17:57:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-26:posts/2014/04/bitbucket-shortcuts/</id><summary type="html">&lt;p&gt;Here are some of the shortcuts I try to use often on &lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt; to help
+reduce the amount of the time I am on there.&lt;/p&gt;
+&lt;h2&gt;Useful Shortcuts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;?&lt;/strong&gt; - To view &lt;strong&gt;help menu&lt;/strong&gt; for shortcuts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Repository Navigation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;r i&lt;/strong&gt; - To view &lt;strong&gt;Issues&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;r s&lt;/strong&gt; - To view &lt;strong&gt;Source Code&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;r c&lt;/strong&gt; - To view &lt;strong&gt;Commits&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;r o&lt;/strong&gt; - To view &lt;strong&gt;Overview&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;r d&lt;/strong&gt; - To view &lt;strong&gt;Downloads&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Issues&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;x i&lt;/strong&gt; - Create Issue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Vimium Exception&lt;/h2&gt;
+&lt;p&gt;If you are using Chrome plugin &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; so you must add exception for
+&lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This will disable &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; on &lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;*:&lt;/span&gt;&lt;span class="c1"&gt;//bitbucket.org/*&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="Bitbucket"></category><category term="Shortcuts"></category></entry><entry><title>Github Shortcuts</title><link href="http://syntaxsugar.github.io/posts/2014/04/github-shortcuts/" rel="alternate"></link><updated>2014-04-16T16:43:22+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-16:posts/2014/04/github-shortcuts/</id><summary type="html">&lt;p&gt;Here are some of the shortcuts I try to use often on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; to help
 reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;h2&gt;Useful Shortcuts&lt;/h2&gt;
 &lt;ul&gt;
