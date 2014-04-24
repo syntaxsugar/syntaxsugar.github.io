@@ -57,6 +57,7 @@ STATIC_PATHS = [
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/google91e15f50f8a42f37.html': {'path': 'google91e15f50f8a42f37.html'}
 }
 
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
