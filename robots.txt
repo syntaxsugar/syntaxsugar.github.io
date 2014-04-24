@@ -1,0 +1,5 @@
+# robots.txt for http://syntaxsugar.github.io/
+
+User-agent: *
+Disallow: /authors/
+Disallow: /author/
