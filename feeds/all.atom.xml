@@ -47,7 +47,7 @@ reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This will disable &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;*:&lt;/span&gt;&lt;span class="c1"&gt;//github.com/*&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="Github Shortcuts"></category></entry><entry><title>PyCharm Tips And Tricks</title><link href="http://syntaxsugar.github.io/posts/2014/04/pycharm-tips-and-tricks/" rel="alternate"></link><updated>2014-04-03T17:17:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-03:posts/2014/04/pycharm-tips-and-tricks/</id><summary type="html">&lt;h2&gt;Full Screen Mode&lt;/h2&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="Github"></category><category term="Shortcuts"></category></entry><entry><title>PyCharm Tips And Tricks</title><link href="http://syntaxsugar.github.io/posts/2014/04/pycharm-tips-and-tricks/" rel="alternate"></link><updated>2014-04-03T17:17:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-03:posts/2014/04/pycharm-tips-and-tricks/</id><summary type="html">&lt;h2&gt;Full Screen Mode&lt;/h2&gt;
 &lt;h3&gt;To enter full screen mode&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;On the main menu, choose &lt;strong&gt;View | Enter Full Screen Mode&lt;/strong&gt;&lt;/li&gt;
@@ -56,7 +56,7 @@ reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Hover your mouse pointer over the upper-most part of the screen, to show main menu.&lt;/li&gt;
 &lt;li&gt;On the main menu, choose &lt;strong&gt;View | Exit Full Screen Mode&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>How to enable UserDir in Ubuntu 12.04 LTS</title><link href="http://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/" rel="alternate"></link><updated>2014-04-02T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-02:posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/</id><summary type="html">&lt;h2&gt;Configure for userdir&lt;/h2&gt;
+&lt;/ul&gt;</summary><category term="PyCharm"></category></entry><entry><title>How to enable UserDir in Ubuntu 12.04 LTS</title><link href="http://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/" rel="alternate"></link><updated>2014-04-02T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-02:posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/</id><summary type="html">&lt;h2&gt;Configure for userdir&lt;/h2&gt;
 &lt;p&gt;To enable the UserDir configuration on &lt;a href="http://releases.ubuntu.com/12.04/"&gt;Ubuntu 12.04 LTS&lt;/a&gt;, do the following:
 Enable the userdir mod.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo a2enmod userdir
