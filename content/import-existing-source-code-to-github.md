@@ -2,7 +2,6 @@ Title: How to import existing code to GitHub
 Date: 2014-03-31
 Category: How to
 Tags: GIT
-Author: Jaromir Fojtu
 Summary: Example, How to local source code add to a new remote git repository without 'cloning'
 
 ## Create the remote repository on [GitHub](http://github.com/)

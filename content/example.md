@@ -1,7 +1,6 @@
 Title: 
 Date: 2014-03-20
-Category: 
-Author: Jaromir Fojtu
+Category:
 Summary: 
 Status: draft
 

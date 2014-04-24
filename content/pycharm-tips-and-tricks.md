@@ -1,8 +1,8 @@
 Title:  PyCharm Tips And Tricks
 Date: 2014-04-03 17:17
 Category: Misc
-Author: Jaromir Fojtu
-Summary: 
+Summary:
+Tags: PyCharm
 
 
 ## Full Screen Mode

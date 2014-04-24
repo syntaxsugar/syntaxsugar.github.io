@@ -1,9 +1,8 @@
 Title: Github Shortcuts
 Date: 2014-04-16 16:43:22
 Category: Shortcuts
-Author: Jaromir Fojtu
 Summary: Some useful Github shortcuts.
-Tags: Github Shortcuts
+Tags: Github, Shortcuts
 
 Here are some of the shortcuts I try to use often on [Github][github] to help
 reduce the amount of the time I am on there.

@@ -1,7 +1,6 @@
 Title: How to disable keyboard shortcut for Lockscreen
 Date: 2014-03-30
 Category: How to
-Author: Jaromir Fojtu
 Summary: 
 Tags: Ubuntu, Gnome
 

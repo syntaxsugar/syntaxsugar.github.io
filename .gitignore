@@ -37,4 +37,9 @@ nosetests.xml
 
 output
 
+# PyCharm
 .idea/
+
+# PID files
+*.pid
+

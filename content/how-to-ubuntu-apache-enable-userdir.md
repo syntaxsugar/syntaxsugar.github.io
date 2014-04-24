@@ -1,7 +1,6 @@
 Title: How to enable UserDir in Ubuntu 12.04 LTS
 Date: 2014-04-02
 Category: How to
-Author: Jaromir Fojtu
 Tags: Apache, Ubuntu
 Summary: Enable userdir, users can build websites with whis config.
 

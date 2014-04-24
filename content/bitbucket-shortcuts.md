@@ -1,7 +1,6 @@
 Title: Bitbucket Shortcuts
 Date: 2014-04-26 17:57
 Category: Shortcuts
-Author: Jaromir Fojtu
 Summary: Some useful Bitbucket shortcuts.
 Tags: Bitbucket, Shortcuts
 

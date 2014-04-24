@@ -1,7 +1,6 @@
 Title: Bitbucket Issues - CLI
 Date: 2014-04-16 18:33:20 
 Category: How to
-Author: Jaromir Fojtu
 Summary: How to install **bbi** - Command line interface to Bitbucket Issues.
 
 [bbi](https://bitbucket.org/jsmits/bitbucket-issues-cli) provides an executable
