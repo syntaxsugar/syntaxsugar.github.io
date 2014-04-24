@@ -52,12 +52,12 @@ DATE_FORMATS = {
 
 STATIC_PATHS = [
     'images',
-    'extra/robots.txt',
+    'extra',
 ]
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/google91e15f50f8a42f37.html': {'path': 'google91e15f50f8a42f37.html'}
+    'extra/google91e15f50f8a42f37.txt': {'path': 'google91e15f50f8a42f37.html'}
 }
 
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
