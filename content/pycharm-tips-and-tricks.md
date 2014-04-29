@@ -14,4 +14,13 @@ Tags: PyCharm
 * Hover your mouse pointer over the upper-most part of the screen, to show main menu.
 * On the main menu, choose **View | Exit Full Screen Mode**
 
+## Useful Shortcuts
+- Shift + F10 - Run Code
+
+
+## Configuration
+
+### Show line numbers
+
+Settings -> Editor -> Appearance -> Show line numbers
 
