@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-04-16T18:33:20+02:00</updated><entry><title>Bitbucket Issues - CLI</title><link href="http://syntaxsugar.github.io/posts/2014/04/bitbucket-issues-cli/" rel="alternate"></link><updated>2014-04-16T18:33:20+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-16:posts/2014/04/bitbucket-issues-cli/</id><summary type="html">&lt;p&gt;&lt;a href="https://bitbucket.org/jsmits/bitbucket-issues-cli"&gt;bbi&lt;/a&gt; provides an executable
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-04-29T20:08:46+02:00</updated><entry><title>Things to do after installing ubuntu 14.04 LTS</title><link href="http://syntaxsugar.github.io/posts/2014/04/things-to-do-after-installing-ubuntu-1404-lts/" rel="alternate"></link><updated>2014-04-29T20:08:46+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-29:posts/2014/04/things-to-do-after-installing-ubuntu-1404-lts/</id><summary type="html">&lt;h2&gt;Update your Ubuntu 14.04 LTS&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update 
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get upgrade
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Install usefull Apps&lt;/h2&gt;
+&lt;p&gt;Install &lt;strong&gt;Multimedia Codecs&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install ubuntu-restricted-extras
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Install some extra AppIndicators (applets)
+Install &lt;strong&gt;The Classic Menu Indicator&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo add-apt-repository ppa:diesch/testing
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install classicmenu-indicator
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Replace videoplayer &lt;strong&gt;Totem&lt;/strong&gt; with &lt;strong&gt;SMPlayer&lt;/strong&gt;
+Complete remove totem (&lt;em&gt;totem&lt;/em&gt;, &lt;em&gt;totem-common&lt;/em&gt;, &lt;em&gt;totem-plugins&lt;/em&gt;)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get remove totem
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Install &lt;strong&gt;SMPlayer&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install smplayer
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Clean Up&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get -f install
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get autoremove
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get -y autoclean
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get -y clean
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="Ubuntu"></category></entry><entry><title>Bitbucket Issues - CLI</title><link href="http://syntaxsugar.github.io/posts/2014/04/bitbucket-issues-cli/" rel="alternate"></link><updated>2014-04-16T18:33:20+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-16:posts/2014/04/bitbucket-issues-cli/</id><summary type="html">&lt;p&gt;&lt;a href="https://bitbucket.org/jsmits/bitbucket-issues-cli"&gt;bbi&lt;/a&gt; provides an executable
 called &lt;strong&gt;bbi&lt;/strong&gt;, that can be used to access Bitbuckets issues from CLI.&lt;/p&gt;
 &lt;h2&gt;Installation&lt;/h2&gt;
 &lt;p&gt;Install to $HOME dir, instead of system.&lt;/p&gt;

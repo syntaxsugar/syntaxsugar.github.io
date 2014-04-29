@@ -8,7 +8,14 @@
 &lt;ul&gt;
 &lt;li&gt;Hover your mouse pointer over the upper-most part of the screen, to show main menu.&lt;/li&gt;
 &lt;li&gt;On the main menu, choose &lt;strong&gt;View | Exit Full Screen Mode&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="PyCharm"></category></entry><entry><title>Syntax Highlighter</title><link href="http://syntaxsugar.github.io/posts/2014/03/syntax-highlighter/" rel="alternate"></link><updated>2014-03-29T00:00:00+01:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-03-29:posts/2014/03/syntax-highlighter/</id><summary type="html">&lt;h1&gt;Syntax Highlighter Test&lt;/h1&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Useful Shortcuts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Shift + F10 - Run Code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Configuration&lt;/h2&gt;
+&lt;h3&gt;Show line numbers&lt;/h3&gt;
+&lt;p&gt;Settings -&amp;gt; Editor -&amp;gt; Appearance -&amp;gt; Show line numbers&lt;/p&gt;</summary><category term="PyCharm"></category></entry><entry><title>Syntax Highlighter</title><link href="http://syntaxsugar.github.io/posts/2014/03/syntax-highlighter/" rel="alternate"></link><updated>2014-03-29T00:00:00+01:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-03-29:posts/2014/03/syntax-highlighter/</id><summary type="html">&lt;h1&gt;Syntax Highlighter Test&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#java"&gt;Java&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#javascript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
