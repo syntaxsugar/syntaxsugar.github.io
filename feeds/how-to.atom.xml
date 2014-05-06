@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-04-29T20:08:46+02:00</updated><entry><title>Things to do after installing ubuntu 14.04 LTS</title><link href="http://syntaxsugar.github.io/posts/2014/04/things-to-do-after-installing-ubuntu-1404-lts/" rel="alternate"></link><updated>2014-04-29T20:08:46+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-29:posts/2014/04/things-to-do-after-installing-ubuntu-1404-lts/</id><summary type="html">&lt;h2&gt;Update your Ubuntu 14.04 LTS&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-05-06T21:43:31+02:00</updated><entry><title>Things to do after installing ubuntu 14.04 LTS</title><link href="http://syntaxsugar.github.io/posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/" rel="alternate"></link><updated>2014-05-06T21:43:31+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-05-06:posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/</id><summary type="html">&lt;h2&gt;Update your Ubuntu 14.04 LTS&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update 
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get upgrade
 &lt;/pre&gt;&lt;/div&gt;
@@ -27,6 +27,48 @@ Complete remove totem (&lt;em&gt;totem&lt;/em&gt;, &lt;em&gt;totem-common&lt;/em
 
 &lt;p&gt;Install &lt;strong&gt;SMPlayer&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install smplayer
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;ZSH shell&lt;/h2&gt;
+&lt;h3&gt;Install ZSH&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install zsh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This will install &lt;em&gt;zsh&lt;/em&gt; and &lt;em&gt;zsh-common&lt;/em&gt; packages.&lt;/p&gt;
+&lt;h3&gt;Setup &lt;a href="http://ohmyz.sh/"&gt;oh-my-zsh&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+&lt;span class="nv"&gt;$ &lt;/span&gt;chsh -s /bin/zsh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Python Development&lt;/h2&gt;
+&lt;h3&gt;Python headers files&lt;/h3&gt;
+&lt;p&gt;Install package &lt;em&gt;python-dev&lt;/em&gt;. This package includes header files, a static
+library and development tools for building Python modules, extending the
+Python interpreter or embedding Python in applications.&lt;/p&gt;
+&lt;p&gt;To install this package, enter:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install python-dev
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Virtualenv&lt;/h3&gt;
+&lt;p&gt;Install &lt;a href="http://virtualenvwrapper.readthedocs.org/"&gt;virtualenvwrapper&lt;/a&gt; - extension to &lt;a href="https://pypi.python.org/pypi/virtualenv"&gt;virtualenv&lt;/a&gt;
+for managing multiple virtual Python environments&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install virtualenvwrapper
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Pycharm&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install openjdk-7-jdk
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/Downloads
+&lt;span class="nv"&gt;$ &lt;/span&gt;wget http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /opt
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo cp ~/Downloads/pycharm-professional-3.1.3.tar.gz .
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo tar xvzf pycharm-professional-3.1.3.tar.gz .
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv pycharm-3.1.3/ pycharm/
+&lt;span class="nv"&gt;$ &lt;/span&gt;/opt/pycharm/bin/pycharm.sh
 &lt;/pre&gt;&lt;/div&gt;
 
 

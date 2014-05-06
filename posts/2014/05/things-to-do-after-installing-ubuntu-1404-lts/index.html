@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>SyntaxSugar: Things to do after installing ubuntu 14.04 LTS</title>
+    <title>Things to do after installing ubuntu 14.04 LTS - SyntaxSugar</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
         <meta property="og:site_name" content="SyntaxSugar" />
             <meta property="og:type" content="article"/>
             <meta property="og:title" content="Things to do after installing ubuntu 14.04 LTS"/>
-            <meta property="og:url" content="http://syntaxsugar.github.io/posts/2014/04/things-to-do-after-installing-ubuntu-1404-lts/"/>
+            <meta property="og:url" content="http://syntaxsugar.github.io/posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/"/>
             <meta property="og:description" content="Update your Ubuntu 14.04 LTS $ sudo apt-get update $ sudo apt-get upgrade Install usefull Apps Install Multimedia Codecs $ sudo apt-get install ubuntu-restricted-extras Install some extra AppIndicators (applets) Install The Classic Menu Indicator $ sudo add-apt-repository ppa:diesch/testing $ sudo apt-get update $ sudo apt-get install classicmenu-indicator Replace videoplayer Totem with SMPlayer Complete ..."/>
-            <meta property="article:published_time" content="2014-04-29" />
+            <meta property="article:published_time" content="2014-05-06" />
                 <meta property="article:section" content="How to" />
                 <meta property="article:tag" content="Ubuntu" />
                 <meta property="article:author" content="Jaromir Fojtu" />
@@ -74,7 +74,7 @@ SyntaxSugar            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="http://syntaxsugar.github.io/posts/2014/04/things-to-do-after-installing-ubuntu-1404-lts/"
+                    <a href="http://syntaxsugar.github.io/posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/"
                        rel="bookmark"
                        title="Permalink to Things to do after installing ubuntu 14.04 LTS">
                         Things to do after installing ubuntu 14.04 LTS
@@ -87,7 +87,7 @@ SyntaxSugar            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2014-04-29T20:08:46.357168"> Tue, 29 Apr 2014</time>
+        <i class="fa fa-calendar"></i><time datetime="2014-05-06T21:43:31.553685"> Tue, 06 May 2014</time>
     </span>
 
 
@@ -125,6 +125,48 @@ Complete remove totem (<em>totem</em>, <em>totem-common</em>, <em>totem-plugins<
 
 <p>Install <strong>SMPlayer</strong></p>
 <div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install smplayer
+</pre></div>
+
+
+<h2>ZSH shell</h2>
+<h3>Install ZSH</h3>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install zsh
+</pre></div>
+
+
+<p>This will install <em>zsh</em> and <em>zsh-common</em> packages.</p>
+<h3>Setup <a href="http://ohmyz.sh/">oh-my-zsh</a></h3>
+<div class="highlight"><pre><span class="nv">$ </span>wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+<span class="nv">$ </span>chsh -s /bin/zsh
+</pre></div>
+
+
+<h2>Python Development</h2>
+<h3>Python headers files</h3>
+<p>Install package <em>python-dev</em>. This package includes header files, a static
+library and development tools for building Python modules, extending the
+Python interpreter or embedding Python in applications.</p>
+<p>To install this package, enter:</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install python-dev
+</pre></div>
+
+
+<h3>Virtualenv</h3>
+<p>Install <a href="http://virtualenvwrapper.readthedocs.org/">virtualenvwrapper</a> - extension to <a href="https://pypi.python.org/pypi/virtualenv">virtualenv</a>
+for managing multiple virtual Python environments</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install virtualenvwrapper
+</pre></div>
+
+
+<h3>Pycharm</h3>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install openjdk-7-jdk
+<span class="nv">$ </span><span class="nb">cd</span> ~/Downloads
+<span class="nv">$ </span>wget http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz
+<span class="nv">$ </span><span class="nb">cd</span> /opt
+<span class="nv">$ </span>sudo cp ~/Downloads/pycharm-professional-3.1.3.tar.gz .
+<span class="nv">$ </span>sudo tar xvzf pycharm-professional-3.1.3.tar.gz .
+<span class="nv">$ </span>sudo mv pycharm-3.1.3/ pycharm/
+<span class="nv">$ </span>/opt/pycharm/bin/pycharm.sh
 </pre></div>
 
 
@@ -182,13 +224,13 @@ Complete remove totem (<em>totem</em>, <em>totem-common</em>, <em>totem-plugins<
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
-                                PyCharm
+                            <a href="http://syntaxsugar.github.io/tag/git.html">
+                                GIT
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/gnome.html">
-                                Gnome
+                            <a href="http://syntaxsugar.github.io/tag/bitbucket.html">
+                                Bitbucket
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -197,13 +239,13 @@ Complete remove totem (<em>totem</em>, <em>totem-common</em>, <em>totem-plugins<
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/git.html">
-                                GIT
+                            <a href="http://syntaxsugar.github.io/tag/gnome.html">
+                                Gnome
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/bitbucket.html">
-                                Bitbucket
+                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
+                                PyCharm
                             </a>
                         </li>
                     </ul>
