@@ -1,4 +1,5 @@
 Title: Things to do after installing ubuntu 14.04 LTS
+Date: 2014-05-06
 Category: How to
 Tags: Ubuntu
 
