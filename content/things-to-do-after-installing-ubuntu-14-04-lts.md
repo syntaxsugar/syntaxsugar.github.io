@@ -82,6 +82,25 @@ for managing multiple virtual Python environments
     $ /opt/pycharm/bin/pycharm.sh
 
 
+## Google Chrome
+Download GPG key and install it.
+
+    :::bash
+    $ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+    $ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+    $ sudo chmod 644 /etc/apt/sources.list.d/google-chrome.list
+
+Update packages list:
+
+    :::bash
+    $ sudo apt-get update
+
+And install **stable** version Google Chrome
+
+    :::bash
+    $ sudo apt-get install google-chrome-stable
+
+
 ## Clean Up
 
     :::bash
