@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/all.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-05-06T21:43:31+02:00</updated><entry><title>Things to do after installing ubuntu 14.04 LTS</title><link href="http://syntaxsugar.github.io/posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/" rel="alternate"></link><updated>2014-05-06T21:43:31+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-05-06:posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/</id><summary type="html">&lt;h2&gt;Update your Ubuntu 14.04 LTS&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/all.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-05-06T00:00:00+02:00</updated><entry><title>Things to do after installing ubuntu 14.04 LTS</title><link href="http://syntaxsugar.github.io/posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/" rel="alternate"></link><updated>2014-05-06T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-05-06:posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/</id><summary type="html">&lt;h2&gt;Update your Ubuntu 14.04 LTS&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update 
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get upgrade
 &lt;/pre&gt;&lt;/div&gt;
@@ -69,6 +69,24 @@ for managing multiple virtual Python environments&lt;/p&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo tar xvzf pycharm-professional-3.1.3.tar.gz .
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv pycharm-3.1.3/ pycharm/
 &lt;span class="nv"&gt;$ &lt;/span&gt;/opt/pycharm/bin/pycharm.sh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Google Chrome&lt;/h2&gt;
+&lt;p&gt;Download GPG key and install it.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo sh -c &lt;span class="s1"&gt;&amp;#39;echo &amp;quot;deb http://dl.google.com/linux/chrome/deb/ stable main&amp;quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/google-chrome.list&amp;#39;&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo chmod 644 /etc/apt/sources.list.d/google-chrome.list
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Update packages list:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And install &lt;strong&gt;stable&lt;/strong&gt; version Google Chrome&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install google-chrome-stable
 &lt;/pre&gt;&lt;/div&gt;
 
 

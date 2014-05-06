@@ -87,7 +87,7 @@ SyntaxSugar            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2014-05-06T21:43:31.553685"> Tue, 06 May 2014</time>
+        <i class="fa fa-calendar"></i><time datetime="2014-05-06T00:00:00"> Tue, 06 May 2014</time>
     </span>
 
 
@@ -170,6 +170,24 @@ for managing multiple virtual Python environments</p>
 </pre></div>
 
 
+<h2>Google Chrome</h2>
+<p>Download GPG key and install it.</p>
+<div class="highlight"><pre><span class="nv">$ </span>wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+<span class="nv">$ </span>sudo sh -c <span class="s1">&#39;echo &quot;deb http://dl.google.com/linux/chrome/deb/ stable main&quot; &gt;&gt; /etc/apt/sources.list.d/google-chrome.list&#39;</span>
+<span class="nv">$ </span>sudo chmod 644 /etc/apt/sources.list.d/google-chrome.list
+</pre></div>
+
+
+<p>Update packages list:</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get update
+</pre></div>
+
+
+<p>And install <strong>stable</strong> version Google Chrome</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install google-chrome-stable
+</pre></div>
+
+
 <h2>Clean Up</h2>
 <div class="highlight"><pre><span class="nv">$ </span>sudo apt-get -f install
 <span class="nv">$ </span>sudo apt-get autoremove
@@ -219,23 +237,18 @@ for managing multiple virtual Python environments</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/apache.html">
-                                Apache
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
                             <a href="http://syntaxsugar.github.io/tag/git.html">
                                 GIT
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/bitbucket.html">
-                                Bitbucket
+                            <a href="http://syntaxsugar.github.io/tag/apache.html">
+                                Apache
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/github.html">
-                                Github
+                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
+                                PyCharm
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -244,8 +257,13 @@ for managing multiple virtual Python environments</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
-                                PyCharm
+                            <a href="http://syntaxsugar.github.io/tag/github.html">
+                                Github
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/bitbucket.html">
+                                Bitbucket
                             </a>
                         </li>
                     </ul>
