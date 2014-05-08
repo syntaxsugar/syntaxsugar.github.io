@@ -33,9 +33,9 @@ Complete remove totem (&lt;em&gt;totem&lt;/em&gt;, &lt;em&gt;totem-common&lt;/em
 &lt;p&gt;Install &lt;strong&gt;Skype&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Uncomment following lines in &lt;em&gt;/etc/apt/sources.list&lt;/em&gt; to enable Cannnonical Partners repository.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;deb http://archive.canonical.com/ubuntu trusty partner&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;deb http://archive.canonical.com/ubuntu trusty partner&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;deb-src http://archive.canonical.com/ubuntu trusty partner&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;deb-src http://archive.canonical.com/ubuntu trusty partner&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;:::bash
 $ sudo apt-get update
 $ sudo apt-get install skype&lt;/p&gt;
