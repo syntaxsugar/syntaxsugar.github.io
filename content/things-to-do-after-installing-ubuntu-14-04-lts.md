@@ -1,5 +1,6 @@
 Title: Things to do after installing ubuntu 14.04 LTS
 Date: 2014-05-06
+Modified: 2014-05-08
 Category: How to
 Tags: Ubuntu
 
@@ -135,7 +136,18 @@ Open *Settings / Appereance / Look*.
 
 Change **Launcher icon size** to 24.
 
+### Disable overlay Scrollbars
+You can disable overlay scrollbars, if you don't like that
 
+To disable overlay scrollbar:
+
+    :::bash
+    $ gsettings set com.canonical.desktop.interface scrollbar-mode normal
+
+To get back overlay bar to default:
+
+    :::bash
+    $ gsettings reset com.canonical.desktop.interface scrollbar-mode
 
 ## Clean Up
 
