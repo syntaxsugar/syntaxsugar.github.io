@@ -117,6 +117,18 @@ switcher you can use &lt;strong&gt;unity-tweak-tool&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Resize Unity launchers icons&lt;/h3&gt;
 &lt;p&gt;Open &lt;em&gt;Settings / Appereance / Look&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Change &lt;strong&gt;Launcher icon size&lt;/strong&gt; to 24.&lt;/p&gt;
+&lt;h3&gt;Disable overlay Scrollbars&lt;/h3&gt;
+&lt;p&gt;You can disable overlay scrollbars, if you don't like that&lt;/p&gt;
+&lt;p&gt;To disable overlay scrollbar:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;gsettings &lt;span class="nb"&gt;set &lt;/span&gt;com.canonical.desktop.interface scrollbar-mode normal
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To get back overlay bar to default:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;gsettings reset com.canonical.desktop.interface scrollbar-mode
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;Clean Up&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get -f install
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get autoremove
