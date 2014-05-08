@@ -90,6 +90,19 @@ for managing multiple virtual Python environments&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;h2&gt;Unity&lt;/h2&gt;
+&lt;h3&gt;Turn On Workspaces&lt;/h3&gt;
+&lt;p&gt;Open &lt;em&gt;Settings / Appereance / Behavior&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Now you can re-enable worspaces with the &lt;em&gt;Enable Workspaces&lt;/em&gt; checkox.&lt;/p&gt;
+&lt;p&gt;And &lt;em&gt;Add show desktop icon to the launcher&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Remove "Show Desktop" from the app switcher&lt;/h3&gt;
+&lt;p&gt;To disable the "Show Desktop" option in application
+switcher you can use &lt;strong&gt;unity-tweak-tool&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install unity-tweak-tool
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And then, &lt;em&gt;Unity Tweak Tool / Switcher / Display "Show Desktop" icon&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Clean Up&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get -f install
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get autoremove
