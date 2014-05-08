@@ -118,6 +118,13 @@ switcher you can use **unity-tweak-tool**.
 
 And then, *Unity Tweak Tool / Switcher / Display "Show Desktop" icon*
 
+### Resize Unity launchers icons
+Open *Settings / Appereance / Look*.
+
+Change **Launcher icon size** to 24.
+
+
+
 ## Clean Up
 
     :::bash
