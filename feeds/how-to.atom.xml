@@ -6,7 +6,10 @@
 
 
 &lt;h2&gt;Install usefull Apps&lt;/h2&gt;
-&lt;p&gt;Install &lt;strong&gt;Multimedia Codecs&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Install &lt;strong&gt;Restricted Extras&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;There are some &lt;em&gt;Restricted Extras&lt;/em&gt; in Ubuntu which can't be install while 
+installation of Ubuntu by default but you can install these Restricted
+extras by yourself. &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install ubuntu-restricted-extras
 &lt;/pre&gt;&lt;/div&gt;
 
