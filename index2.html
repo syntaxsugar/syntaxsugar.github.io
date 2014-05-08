@@ -1,67 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-        <title>SyntaxSugar</title>
-        <meta charset="utf-8" />
-        <link href="http://syntaxsugar.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="SyntaxSugar Full Atom Feed" />
+    <title>SyntaxSugar</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="SyntaxSugar" />
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="SyntaxSugar"/>
+            <meta property="og:url" content="http://syntaxsugar.github.io"/>
+            <meta property="og:description" content="SyntaxSugar"/>
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://syntaxsugar.github.io/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="http://syntaxsugar.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://syntaxsugar.github.io/theme/css/pygments/friendly.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://syntaxsugar.github.io/theme/css/style.css" type="text/css"/>
+
+        <link href="http://syntaxsugar.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="SyntaxSugar ATOM Feed"/>
+
 </head>
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://syntaxsugar.github.io">SyntaxSugar <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        </ul></nav><!-- /#menu -->
-<section id="content">
-<h2>All articles</h2>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://syntaxsugar.github.io/" class="navbar-brand">
+SyntaxSugar            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="http://syntaxsugar.github.io/category/how-to.html">How to</a>
+                        </li>
+                        <li >
+                            <a href="http://syntaxsugar.github.io/category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="http://syntaxsugar.github.io/category/shortcuts.html">Shortcuts</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://syntaxsugar.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
 
-<ol id="post-list">
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/" rel="bookmark" title="Permalink to How to enable UserDir in Ubuntu 12.04 LTS">How to enable UserDir in Ubuntu 12.04 LTS</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-04-02T00:00:00"> Wed, 02 Apr 2014 </abbr>
-<address class="vcard author">By <a class="url fn" href="http://syntaxsugar.github.io/author/jaromir-fojtu.html">Jaromir Fojtu</a></address>                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>Enable userdir, users can build websites with whis config.</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/" rel="bookmark" title="Permalink to How to import existing code to GitHub">How to import existing code to GitHub</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-03-31T00:00:00"> Mon, 31 Mar 2014 </abbr>
-<address class="vcard author">By <a class="url fn" href="http://syntaxsugar.github.io/author/jaromir-fojtu.html">Jaromir Fojtu</a></address>                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>Example, How to local source code add to a new remote git repository without 'cloning'</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://syntaxsugar.github.io/posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/" rel="bookmark" title="Permalink to How to disable keyboard shortcut for Lockscreen">How to disable keyboard shortcut for Lockscreen</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-03-30T00:00:00"> Sun, 30 Mar 2014 </abbr>
-<address class="vcard author">By <a class="url fn" href="http://syntaxsugar.github.io/author/jaromir-fojtu.html">Jaromir Fojtu</a></address>                </footer><!-- /.post-info -->
-                <div class="entry-content">  </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://syntaxsugar.github.io/posts/2014/03/syntax-highlighter/" rel="bookmark" title="Permalink to Syntax Highlighter">Syntax Highlighter</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-03-29T00:00:00"> Sat, 29 Mar 2014 </abbr>
-<address class="vcard author">By <a class="url fn" href="http://syntaxsugar.github.io/author/jaromir-fojtu.html">Jaromir Fojtu</a></address>                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>Pelican - Pygments Syntax Highlighter</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://syntaxsugar.github.io/posts/2010/12/lorem-ipsum/" rel="bookmark" title="Permalink to Lorem Ipsum">Lorem Ipsum</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2010-12-03T10:20:00"> Fri, 03 Dec 2010 </abbr>
-<address class="vcard author">By <a class="url fn" href="http://syntaxsugar.github.io/author/jaromir-fojtu.html">Jaromir Fojtu</a></address>                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>Generated Lorem Ipsum Text</p> </div><!-- /.entry-content -->
-        </article></li>
-</ol><!-- /#posts-list -->
-<p class="paginator">
-        <a href="http://syntaxsugar.github.io/index.html">&laquo;</a>
-    Page 2 / 2
-</p>
-</section><!-- /#content -->
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+            <article>
+                <h2><a href="http://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/">How to enable UserDir in Ubuntu 12.04 LTS</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-04-02T00:00:00"> Wed, 02 Apr 2014</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://syntaxsugar.github.io/tag/apache.html">Apache</a>
+        /
+	<a href="http://syntaxsugar.github.io/tag/ubuntu.html">Ubuntu</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p>Enable userdir, users can build websites with whis config.</p>
+                    <a class="btn btn-default btn-xs" href="http://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/">How to import existing code to GitHub</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-03-31T00:00:00"> Mon, 31 Mar 2014</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://syntaxsugar.github.io/tag/git.html">GIT</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p>Example, How to local source code add to a new remote git repository without 'cloning'</p>
+                    <a class="btn btn-default btn-xs" href="http://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://syntaxsugar.github.io/posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/">How to disable keyboard shortcut for Lockscreen</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-03-30T00:00:00"> Sun, 30 Mar 2014</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://syntaxsugar.github.io/tag/ubuntu.html">Ubuntu</a>
+        /
+	<a href="http://syntaxsugar.github.io/tag/gnome.html">Gnome</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary">
+                    <a class="btn btn-default btn-xs" href="http://syntaxsugar.github.io/posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://syntaxsugar.github.io/posts/2014/03/syntax-highlighter/">Syntax Highlighter</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-03-29T00:00:00"> Sat, 29 Mar 2014</time>
+    </span>
+
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p>Pelican - Pygments Syntax Highlighter</p>
+                    <a class="btn btn-default btn-xs" href="http://syntaxsugar.github.io/posts/2014/03/syntax-highlighter/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://syntaxsugar.github.io/posts/2010/12/lorem-ipsum/">Lorem Ipsum</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2010-12-03T10:20:00"> Fri, 03 Dec 2010</time>
+    </span>
+
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p>Generated Lorem Ipsum Text</p>
+                    <a class="btn btn-default btn-xs" href="http://syntaxsugar.github.io/posts/2010/12/lorem-ipsum/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
+        <ul class="pagination">
+                <li class="prev"><a href="http://syntaxsugar.github.io/index.html">&laquo;</a>
+                </li>
+                    <li class=""><a
+                            href="http://syntaxsugar.github.io/index.html">1</a></li>
+                    <li class="active"><a
+                            href="http://syntaxsugar.github.io/index2.html">2</a></li>
+                <li class="next disabled"><a href="#">&raquo;</a></li>
+        </ul>
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+                  <ul class="list-group" id="social">
+                    <li class="list-group-item"><a href="https://twitter.com/syntaxsugar"><i
+                            class="fa fa-twitter-square fa-lg"></i> twitter
+                    </a></li>
+                    <li class="list-group-item"><a href="https://www.facebook.com/paiti"><i
+                            class="fa fa-facebook-square fa-lg"></i> facebook
+                    </a></li>
+                    <li class="list-group-item"><a href="https://github.com/syntaxsugar"><i
+                            class="fa fa-github-square fa-lg"></i> github
+                    </a></li>
+                    <li class="list-group-item"><a href="http://syntaxsugar.github.io/feeds/all.atom.xml"><i
+                            class="fa fa-rss-square fa-lg"></i> rss
+                    </a></li>
+                  </ul>
+                </li>
+
+
+
+                <li class="list-group-item"><a href="http://syntaxsugar.github.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                    <ul class="list-group " id="tags">
+                        <li class="list-group-item tag-1">
+                            <a href="http://syntaxsugar.github.io/tag/ubuntu.html">
+                                Ubuntu
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="http://syntaxsugar.github.io/tag/shortcuts.html">
+                                Shortcuts
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/bitbucket.html">
+                                Bitbucket
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/apache.html">
+                                Apache
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/gnome.html">
+                                Gnome
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
+                                PyCharm
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/github.html">
+                                Github
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/git.html">
+                                GIT
+                            </a>
+                        </li>
+                    </ul>
+                </li>    
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2014 Jaromir Fojtu
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://syntaxsugar.github.io/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://syntaxsugar.github.io/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://syntaxsugar.github.io/theme/js/respond.min.js"></script>
+
 </body>
 </html>
