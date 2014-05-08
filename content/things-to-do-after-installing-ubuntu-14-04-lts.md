@@ -35,6 +35,19 @@ Install **SMPlayer**
     :::bash
     $ sudo apt-get install smplayer
 
+Install **Skype**
+
+Uncomment following lines in */etc/apt/sources.list* to enable Cannnonical Partners repository.
+
+* deb http://archive.canonical.com/ubuntu trusty partner
+* deb-src http://archive.canonical.com/ubuntu trusty partner
+
+
+    :::bash
+    $ sudo apt-get update
+    $ sudo apt-get install skype
+    
+
 ## ZSH shell
 
 ### Install ZSH
