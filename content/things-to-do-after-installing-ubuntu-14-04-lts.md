@@ -100,6 +100,23 @@ And install **stable** version Google Chrome
     :::bash
     $ sudo apt-get install google-chrome-stable
 
+## Unity
+
+### Turn On Workspaces
+Open *Settings / Appereance / Behavior*
+
+Now you can re-enable worspaces with the *Enable Workspaces* checkox.
+
+And *Add show desktop icon to the launcher*
+
+### Remove "Show Desktop" from the app switcher
+To disable the "Show Desktop" option in application
+switcher you can use **unity-tweak-tool**.
+
+    :::bash
+    $ sudo apt-get install unity-tweak-tool
+
+And then, *Unity Tweak Tool / Switcher / Display "Show Desktop" icon*
 
 ## Clean Up
 
