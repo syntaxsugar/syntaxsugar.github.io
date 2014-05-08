@@ -103,6 +103,9 @@ switcher you can use &lt;strong&gt;unity-tweak-tool&lt;/strong&gt;.&lt;/p&gt;
 
 
 &lt;p&gt;And then, &lt;em&gt;Unity Tweak Tool / Switcher / Display "Show Desktop" icon&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Resize Unity launchers icons&lt;/h3&gt;
+&lt;p&gt;Open &lt;em&gt;Settings / Appereance / Look&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Change &lt;strong&gt;Launcher icon size&lt;/strong&gt; to 24.&lt;/p&gt;
 &lt;h2&gt;Clean Up&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get -f install
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get autoremove
