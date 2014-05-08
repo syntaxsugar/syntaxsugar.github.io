@@ -12,7 +12,10 @@ Tags: Ubuntu
 
 ## Install usefull Apps
 
-Install **Multimedia Codecs**
+### Install **Restricted Extras**
+There are some *Restricted Extras* in Ubuntu which can't be install while 
+installation of Ubuntu by default but you can install these Restricted
+extras by yourself. 
 
     :::bash
     $ sudo apt-get install ubuntu-restricted-extras
