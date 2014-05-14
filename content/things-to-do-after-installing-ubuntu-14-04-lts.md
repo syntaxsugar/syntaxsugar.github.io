@@ -20,24 +20,25 @@ extras by yourself.
     :::bash
     $ sudo apt-get install ubuntu-restricted-extras
 
-Install some extra AppIndicators (applets)
-Install **The Classic Menu Indicator**
+-   Classic Menu Indicator
+    [Classic Menu Indicator](http://packages.ubuntu.com/trusty/classicmenu-indicator)
+    
+        :::bash
+        $ sudo apt-get install classicmenu-indicator
 
-    :::bash
-    $ sudo add-apt-repository ppa:diesch/testing
-    $ sudo apt-get update
-    $ sudo apt-get install classicmenu-indicator
+-   SMPlayer        
+    SMPlayer is great front-end for MPlayer with built-in codecs.
+    SMPlayer can search and download subtitles from opensubtitles.org
+    [SMplayer Package](http://packages.ubuntu.com/trusty/smplayer)
+
+        :::bash 
+        $ sudo apt-get install smplayer
 
 Replace videoplayer **Totem** with **SMPlayer**
 Complete remove totem (*totem*, *totem-common*, *totem-plugins*)
 
     :::bash
     $ sudo apt-get remove totem
-
-Install **SMPlayer**
-
-    :::bash
-    $ sudo apt-get install smplayer
 
 Install **Skype**
 
