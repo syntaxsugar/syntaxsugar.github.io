@@ -194,6 +194,8 @@ for managing multiple virtual Python environments&lt;/p&gt;
 
 
 &lt;h2&gt;Google Chrome&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
 &lt;p&gt;Download GPG key and install it.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo sh -c &lt;span class="s1"&gt;&amp;#39;echo &amp;quot;deb http://dl.google.com/linux/chrome/deb/ stable main&amp;quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/google-chrome.list&amp;#39;&lt;/span&gt;
@@ -201,22 +203,44 @@ for managing multiple virtual Python environments&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Update packages list:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update package lists:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;And install &lt;strong&gt;stable&lt;/strong&gt; version Google Chrome&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;install &lt;strong&gt;stable&lt;/strong&gt; version of Google Chrome&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install google-chrome-stable
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;Unity&lt;/h2&gt;
-&lt;h3&gt;Turn On Workspaces&lt;/h3&gt;
-&lt;p&gt;Open &lt;em&gt;Settings / Appereance / Behavior&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Now you can re-enable worspaces with the &lt;em&gt;Enable Workspaces&lt;/em&gt; checkox.&lt;/p&gt;
-&lt;p&gt;And &lt;em&gt;Add show desktop icon to the launcher&lt;/em&gt;&lt;/p&gt;
-&lt;h3&gt;Remove "Show Desktop" from the app switcher&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Chromium browser&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install chromium-browser
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Unity tunning&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Resize Unity launchers icons&lt;/p&gt;
+&lt;p&gt;Open &lt;em&gt;System Settings / Appereance / Look&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Drag the marker either direction to increase or decrease the icon size
+on the Unity launcher.&lt;/p&gt;
+&lt;p&gt;The default size of the Unity Launcher icons is 48px in case you want to go back to the original size..&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Turn On Workspaces&lt;/p&gt;
+&lt;p&gt;Open &lt;em&gt;System Settings / Appereance / Behavior&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Now you can re-enable worspaces with the &lt;em&gt;Enable Workspaces&lt;/em&gt; checkbox.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Add show desktop icon to the launcher&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove "Show Desktop" icon from the app switcher&lt;/p&gt;
 &lt;p&gt;To disable the "Show Desktop" option in application
 switcher you can use &lt;strong&gt;unity-tweak-tool&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install unity-tweak-tool
@@ -224,9 +248,9 @@ switcher you can use &lt;strong&gt;unity-tweak-tool&lt;/strong&gt;.&lt;/p&gt;
 
 
 &lt;p&gt;And then, &lt;em&gt;Unity Tweak Tool / Switcher / Display "Show Desktop" icon&lt;/em&gt;&lt;/p&gt;
-&lt;h3&gt;Resize Unity launchers icons&lt;/h3&gt;
-&lt;p&gt;Open &lt;em&gt;Settings / Appereance / Look&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Change &lt;strong&gt;Launcher icon size&lt;/strong&gt; to 24.&lt;/p&gt;
+&lt;p&gt;To Show Desktop (Minimise all windows) now use Ctrl + Super + D&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Disable overlay Scrollbars&lt;/h3&gt;
 &lt;p&gt;You can disable overlay scrollbars, if you don't like that&lt;/p&gt;
 &lt;p&gt;To disable overlay scrollbar:&lt;/p&gt;
