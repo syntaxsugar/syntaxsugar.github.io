@@ -21,18 +21,23 @@ extras by yourself.
     $ sudo apt-get install ubuntu-restricted-extras
 
 -   Classic Menu Indicator
-    [Classic Menu Indicator](http://packages.ubuntu.com/trusty/classicmenu-indicator)
+
+    [Classic Menu Indicator Package](http://packages.ubuntu.com/trusty/classicmenu-indicator)
     
         :::bash
         $ sudo apt-get install classicmenu-indicator
 
+
 -   SMPlayer        
     SMPlayer is great front-end for MPlayer with built-in codecs.
+
     SMPlayer can search and download subtitles from opensubtitles.org
+
     [SMplayer Package](http://packages.ubuntu.com/trusty/smplayer)
 
         :::bash 
         $ sudo apt-get install smplayer
+
 
 Replace videoplayer **Totem** with **SMPlayer**
 Complete remove totem (*totem*, *totem-common*, *totem-plugins*)
