@@ -14,22 +14,29 @@ extras by yourself. &lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Install some extra AppIndicators (applets)
-Install &lt;strong&gt;The Classic Menu Indicator&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo add-apt-repository ppa:diesch/testing
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install classicmenu-indicator
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Classic Menu Indicator
+    &lt;a href="http://packages.ubuntu.com/trusty/classicmenu-indicator"&gt;Classic Menu Indicator&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install classicmenu-indicator
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SMPlayer      &lt;br /&gt;
+    SMPlayer is great front-end for MPlayer with built-in codecs.
+    SMPlayer can search and download subtitles from opensubtitles.org
+    &lt;a href="http://packages.ubuntu.com/trusty/smplayer"&gt;SMplayer Package&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install smplayer
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Replace videoplayer &lt;strong&gt;Totem&lt;/strong&gt; with &lt;strong&gt;SMPlayer&lt;/strong&gt;
 Complete remove totem (&lt;em&gt;totem&lt;/em&gt;, &lt;em&gt;totem-common&lt;/em&gt;, &lt;em&gt;totem-plugins&lt;/em&gt;)&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get remove totem
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Install &lt;strong&gt;SMPlayer&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install smplayer
 &lt;/pre&gt;&lt;/div&gt;
 
 
