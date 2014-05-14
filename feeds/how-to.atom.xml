@@ -16,8 +16,8 @@ extras by yourself. &lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Classic Menu Indicator
-    &lt;a href="http://packages.ubuntu.com/trusty/classicmenu-indicator"&gt;Classic Menu Indicator&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Classic Menu Indicator&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://packages.ubuntu.com/trusty/classicmenu-indicator"&gt;Classic Menu Indicator Package&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install classicmenu-indicator
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -25,9 +25,9 @@ extras by yourself. &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;SMPlayer      &lt;br /&gt;
-    SMPlayer is great front-end for MPlayer with built-in codecs.
-    SMPlayer can search and download subtitles from opensubtitles.org
-    &lt;a href="http://packages.ubuntu.com/trusty/smplayer"&gt;SMplayer Package&lt;/a&gt;&lt;/p&gt;
+    SMPlayer is great front-end for MPlayer with built-in codecs.&lt;/p&gt;
+&lt;p&gt;SMPlayer can search and download subtitles from opensubtitles.org&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://packages.ubuntu.com/trusty/smplayer"&gt;SMplayer Package&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install smplayer
 &lt;/pre&gt;&lt;/div&gt;
 
