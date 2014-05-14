@@ -120,23 +120,35 @@ extras by yourself. &lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Replace videoplayer &lt;strong&gt;Totem&lt;/strong&gt; with &lt;strong&gt;SMPlayer&lt;/strong&gt;
-Complete remove totem (&lt;em&gt;totem&lt;/em&gt;, &lt;em&gt;totem-common&lt;/em&gt;, &lt;em&gt;totem-plugins&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;Once the SMPlayer is installed, the totem is no longer needed.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get remove totem
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Install &lt;strong&gt;Skype&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Uncomment following lines in &lt;em&gt;/etc/apt/sources.list&lt;/em&gt; to enable Cannnonical Partners repository.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Skype&lt;/p&gt;
+&lt;p&gt;Uncomment the following lines in &lt;em&gt;/etc/apt/sources.list&lt;/em&gt; to enable Cannnonical Partners repository.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;deb http://archive.canonical.com/ubuntu trusty partner&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;deb-src http://archive.canonical.com/ubuntu trusty partner&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Refresh package lists and install Skype through &lt;em&gt;apt&lt;/em&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install skype
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;deb-src http://archive.canonical.com/ubuntu trusty partner&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;:::bash
-$ sudo apt-get update
-$ sudo apt-get install skype&lt;/p&gt;
+&lt;p&gt;Guake Terminal&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Guake&lt;/strong&gt; is great drop-down terminal for Gnome written in Python.&lt;/p&gt;
+&lt;p&gt;Show / hide with &lt;em&gt;F12&lt;/em&gt; key.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://apps.ubuntu.com/cat/applications/guake/"&gt;Guake Terminal Ubuntu Package&lt;/a&gt;        &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install guake
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;ZSH shell&lt;/h2&gt;
