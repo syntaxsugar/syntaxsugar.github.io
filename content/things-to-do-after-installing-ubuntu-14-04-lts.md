@@ -20,35 +20,55 @@ extras by yourself.
     :::bash
     $ sudo apt-get install ubuntu-restricted-extras
 
-Install some extra AppIndicators (applets)
-Install **The Classic Menu Indicator**
+-   Classic Menu Indicator
 
-    :::bash
-    $ sudo add-apt-repository ppa:diesch/testing
-    $ sudo apt-get update
-    $ sudo apt-get install classicmenu-indicator
+    [Classic Menu Indicator Package](http://packages.ubuntu.com/trusty/classicmenu-indicator)
+    
+        :::bash
+        $ sudo apt-get install classicmenu-indicator
 
-Replace videoplayer **Totem** with **SMPlayer**
-Complete remove totem (*totem*, *totem-common*, *totem-plugins*)
 
-    :::bash
-    $ sudo apt-get remove totem
+-   SMPlayer        
+    SMPlayer is great front-end for MPlayer with built-in codecs.
 
-Install **SMPlayer**
+    SMPlayer can search and download subtitles from opensubtitles.org
 
-    :::bash
-    $ sudo apt-get install smplayer
+    [SMplayer Package](http://packages.ubuntu.com/trusty/smplayer)
 
-Install **Skype**
+        :::bash 
+        $ sudo apt-get install smplayer
 
-Uncomment following lines in */etc/apt/sources.list* to enable Cannnonical Partners repository.
+    
+    Once the SMPlayer is installed, the totem is no longer needed.
 
-- `deb http://archive.canonical.com/ubuntu trusty partner`
-- `deb-src http://archive.canonical.com/ubuntu trusty partner`
+        :::bash
+        $ sudo apt-get remove totem
 
-    :::bash
-    $ sudo apt-get update
-    $ sudo apt-get install skype
+
+-   Skype
+
+    Uncomment the following lines in */etc/apt/sources.list* to enable Cannnonical Partners repository.
+
+    - `deb http://archive.canonical.com/ubuntu trusty partner`
+    - `deb-src http://archive.canonical.com/ubuntu trusty partner`
+
+    Refresh package lists and install Skype through *apt*:
+     
+        :::bash
+        $ sudo apt-get update
+        $ sudo apt-get install skype
+
+
+-   Guake Terminal
+
+    **Guake** is great drop-down terminal for Gnome written in Python.
+
+    Show / hide with *F12* key.
+
+    [Guake Terminal Ubuntu Package](https://apps.ubuntu.com/cat/applications/guake/)        
+
+        :::bash
+        $ sudo apt-get install guake
     
 
 ## ZSH shell
@@ -99,45 +119,65 @@ for managing multiple virtual Python environments
 
 
 ## Google Chrome
-Download GPG key and install it.
+
+1.  Download GPG key and install it.
+
+        :::bash
+        $ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        $ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+        $ sudo chmod 644 /etc/apt/sources.list.d/google-chrome.list
+
+2.  Update package lists:
+
+        :::bash
+        $ sudo apt-get update
+
+3.  install **stable** version of Google Chrome
+
+        :::bash
+        $ sudo apt-get install google-chrome-stable
+
+
+## Chromium browser
 
     :::bash
-    $ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-    $ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-    $ sudo chmod 644 /etc/apt/sources.list.d/google-chrome.list
+    $ sudo apt-get install chromium-browser
+        
 
-Update packages list:
+## Unity tunning
 
-    :::bash
-    $ sudo apt-get update
+-   Resize Unity launchers icons
 
-And install **stable** version Google Chrome
+    Open *System Settings / Appereance / Look*.
 
-    :::bash
-    $ sudo apt-get install google-chrome-stable
+    Drag the marker either direction to increase or decrease the icon size
+    on the Unity launcher.
 
-## Unity
+    The default size of the Unity Launcher icons is 48px in case you want to go back to the original size..
 
-### Turn On Workspaces
-Open *Settings / Appereance / Behavior*
 
-Now you can re-enable worspaces with the *Enable Workspaces* checkox.
+-   Turn On Workspaces
+    
+    Open *System Settings / Appereance / Behavior*
 
-And *Add show desktop icon to the launcher*
+    Now you can re-enable worspaces with the *Enable Workspaces* checkbox.
 
-### Remove "Show Desktop" from the app switcher
-To disable the "Show Desktop" option in application
-switcher you can use **unity-tweak-tool**.
+    *Add show desktop icon to the launcher*
 
-    :::bash
-    $ sudo apt-get install unity-tweak-tool
 
-And then, *Unity Tweak Tool / Switcher / Display "Show Desktop" icon*
+-   Remove "Show Desktop" icon from the app switcher
 
-### Resize Unity launchers icons
-Open *Settings / Appereance / Look*.
+    To disable the "Show Desktop" option in application
+    switcher you can use **unity-tweak-tool**.
 
-Change **Launcher icon size** to 24.
+        :::bash
+        $ sudo apt-get install unity-tweak-tool
+
+    And then, *Unity Tweak Tool / Switcher / Display "Show Desktop" icon*
+
+    To Show Desktop (Minimise all windows) now use Ctrl + Super + D
+
+
 
 ### Disable overlay Scrollbars
 You can disable overlay scrollbars, if you don't like that
