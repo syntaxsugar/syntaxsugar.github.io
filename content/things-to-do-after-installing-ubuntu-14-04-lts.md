@@ -38,23 +38,37 @@ extras by yourself.
         :::bash 
         $ sudo apt-get install smplayer
 
+    
+    Once the SMPlayer is installed, the totem is no longer needed.
 
-Replace videoplayer **Totem** with **SMPlayer**
-Complete remove totem (*totem*, *totem-common*, *totem-plugins*)
+        :::bash
+        $ sudo apt-get remove totem
 
-    :::bash
-    $ sudo apt-get remove totem
 
-Install **Skype**
+-   Skype
 
-Uncomment following lines in */etc/apt/sources.list* to enable Cannnonical Partners repository.
+    Uncomment the following lines in */etc/apt/sources.list* to enable Cannnonical Partners repository.
 
-- `deb http://archive.canonical.com/ubuntu trusty partner`
-- `deb-src http://archive.canonical.com/ubuntu trusty partner`
+    - `deb http://archive.canonical.com/ubuntu trusty partner`
+    - `deb-src http://archive.canonical.com/ubuntu trusty partner`
 
-    :::bash
-    $ sudo apt-get update
-    $ sudo apt-get install skype
+    Refresh package lists and install Skype through *apt*:
+     
+        :::bash
+        $ sudo apt-get update
+        $ sudo apt-get install skype
+
+
+-   Guake Terminal
+
+    **Guake** is great drop-down terminal for Gnome written in Python.
+
+    Show / hide with *F12* key.
+
+    [Guake Terminal Ubuntu Package](https://apps.ubuntu.com/cat/applications/guake/)        
+
+        :::bash
+        $ sudo apt-get install guake
     
 
 ## ZSH shell
