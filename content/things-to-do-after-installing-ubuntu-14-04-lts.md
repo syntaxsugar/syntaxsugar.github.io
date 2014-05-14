@@ -107,6 +107,32 @@ for managing multiple virtual Python environments
 
 ### Pycharm
 
+For **community** edition, there is unoficial Pycharm package from getdeb.net
+
+-   Add the repository GPG key
+
+        :::bash
+        $ wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+
+-   Add repository list
+
+        :::bash
+        $ sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'        
+
+-   Update package lists
+
+        :::bash
+        $ sudo apt-get update        
+
+- Install Pycharm Community package
+
+        :::bash
+        $ sudo apt-get install pycharm        
+
+
+    
+For **professional** edition. Follow:
+
     :::bash
     $ sudo apt-get install openjdk-7-jdk
     $ cd ~/Downloads
