@@ -133,23 +133,35 @@ extras by yourself. </p>
 </pre></div>
 
 
-</li>
-</ul>
-<p>Replace videoplayer <strong>Totem</strong> with <strong>SMPlayer</strong>
-Complete remove totem (<em>totem</em>, <em>totem-common</em>, <em>totem-plugins</em>)</p>
+<p>Once the SMPlayer is installed, the totem is no longer needed.</p>
 <div class="highlight"><pre><span class="nv">$ </span>sudo apt-get remove totem
 </pre></div>
 
 
-<p>Install <strong>Skype</strong></p>
-<p>Uncomment following lines in <em>/etc/apt/sources.list</em> to enable Cannnonical Partners repository.</p>
+</li>
+<li>
+<p>Skype</p>
+<p>Uncomment the following lines in <em>/etc/apt/sources.list</em> to enable Cannnonical Partners repository.</p>
 <ul>
 <li><code>deb http://archive.canonical.com/ubuntu trusty partner</code></li>
+<li><code>deb-src http://archive.canonical.com/ubuntu trusty partner</code></li>
+</ul>
+<p>Refresh package lists and install Skype through <em>apt</em>:</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get update
+<span class="nv">$ </span>sudo apt-get install skype
+</pre></div>
+
+
+</li>
 <li>
-<p><code>deb-src http://archive.canonical.com/ubuntu trusty partner</code></p>
-<p>:::bash
-$ sudo apt-get update
-$ sudo apt-get install skype</p>
+<p>Guake Terminal</p>
+<p><strong>Guake</strong> is great drop-down terminal for Gnome written in Python.</p>
+<p>Show / hide with <em>F12</em> key.</p>
+<p><a href="https://apps.ubuntu.com/cat/applications/guake/">Guake Terminal Ubuntu Package</a>        </p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install guake
+</pre></div>
+
+
 </li>
 </ul>
 <h2>ZSH shell</h2>
@@ -284,13 +296,13 @@ switcher you can use <strong>unity-tweak-tool</strong>.</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-2">
-                            <a href="http://syntaxsugar.github.io/tag/shortcuts.html">
-                                Shortcuts
+                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
+                                PyCharm
                             </a>
                         </li>
                         <li class="list-group-item tag-2">
-                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
-                                PyCharm
+                            <a href="http://syntaxsugar.github.io/tag/shortcuts.html">
+                                Shortcuts
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -299,13 +311,8 @@ switcher you can use <strong>unity-tweak-tool</strong>.</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/bitbucket.html">
-                                Bitbucket
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/apache.html">
-                                Apache
+                            <a href="http://syntaxsugar.github.io/tag/gnome.html">
+                                Gnome
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -314,8 +321,13 @@ switcher you can use <strong>unity-tweak-tool</strong>.</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/gnome.html">
-                                Gnome
+                            <a href="http://syntaxsugar.github.io/tag/apache.html">
+                                Apache
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/bitbucket.html">
+                                Bitbucket
                             </a>
                         </li>
                     </ul>
