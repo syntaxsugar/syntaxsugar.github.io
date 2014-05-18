@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/misc.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-04-03T17:17:00+02:00</updated><entry><title>PyCharm Tips And Tricks</title><link href="http://syntaxsugar.github.io/posts/2014/04/pycharm-tips-and-tricks/" rel="alternate"></link><updated>2014-04-03T17:17:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-03:posts/2014/04/pycharm-tips-and-tricks/</id><summary type="html">&lt;h2&gt;Full Screen Mode&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SyntaxSugar</title><link href="http://syntaxsugar.github.io/" rel="alternate"></link><link href="http://syntaxsugar.github.io/feeds/misc.atom.xml" rel="self"></link><id>http://syntaxsugar.github.io/</id><updated>2014-05-18T16:00:00+02:00</updated><entry><title>Favorite Django Apps</title><link href="http://syntaxsugar.github.io/posts/2014/05/favorite-django-apps/" rel="alternate"></link><updated>2014-05-18T16:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-05-18:posts/2014/05/favorite-django-apps/</id><summary type="html">&lt;h2&gt;django-bower&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/nvbn/django-bower"&gt;Source on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://django-bower.readthedocs.org/"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pypi.python.org/pypi/django-bower/"&gt;PyPi&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="Django"></category></entry><entry><title>PyCharm Tips And Tricks</title><link href="http://syntaxsugar.github.io/posts/2014/04/pycharm-tips-and-tricks/" rel="alternate"></link><updated>2014-04-03T17:17:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-03:posts/2014/04/pycharm-tips-and-tricks/</id><summary type="html">&lt;h2&gt;Full Screen Mode&lt;/h2&gt;
 &lt;h3&gt;To enter full screen mode&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;On the main menu, choose &lt;strong&gt;View | Enter Full Screen Mode&lt;/strong&gt;&lt;/li&gt;
