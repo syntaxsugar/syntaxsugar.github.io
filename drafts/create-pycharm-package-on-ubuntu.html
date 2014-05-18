@@ -58,9 +58,6 @@ SyntaxSugar            </a>
                         <li >
                             <a href="http://syntaxsugar.github.io/category/shortcuts.html">Shortcuts</a>
                         </li>
-                        <li class="active">
-                            <a href="http://syntaxsugar.github.io/category/ubuntu.html">Ubuntu</a>
-                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://syntaxsugar.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
@@ -103,24 +100,67 @@ SyntaxSugar            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h2>Install all the packages needed for creating a .deb package</h2>
-<div class="highlight"><pre><span class="err">$</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span> <span class="n">autoconf</span> <span class="n">automake</span> <span class="n">autotools</span><span class="o">-</span><span class="n">dev</span> <span class="n">dh</span><span class="o">-</span><span class="n">make</span> <span class="n">debhelper</span> <span class="n">devscripts</span> <span class="n">fakeroot</span> <span class="n">xutils</span> <span class="n">lintian</span> <span class="n">pbuilder</span>
-<span class="err">$</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">packaging</span><span class="o">-</span><span class="n">dev</span>
+                <h2>Install requirements</h2>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install build-essential devscripts debhelper
 </pre></div>
 
 
 <h2>Setting up the directory structure</h2>
 <ul>
-<li><strong>Create the top directory</strong></li>
-</ul>
+<li>
+<p>Create the top directory</p>
 <p>Create a directory to work in first. We want to package the PyCharm app, so we'll chose a 
-fifting name for it: <strong>pycharm</strong> - Make a directory called <em>pycharm</em> using:</p>
-<div class="highlight"><pre><span class="err">$</span> <span class="n">mkdir</span> <span class="n">pycharm</span>
+fifting name for it: <strong>pycharm</strong>.</p>
+<p>Make a directory called <em>pycharm</em> using:</p>
+<div class="highlight"><pre><span class="nv">$ </span>mkdir -p ~/packages/pycharm
 </pre></div>
 
 
-<ul>
-<li><strong>Create the packaging dir</strong></li>
+</li>
+<li>
+<p>Get the upstream tarball</p>
+<div class="highlight"><pre><span class="nv">$ </span>wget -O ~/packages/pycharm/pycharm-professional-3.1.3.tar.gz  http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz
+</pre></div>
+
+
+</li>
+<li>
+<p>Rename the upstream tarball</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> ~/packages/pycharm        
+<span class="nv">$ </span>mv pycharm-professional-3.1.3.tar.gz pycharm_3.1.3.orig.tar.gz
+</pre></div>
+
+
+</li>
+<li>
+<p>Unpack the upstream tarball</p>
+<p>Directory should be named <code>pycharm-3.1.3</code>        </p>
+<div class="highlight"><pre><span class="nv">$ </span>tar xzf pycharm_3.1.3.orig.tar.gz
+</pre></div>
+
+
+</li>
+<li>
+<p>Add the Debian packagin files</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>pycharm-3.1.3
+<span class="nv">$ </span>mkdir debian
+<span class="nv">$ </span>dch --create -v 3.1.3-1 --package pycharm
+<span class="nv">$ </span><span class="nb">echo</span> <span class="s2">&quot;9&quot;</span> &gt;&gt; debian/compat
+</pre></div>
+
+
+</li>
+<li>
+<p>Create <code>debian/control</code> file</p>
+<p>https://raw.githubusercontent.com/ckorn/GetDeb/bdebdc5d3711f73fd630df1f14752a570f50d3d1/pycharm/control</p>
+<div class="highlight"><pre><span class="nv">$ </span>touch debian/copyright
+</pre></div>
+
+
+</li>
+<li>
+<p><strong>Create the packaging dir</strong></p>
+</li>
 </ul>
 <p>In the new <em>pycharm</em> directory create another directory to place the package files you'll be
 creating. The name of this directory should consider with the version of the package using a 
@@ -230,23 +270,8 @@ package 3.1.3 <a href="http://www.ducea.com/2006/06/17/ubuntu-package-version-na
                             </a>
                         </li>
                         <li class="list-group-item tag-2">
-                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
-                                PyCharm
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-2">
                             <a href="http://syntaxsugar.github.io/tag/shortcuts.html">
                                 Shortcuts
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/git.html">
-                                GIT
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/apache.html">
-                                Apache
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -255,13 +280,33 @@ package 3.1.3 <a href="http://www.ducea.com/2006/06/17/ubuntu-package-version-na
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/github.html">
-                                Github
+                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
+                                PyCharm
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
                             <a href="http://syntaxsugar.github.io/tag/gnome.html">
                                 Gnome
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/bower.html">
+                                Bower
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/git.html">
+                                GIT
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/github.html">
+                                Github
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/apache.html">
+                                Apache
                             </a>
                         </li>
                     </ul>
