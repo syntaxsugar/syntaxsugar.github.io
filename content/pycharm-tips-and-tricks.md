@@ -3,6 +3,7 @@ Date: 2014-04-03 17:17
 Category: Misc
 Summary:
 Tags: PyCharm
+Modified: 2014-04-03 17:17
 
 
 ## Full Screen Mode
@@ -15,7 +16,9 @@ Tags: PyCharm
 * On the main menu, choose **View | Exit Full Screen Mode**
 
 ## Useful Shortcuts
-- Shift + F10 - Run Code
+
+-   Shift + F10 - Run Code
+-   Ctrl + F4 - Close the file in active tab
 
 
 ## Configuration
