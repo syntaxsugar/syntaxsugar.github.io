@@ -3,21 +3,60 @@ Date: 2014-05-13 22:30
 Category: Ubuntu
 Summary: How to create Ubuntu package for PyCharm.
 Tags: Ubuntu, PyCharm
+Status: draft
 
 
-## Install all the packages needed for creating a .deb package
+## Install requirements
 
-    $ sudo apt-get install build-essential autoconf automake autotools-dev dh-make debhelper devscripts fakeroot xutils lintian pbuilder
-    $ sudo apt-get install packaging-dev
+    :::bash
+    $ sudo apt-get install build-essential devscripts debhelper
 
 ## Setting up the directory structure
 
-- **Create the top directory**
+-   Create the top directory
 
-Create a directory to work in first. We want to package the PyCharm app, so we'll chose a 
-fifting name for it: **pycharm** - Make a directory called *pycharm* using:
+    Create a directory to work in first. We want to package the PyCharm app, so we'll chose a 
+    fifting name for it: **pycharm**.
 
-    $ mkdir pycharm    
+    Make a directory called *pycharm* using:
+
+        :::bash
+        $ mkdir -p ~/packages/pycharm    
+
+-   Get the upstream tarball
+
+        :::bash
+        $ wget -O ~/packages/pycharm/pycharm-professional-3.1.3.tar.gz  http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz
+
+-   Rename the upstream tarball
+
+        :::bash
+        $ cd ~/packages/pycharm        
+        $ mv pycharm-professional-3.1.3.tar.gz pycharm_3.1.3.orig.tar.gz
+
+-   Unpack the upstream tarball
+
+    Directory should be named `pycharm-3.1.3`        
+
+        :::bash
+        $ tar xzf pycharm_3.1.3.orig.tar.gz
+
+-   Add the Debian packagin files
+
+        :::bash
+        $ cd pycharm-3.1.3
+        $ mkdir debian
+        $ dch --create -v 3.1.3-1 --package pycharm
+        $ echo "9" >> debian/compat
+
+-   Create `debian/control` file
+    
+    https://raw.githubusercontent.com/ckorn/GetDeb/bdebdc5d3711f73fd630df1f14752a570f50d3d1/pycharm/control
+
+        :::bash
+        $ touch debian/copyright
+    
+            
 
 - **Create the packaging dir**
 
