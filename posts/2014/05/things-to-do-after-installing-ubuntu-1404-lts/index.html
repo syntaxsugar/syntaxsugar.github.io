@@ -174,6 +174,38 @@ extras by yourself. </p>
 </pre></div>
 
 
+<h2>PHP Development</h2>
+<h3>Install LAMP stack</h3>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install lamp-server^
+</pre></div>
+
+
+<p>If you get this error:
+apache2: Could not determine the server's fully qualified domain name, using 127.0.0.1 for ServerName</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">sudo</span> <span class="n">sh</span>  <span class="o">-</span><span class="n">c</span> <span class="s">&quot;echo &#39;ServerName localhost&#39; &gt; /etc/apache2/conf-available/fqdn.conf&quot;</span>
+</pre></div>
+
+
+<p>Enable fqdn config</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">sudo</span> <span class="n">a2enconf</span> <span class="n">fqdn</span>
+</pre></div>
+
+
+<h3>Install PhpMyAdmin</h3>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">phpmyadmin</span>
+</pre></div>
+
+
+<p>Select reconfigure automatically with <em>apache2</em></p>
+<p>Now, PhpMyAdmin should run on http://127.0.0.1/phpmyadmin/</p>
+<p>If you get this error on booton of PhpMyAdmin page:
+<code>The mcrypt extension is missing. Please check your PHP configuration.</code></p>
+<p>Enable <em>mcrypt</em> extension and restart <em>apache2</em></p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">sudo</span> <span class="n">php5enmod</span> <span class="n">mcrypt</span>
+<span class="err">$</span> <span class="n">sudo</span> <span class="n">service</span> <span class="n">apache2</span> <span class="n">restart</span>
+</pre></div>
+
+
 <h2>Python Development</h2>
 <h3>Python headers files</h3>
 <p>Install package <em>python-dev</em>. This package includes header files, a static
@@ -311,6 +343,18 @@ switcher you can use <strong>unity-tweak-tool</strong>.</p>
 <span class="nv">$ </span>sudo apt-get -y autoclean
 <span class="nv">$ </span>sudo apt-get -y clean
 </pre></div>
+
+
+<h3>Installing OpenShift RHC Client Tools</h3>
+<p>Install Ruby and Git before you install the OpenShift command line tools. Run:</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install ruby git-core
+</pre></div>
+
+
+<p>Now use the RubyGems package manager to install the OpenShift client tools.
+From a command line, run:</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo gem install rhc
+</pre></div>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -354,18 +398,8 @@ switcher you can use <strong>unity-tweak-tool</strong>.</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/github.html">
-                                Github
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/bower.html">
-                                Bower
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/django.html">
-                                Django
+                            <a href="http://syntaxsugar.github.io/tag/gnome.html">
+                                Gnome
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -374,18 +408,28 @@ switcher you can use <strong>unity-tweak-tool</strong>.</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
-                                PyCharm
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
                             <a href="http://syntaxsugar.github.io/tag/git.html">
                                 GIT
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/gnome.html">
-                                Gnome
+                            <a href="http://syntaxsugar.github.io/tag/django.html">
+                                Django
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
+                                PyCharm
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/bower.html">
+                                Bower
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://syntaxsugar.github.io/tag/github.html">
+                                Github
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
