@@ -86,6 +86,40 @@ This will install *zsh* and *zsh-common* packages.
     $ wget --no-check-certificate http://install.ohmyz.sh -O - | sh
     $ chsh -s /bin/zsh
 
+## PHP Development
+
+### Install LAMP stack
+
+    :::bash
+    $ sudo apt-get install lamp-server^
+
+If you get this error:
+apache2: Could not determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+
+    $ sudo sh  -c "echo 'ServerName localhost' > /etc/apache2/conf-available/fqdn.conf"
+
+Enable fqdn config
+
+    $ sudo a2enconf fqdn
+
+### Install PhpMyAdmin
+
+    $ sudo apt-get install phpmyadmin
+
+Select reconfigure automatically with *apache2*
+
+Now, PhpMyAdmin should run on http://127.0.0.1/phpmyadmin/
+
+If you get this error on booton of PhpMyAdmin page:
+`The mcrypt extension is missing. Please check your PHP configuration.`
+
+Enable *mcrypt* extension and restart *apache2*
+
+    $ sudo php5enmod mcrypt
+    $ sudo service apache2 restart
+
+
+
 ## Python Development
 
 ### Python headers files
@@ -225,6 +259,19 @@ To get back overlay bar to default:
     $ sudo apt-get autoremove
     $ sudo apt-get -y autoclean
     $ sudo apt-get -y clean
+
+### Installing OpenShift RHC Client Tools
+
+Install Ruby and Git before you install the OpenShift command line tools. Run:
+
+    :::bash
+    $ sudo apt-get install ruby git-core
+
+Now use the RubyGems package manager to install the OpenShift client tools.
+From a command line, run:
+
+    :::bash
+    $ sudo gem install rhc
 
 [virtualenvwrapper]: http://virtualenvwrapper.readthedocs.org/
 [virtualenv]: https://pypi.python.org/pypi/virtualenv
