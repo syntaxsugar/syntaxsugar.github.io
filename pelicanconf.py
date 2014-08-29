@@ -2,9 +2,13 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+THEME = '/home/fojtu/Projects/pelican-responsive/responsive'
+
 AUTHOR = u'Jaromir Fojtu'
-SITENAME = u'SyntaxSugar'
-SITEURL = 'http://localhost:8000'
+SITENAME = u'syntaxsugar.github.io'
+SITEURL = 'https://syntaxsugar.github.io'
+MINI_BIO = u"A Daily PHP programmer, a nightly Python/Django developer"
+BIO = u'<strong>Jaromir Fojtu</strong>. He is doing web development since 2000 and he is in love with Python & Django.'
 
 TIMEZONE = 'Europe/Prague'
 
@@ -16,12 +20,17 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS = None
+LINKS = ()
 
 # Social widget
-SOCIAL = (('twitter', 'https://twitter.com/syntaxsugar'),
-          ('facebook', 'https://www.facebook.com/paiti'),
-          ('github', 'https://github.com/syntaxsugar'),)
+SOCIAL = (
+    ('Github', 'https://github.com/syntaxsugar', '&#xe037;'),
+    ('Google Plus', 'https://plus.google.com/118025323950244875124/about', '&#xe039;'),
+    ('Twitter', 'https://twitter.com/jaromirfojtu', '&#xe086;'),
+    ('Facebook', 'https://facebook.com/paiti', '&#xe027;'),
+)
+
+PATH = '/home/fojtu/PycharmProjects/syntaxsugar.github.io/content'
 
 DEFAULT_PAGINATION = 5
 
@@ -29,11 +38,6 @@ TAG_CLOUD_MAX_ITEMS = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
-
-THEME = 'pelican-bootstrap3'
-
-DISPLAY_PAGES_ON_MENU = True
-DISPLAY_CATEGORIES_ON_MENU = True
 
 PYGMENTS_STYLE = 'friendly'
 
@@ -49,15 +53,13 @@ DATE_FORMATS = {
     'cs': ('cs_CZ.utf8', '%d.%m.%Y'),
 }
 
-
 STATIC_PATHS = [
     'images',
     'extra',
+    'theme/img/avatar.jpg',
 ]
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/google91e15f50f8a42f37.txt': {'path': 'google91e15f50f8a42f37.html'}
 }
-
-DISPLAY_ARTICLE_INFO_ON_INDEX = True
