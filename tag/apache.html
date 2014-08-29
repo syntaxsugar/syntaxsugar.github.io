@@ -1,199 +1,80 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="https://www.facebook.com/2008/fbml">
+<html>
 <head>
-    <title>Apache - SyntaxSugar</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
+    <title>syntaxsugar.github.io</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <!-- Open Graph tags -->
-        <meta property="og:site_name" content="SyntaxSugar" />
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="SyntaxSugar"/>
-            <meta property="og:url" content="http://syntaxsugar.github.io"/>
-            <meta property="og:description" content="SyntaxSugar"/>
-
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="http://syntaxsugar.github.io/theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="http://syntaxsugar.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="http://localhost:8000/theme/css/github.css" rel="stylesheet" media="screen">
+    <link href="http://localhost:8000/theme/css/github-numbers.css" rel="stylesheet" media="screen">
+    <link href="http://localhost:8000/theme/css/styles.css" rel="stylesheet" media="screen">
 
-    <link href="http://syntaxsugar.github.io/theme/css/pygments/friendly.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://syntaxsugar.github.io/theme/css/style.css" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css' >
+    <link href='http://fonts.googleapis.com/css?family=Cantora+One' rel='stylesheet' type='text/css'>
 
-        <link href="http://syntaxsugar.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-              title="SyntaxSugar ATOM Feed"/>
-
+        <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="syntaxsugar.github.io Atom Feed" />
 </head>
 <body>
+    <div class="miniBio">
+        <div class="container">
+            <a class="brand" href="/" title="syntaxsugar.github.io"><img src="http://localhost:8000/theme/img/avatar.jpg" /></a>
+            <span class="miniBioText">A Daily PHP programmer, a nightly Python/Django developer</span>
+        </div>
+    </div>
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="http://syntaxsugar.github.io/" class="navbar-brand">
-SyntaxSugar            </a>
+        <div class="row articleListItem first">
+            <div class="span3 articleInfo light">
+<p><i class="icon-calendar"></i>&nbsp;Wed, 02 Apr 2014</p>
+    <p class="articleTags">
+        <i class="icon-tag"></i>&nbsp;tags:
+            <a href="http://localhost:8000/tag/apache.html">Apache</a>
+            <a href="http://localhost:8000/tag/ubuntu.html">Ubuntu</a>
+    </p>
+            </div>
+            <div class="span8">
+                <h1><a href="http://localhost:8000/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/" rel="bookmark" title="Permalink to How to enable UserDir in Ubuntu 12.04 LTS">How to enable UserDir in Ubuntu 12.04 LTS&nbsp;<i class="icon-chevron-right"></i></a></h1>
+                <h2></h2>
+                <p class="text-justify"><p>Enable userdir, users can build websites with whis config.</p></p>
+            </div>
         </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                        <li >
-                            <a href="http://syntaxsugar.github.io/category/how-to.html">How to</a>
-                        </li>
-                        <li >
-                            <a href="http://syntaxsugar.github.io/category/misc.html">Misc</a>
-                        </li>
-                        <li >
-                            <a href="http://syntaxsugar.github.io/category/shortcuts.html">Shortcuts</a>
-                        </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://syntaxsugar.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-</div> <!-- /.navbar -->
-
-<div class="container">
     <div class="row">
-        <div class="col-sm-9">
+        <div class="span3"></div>
+        <div class="span6"><div class="pagination pagination-large">
+    <ul>
+            <li class="disabled"><a href="#">&laquo;</a></li>
 
-            <article>
-                <h2><a href="http://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/">How to enable UserDir in Ubuntu 12.04 LTS</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2014-04-02T00:00:00"> Wed, 02 Apr 2014</time>
-    </span>
+                <li class="active"><a href=http://localhost:8000/tag/apache.html>1</a></li>
 
-
-
-<span class="label label-default">Tags</span>
-	<a href="http://syntaxsugar.github.io/tag/apache.html">Apache</a>
-        /
-	<a href="http://syntaxsugar.github.io/tag/ubuntu.html">Ubuntu</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>Enable userdir, users can build websites with whis config.</p>
-                    <a class="btn btn-default btn-xs" href="http://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-
-        </div>
-        <div class="col-sm-3 well well-sm" id="sidebar">
-
-<aside>
-    <section>
-        <ul class="list-group list-group-flush">
-                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
-                  <ul class="list-group" id="social">
-                    <li class="list-group-item"><a href="https://twitter.com/syntaxsugar"><i
-                            class="fa fa-twitter-square fa-lg"></i> twitter
-                    </a></li>
-                    <li class="list-group-item"><a href="https://www.facebook.com/paiti"><i
-                            class="fa fa-facebook-square fa-lg"></i> facebook
-                    </a></li>
-                    <li class="list-group-item"><a href="https://github.com/syntaxsugar"><i
-                            class="fa fa-github-square fa-lg"></i> github
-                    </a></li>
-                    <li class="list-group-item"><a href="http://syntaxsugar.github.io/feeds/all.atom.xml"><i
-                            class="fa fa-rss-square fa-lg"></i> rss
-                    </a></li>
-                  </ul>
-                </li>
-
-
-
-                <li class="list-group-item"><a href="http://syntaxsugar.github.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
-                    <ul class="list-group " id="tags">
-                        <li class="list-group-item tag-1">
-                            <a href="http://syntaxsugar.github.io/tag/ubuntu.html">
-                                Ubuntu
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-2">
-                            <a href="http://syntaxsugar.github.io/tag/shortcuts.html">
-                                Shortcuts
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/gnome.html">
-                                Gnome
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/bitbucket.html">
-                                Bitbucket
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/git.html">
-                                GIT
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/django.html">
-                                Django
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/pycharm.html">
-                                PyCharm
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/bower.html">
-                                Bower
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/github.html">
-                                Github
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://syntaxsugar.github.io/tag/apache.html">
-                                Apache
-                            </a>
-                        </li>
-                    </ul>
-                </li>    
-
-        </ul>
-    </section>
-
-</aside>        </div>
-    </div>
+            <li class="disabled"><a href="#">&raquo;</a></li>
+    </ul>
 </div>
-<footer>
-   <div class="container">
-      <hr>
-      <div class="row">
-         <div class="col-xs-10">&copy; 2014 Jaromir Fojtu
-            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
-         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
-      </div>
-   </div>
-</footer>
-<script src="http://syntaxsugar.github.io/theme/js/jquery.min.js"></script>
+</div>
+    </div>
+    </div>
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="http://syntaxsugar.github.io/theme/js/bootstrap.min.js"></script>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <p><strong>Jaromir Fojtu</strong>. He is doing web development since 2000 and he is in love with Python & Django.</p>
+                </div>
+                <div class="span4">
+                        <p><strong>Say hi!</strong></p>
+                        <ul class="socialLinks">
+                                <li><a href="https://github.com/syntaxsugar"><span class="symbol">&#xe037;</span> Github</a></li>
+                                <li><a href="https://plus.google.com/118025323950244875124/about"><span class="symbol">&#xe039;</span> Google Plus</a></li>
+                                <li><a href="https://twitter.com/jaromirfojtu"><span class="symbol">&#xe086;</span> Twitter</a></li>
+                                <li><a href="https://facebook.com/paiti"><span class="symbol">&#xe027;</span> Facebook</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="http://syntaxsugar.github.io/theme/js/respond.min.js"></script>
-
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
