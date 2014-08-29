@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>syntaxsugar.github.io</title><link>http://localhost:8000/</link><description></description><atom:link href="http://localhost:8000/feeds/jaromir-fojtu.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 18 May 2014 16:00:00 +0200</lastBuildDate><item><title>Favorite Django Apps</title><link>http://localhost:8000/posts/2014/05/favorite-django-apps/</link><description>&lt;h2&gt;django-bower&lt;/h2&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>syntaxsugar.github.io</title><link>https://syntaxsugar.github.io/</link><description></description><atom:link href="https://syntaxsugar.github.io/feeds/jaromir-fojtu.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 18 May 2014 16:00:00 +0200</lastBuildDate><item><title>Favorite Django Apps</title><link>https://syntaxsugar.github.io/posts/2014/05/favorite-django-apps/</link><description>&lt;h2&gt;django-bower&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/nvbn/django-bower"&gt;Source on Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://django-bower.readthedocs.org/"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://pypi.python.org/pypi/django-bower/"&gt;PyPi&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sun, 18 May 2014 16:00:00 +0200</pubDate><guid>tag:localhost:8000,2014-05-18:posts/2014/05/favorite-django-apps/</guid><category>Django</category></item><item><title>How to install Bower on Ubuntu 14.04 LTS</title><link>http://localhost:8000/posts/2014/05/how-to-install-bower-on-ubuntu-1404-lts/</link><description>&lt;h2&gt;Easy way&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sun, 18 May 2014 16:00:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-05-18:posts/2014/05/favorite-django-apps/</guid><category>Django</category></item><item><title>How to install Bower on Ubuntu 14.04 LTS</title><link>https://syntaxsugar.github.io/posts/2014/05/how-to-install-bower-on-ubuntu-1404-lts/</link><description>&lt;h2&gt;Easy way&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install git-core
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install nodejs nodejs-legacy
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install npm
@@ -28,7 +28,7 @@
 
 
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sun, 18 May 2014 00:00:00 +0200</pubDate><guid>tag:localhost:8000,2014-05-18:posts/2014/05/how-to-install-bower-on-ubuntu-1404-lts/</guid><category>Ubuntu</category><category>Bower</category></item><item><title>Things to do after installing ubuntu 14.04 LTS</title><link>http://localhost:8000/posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/</link><description>&lt;h2&gt;Update your Ubuntu 14.04 LTS&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sun, 18 May 2014 00:00:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-05-18:posts/2014/05/how-to-install-bower-on-ubuntu-1404-lts/</guid><category>Ubuntu</category><category>Bower</category></item><item><title>Things to do after installing ubuntu 14.04 LTS</title><link>https://syntaxsugar.github.io/posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/</link><description>&lt;h2&gt;Update your Ubuntu 14.04 LTS&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update 
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get upgrade
 &lt;/pre&gt;&lt;/div&gt;
@@ -285,7 +285,7 @@ switcher you can use &lt;strong&gt;unity-tweak-tool&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Now use the RubyGems package manager to install the OpenShift client tools.
 From a command line, run:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo gem install rhc
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Thu, 08 May 2014 00:00:00 +0200</pubDate><guid>tag:localhost:8000,2014-05-06:posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/</guid><category>Ubuntu</category></item><item><title>Bitbucket Shortcuts</title><link>http://localhost:8000/posts/2014/04/bitbucket-shortcuts/</link><description>&lt;p&gt;Here are some of the shortcuts I try to use often on &lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt; to help
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Thu, 08 May 2014 00:00:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-05-06:posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/</guid><category>Ubuntu</category></item><item><title>Bitbucket Shortcuts</title><link>https://syntaxsugar.github.io/posts/2014/04/bitbucket-shortcuts/</link><description>&lt;p&gt;Here are some of the shortcuts I try to use often on &lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt; to help
 reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;h2&gt;Useful Shortcuts&lt;/h2&gt;
 &lt;ul&gt;
@@ -308,7 +308,7 @@ reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This will disable &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; on &lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;*:&lt;/span&gt;&lt;span class="c1"&gt;//bitbucket.org/*&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sat, 26 Apr 2014 17:57:00 +0200</pubDate><guid>tag:localhost:8000,2014-04-26:posts/2014/04/bitbucket-shortcuts/</guid><category>Bitbucket</category><category>Shortcuts</category></item><item><title>Bitbucket Issues - CLI</title><link>http://localhost:8000/posts/2014/04/bitbucket-issues-cli/</link><description>&lt;p&gt;&lt;a href="https://bitbucket.org/jsmits/bitbucket-issues-cli"&gt;bbi&lt;/a&gt; provides an executable
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sat, 26 Apr 2014 17:57:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-04-26:posts/2014/04/bitbucket-shortcuts/</guid><category>Bitbucket</category><category>Shortcuts</category></item><item><title>Bitbucket Issues - CLI</title><link>https://syntaxsugar.github.io/posts/2014/04/bitbucket-issues-cli/</link><description>&lt;p&gt;&lt;a href="https://bitbucket.org/jsmits/bitbucket-issues-cli"&gt;bbi&lt;/a&gt; provides an executable
 called &lt;strong&gt;bbi&lt;/strong&gt;, that can be used to access Bitbuckets issues from CLI.&lt;/p&gt;
 &lt;h2&gt;Installation&lt;/h2&gt;
 &lt;p&gt;Install to $HOME dir, instead of system.&lt;/p&gt;
@@ -319,7 +319,7 @@ called &lt;strong&gt;bbi&lt;/strong&gt;, that can be used to access Bitbuckets i
 &lt;p&gt;Add local BIN to $PATH in &lt;em&gt;.zshrc&lt;/em&gt; / &lt;em&gt;.bashrc&lt;/em&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Local BIN directory&lt;/span&gt;
 &lt;span class="o"&gt;[[&lt;/span&gt; -d &lt;span class="s2"&gt;&amp;quot;$HOME/.local/bin&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;:&lt;span class="nv"&gt;$HOME&lt;/span&gt;/.local/bin
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Wed, 16 Apr 2014 18:33:20 +0200</pubDate><guid>tag:localhost:8000,2014-04-16:posts/2014/04/bitbucket-issues-cli/</guid></item><item><title>Github Shortcuts</title><link>http://localhost:8000/posts/2014/04/github-shortcuts/</link><description>&lt;p&gt;Here are some of the shortcuts I try to use often on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; to help
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Wed, 16 Apr 2014 18:33:20 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-04-16:posts/2014/04/bitbucket-issues-cli/</guid></item><item><title>Github Shortcuts</title><link>https://syntaxsugar.github.io/posts/2014/04/github-shortcuts/</link><description>&lt;p&gt;Here are some of the shortcuts I try to use often on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; to help
 reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;h2&gt;Useful Shortcuts&lt;/h2&gt;
 &lt;ul&gt;
@@ -333,7 +333,7 @@ reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This will disable &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;*:&lt;/span&gt;&lt;span class="c1"&gt;//github.com/*&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Wed, 16 Apr 2014 16:43:22 +0200</pubDate><guid>tag:localhost:8000,2014-04-16:posts/2014/04/github-shortcuts/</guid><category>Github</category><category>Shortcuts</category></item><item><title>PyCharm Tips And Tricks</title><link>http://localhost:8000/posts/2014/04/pycharm-tips-and-tricks/</link><description>&lt;h2&gt;Full Screen Mode&lt;/h2&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Wed, 16 Apr 2014 16:43:22 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-04-16:posts/2014/04/github-shortcuts/</guid><category>Github</category><category>Shortcuts</category></item><item><title>PyCharm Tips And Tricks</title><link>https://syntaxsugar.github.io/posts/2014/04/pycharm-tips-and-tricks/</link><description>&lt;h2&gt;Full Screen Mode&lt;/h2&gt;
 &lt;h3&gt;To enter full screen mode&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;On the main menu, choose &lt;strong&gt;View | Enter Full Screen Mode&lt;/strong&gt;&lt;/li&gt;
@@ -350,7 +350,7 @@ reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Configuration&lt;/h2&gt;
 &lt;h3&gt;Show line numbers&lt;/h3&gt;
-&lt;p&gt;Settings -&amp;gt; Editor -&amp;gt; Appearance -&amp;gt; Show line numbers&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Thu, 03 Apr 2014 17:17:00 +0200</pubDate><guid>tag:localhost:8000,2014-04-03:posts/2014/04/pycharm-tips-and-tricks/</guid><category>PyCharm</category></item><item><title>How to enable UserDir in Ubuntu 12.04 LTS</title><link>http://localhost:8000/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/</link><description>&lt;h2&gt;Configure for userdir&lt;/h2&gt;
+&lt;p&gt;Settings -&amp;gt; Editor -&amp;gt; Appearance -&amp;gt; Show line numbers&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Thu, 03 Apr 2014 17:17:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-04-03:posts/2014/04/pycharm-tips-and-tricks/</guid><category>PyCharm</category></item><item><title>How to enable UserDir in Ubuntu 12.04 LTS</title><link>https://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/</link><description>&lt;h2&gt;Configure for userdir&lt;/h2&gt;
 &lt;p&gt;To enable the UserDir configuration on &lt;a href="http://releases.ubuntu.com/12.04/"&gt;Ubuntu 12.04 LTS&lt;/a&gt;, do the following:
 Enable the userdir mod.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo a2enmod userdir
@@ -380,8 +380,8 @@ Enable the userdir mod.&lt;/p&gt;
 &lt;p&gt;Comment line &lt;em&gt;php_admin_value engine off&lt;/em&gt;*&lt;/p&gt;
 &lt;p&gt;Restart &lt;strong&gt;apache2&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo service apache2 restart
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Wed, 02 Apr 2014 00:00:00 +0200</pubDate><guid>tag:localhost:8000,2014-04-02:posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/</guid><category>Apache</category><category>Ubuntu</category></item><item><title>How to import existing code to GitHub</title><link>http://localhost:8000/posts/2014/03/how-to-import-existing-code-to-github/</link><description>&lt;h2&gt;Create the remote repository on &lt;a href="http://github.com/"&gt;GitHub&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="GitHub Create Repository" src="http://localhost:8000/images/github_create_repository.png" /&gt;&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Wed, 02 Apr 2014 00:00:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-04-02:posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/</guid><category>Apache</category><category>Ubuntu</category></item><item><title>How to import existing code to GitHub</title><link>https://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/</link><description>&lt;h2&gt;Create the remote repository on &lt;a href="http://github.com/"&gt;GitHub&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="GitHub Create Repository" src="https://syntaxsugar.github.io/images/github_create_repository.png" /&gt;&lt;/p&gt;
 &lt;h2&gt;Locally, at the root directory of source code initialize repository&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;git init
 &lt;/pre&gt;&lt;/div&gt;
@@ -405,10 +405,10 @@ git commit -m &lt;span class="s1"&gt;&amp;#39;initial commit&amp;#39;&lt;/span&g
 
 &lt;h2&gt;Push up master branch&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;git push origin master
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Mon, 31 Mar 2014 00:00:00 +0200</pubDate><guid>tag:localhost:8000,2014-03-31:posts/2014/03/how-to-import-existing-code-to-github/</guid><category>GIT</category></item><item><title>How to disable keyboard shortcut for Lockscreen</title><link>http://localhost:8000/posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/</link><description>&lt;p&gt;&lt;em&gt;System Tools&lt;/em&gt; &amp;gt; &lt;em&gt;System Settings&lt;/em&gt; &amp;gt; &lt;em&gt;Keyboard&lt;/em&gt; &amp;gt; &lt;em&gt;Shortcuts&lt;/em&gt; &amp;gt; &lt;em&gt;System&lt;/em&gt; &amp;gt; &lt;em&gt;Lock Screen&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Ubuntu Keyboard Settings" src="http://localhost:8000/images/ubuntu_keyboard.png" /&gt;&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Mon, 31 Mar 2014 00:00:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-03-31:posts/2014/03/how-to-import-existing-code-to-github/</guid><category>GIT</category></item><item><title>How to disable keyboard shortcut for Lockscreen</title><link>https://syntaxsugar.github.io/posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/</link><description>&lt;p&gt;&lt;em&gt;System Tools&lt;/em&gt; &amp;gt; &lt;em&gt;System Settings&lt;/em&gt; &amp;gt; &lt;em&gt;Keyboard&lt;/em&gt; &amp;gt; &lt;em&gt;Shortcuts&lt;/em&gt; &amp;gt; &lt;em&gt;System&lt;/em&gt; &amp;gt; &lt;em&gt;Lock Screen&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ubuntu Keyboard Settings" src="https://syntaxsugar.github.io/images/ubuntu_keyboard.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Works well on &lt;a href="http://releases.ubuntu.com/12.04/"&gt;Ubuntu 12.04&lt;/a&gt; (&lt;em&gt;Precise Pangolin&lt;/em&gt;) with
-GNOME Session Fallback.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sun, 30 Mar 2014 00:00:00 +0100</pubDate><guid>tag:localhost:8000,2014-03-30:posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/</guid><category>Ubuntu</category><category>Gnome</category></item><item><title>Syntax Highlighter</title><link>http://localhost:8000/posts/2014/03/syntax-highlighter/</link><description>&lt;h1&gt;Syntax Highlighter Test&lt;/h1&gt;
+GNOME Session Fallback.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sun, 30 Mar 2014 00:00:00 +0100</pubDate><guid>tag:syntaxsugar.github.io,2014-03-30:posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/</guid><category>Ubuntu</category><category>Gnome</category></item><item><title>Syntax Highlighter</title><link>https://syntaxsugar.github.io/posts/2014/03/syntax-highlighter/</link><description>&lt;h1&gt;Syntax Highlighter Test&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#java"&gt;Java&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#javascript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
@@ -526,7 +526,7 @@ Use &lt;code&gt;:::python3&lt;/code&gt; or &lt;code&gt;:::py3&lt;/code&gt;&lt;/p
 
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sat, 29 Mar 2014 00:00:00 +0100</pubDate><guid>tag:localhost:8000,2014-03-29:posts/2014/03/syntax-highlighter/</guid></item><item><title>Lorem Ipsum</title><link>http://localhost:8000/posts/2010/12/lorem-ipsum/</link><description>&lt;h1&gt;Rami tremescere semper&lt;/h1&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sat, 29 Mar 2014 00:00:00 +0100</pubDate><guid>tag:syntaxsugar.github.io,2014-03-29:posts/2014/03/syntax-highlighter/</guid></item><item><title>Lorem Ipsum</title><link>https://syntaxsugar.github.io/posts/2010/12/lorem-ipsum/</link><description>&lt;h1&gt;Rami tremescere semper&lt;/h1&gt;
 &lt;h2&gt;Vertice amplexus frater corpora aquarum revertitur per&lt;/h2&gt;
 &lt;p&gt;Lorem markdownum terras. &lt;em&gt;Iuventae adstitit vir&lt;/em&gt; protexi, praecipuum, a pedes
 parce quaeque minor, &lt;strong&gt;quis&lt;/strong&gt;. Cythereius fugit; oculos te expers aderisque
@@ -559,4 +559,4 @@ tepido vellent resimas simul. Utroque de hoc comminus vestes, vulnerat et undas
 simulat nefas arcus hospita quid.&lt;/p&gt;
 &lt;p&gt;Mortemque cur acre causam aut, quod nec; harenas illa subito remitti, pronus.
 Ventique pavens. Ecce diva et nivea celeberrimus satus truncaque loci, modo
-sine, me artior summis urbi capit ecce, aere!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Fri, 03 Dec 2010 10:20:00 +0100</pubDate><guid>tag:localhost:8000,2010-12-03:posts/2010/12/lorem-ipsum/</guid></item></channel></rss>
+sine, me artior summis urbi capit ecce, aere!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Fri, 03 Dec 2010 10:20:00 +0100</pubDate><guid>tag:syntaxsugar.github.io,2010-12-03:posts/2010/12/lorem-ipsum/</guid></item></channel></rss>
