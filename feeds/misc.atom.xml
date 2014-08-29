@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>syntaxsugar.github.io</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/misc.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2014-05-18T16:00:00+02:00</updated><entry><title>Favorite Django Apps</title><link href="http://localhost:8000/posts/2014/05/favorite-django-apps/" rel="alternate"></link><updated>2014-05-18T16:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:localhost:8000,2014-05-18:posts/2014/05/favorite-django-apps/</id><summary type="html">&lt;h2&gt;django-bower&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>syntaxsugar.github.io</title><link href="https://syntaxsugar.github.io/" rel="alternate"></link><link href="https://syntaxsugar.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://syntaxsugar.github.io/</id><updated>2014-05-18T16:00:00+02:00</updated><entry><title>Favorite Django Apps</title><link href="https://syntaxsugar.github.io/posts/2014/05/favorite-django-apps/" rel="alternate"></link><updated>2014-05-18T16:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-05-18:posts/2014/05/favorite-django-apps/</id><summary type="html">&lt;h2&gt;django-bower&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/nvbn/django-bower"&gt;Source on Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://django-bower.readthedocs.org/"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://pypi.python.org/pypi/django-bower/"&gt;PyPi&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="Django"></category></entry><entry><title>PyCharm Tips And Tricks</title><link href="http://localhost:8000/posts/2014/04/pycharm-tips-and-tricks/" rel="alternate"></link><updated>2014-04-03T17:17:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:localhost:8000,2014-04-03:posts/2014/04/pycharm-tips-and-tricks/</id><summary type="html">&lt;h2&gt;Full Screen Mode&lt;/h2&gt;
+&lt;/ul&gt;</summary><category term="Django"></category></entry><entry><title>PyCharm Tips And Tricks</title><link href="https://syntaxsugar.github.io/posts/2014/04/pycharm-tips-and-tricks/" rel="alternate"></link><updated>2014-04-03T17:17:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-03:posts/2014/04/pycharm-tips-and-tricks/</id><summary type="html">&lt;h2&gt;Full Screen Mode&lt;/h2&gt;
 &lt;h3&gt;To enter full screen mode&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;On the main menu, choose &lt;strong&gt;View | Enter Full Screen Mode&lt;/strong&gt;&lt;/li&gt;
@@ -21,7 +21,7 @@
 &lt;/ul&gt;
 &lt;h2&gt;Configuration&lt;/h2&gt;
 &lt;h3&gt;Show line numbers&lt;/h3&gt;
-&lt;p&gt;Settings -&amp;gt; Editor -&amp;gt; Appearance -&amp;gt; Show line numbers&lt;/p&gt;</summary><category term="PyCharm"></category></entry><entry><title>Syntax Highlighter</title><link href="http://localhost:8000/posts/2014/03/syntax-highlighter/" rel="alternate"></link><updated>2014-03-29T00:00:00+01:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:localhost:8000,2014-03-29:posts/2014/03/syntax-highlighter/</id><summary type="html">&lt;h1&gt;Syntax Highlighter Test&lt;/h1&gt;
+&lt;p&gt;Settings -&amp;gt; Editor -&amp;gt; Appearance -&amp;gt; Show line numbers&lt;/p&gt;</summary><category term="PyCharm"></category></entry><entry><title>Syntax Highlighter</title><link href="https://syntaxsugar.github.io/posts/2014/03/syntax-highlighter/" rel="alternate"></link><updated>2014-03-29T00:00:00+01:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-03-29:posts/2014/03/syntax-highlighter/</id><summary type="html">&lt;h1&gt;Syntax Highlighter Test&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#java"&gt;Java&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#javascript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
@@ -139,7 +139,7 @@ Use &lt;code&gt;:::python3&lt;/code&gt; or &lt;code&gt;:::py3&lt;/code&gt;&lt;/p
 
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</summary></entry><entry><title>Lorem Ipsum</title><link href="http://localhost:8000/posts/2010/12/lorem-ipsum/" rel="alternate"></link><updated>2010-12-03T10:20:00+01:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:localhost:8000,2010-12-03:posts/2010/12/lorem-ipsum/</id><summary type="html">&lt;h1&gt;Rami tremescere semper&lt;/h1&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</summary></entry><entry><title>Lorem Ipsum</title><link href="https://syntaxsugar.github.io/posts/2010/12/lorem-ipsum/" rel="alternate"></link><updated>2010-12-03T10:20:00+01:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2010-12-03:posts/2010/12/lorem-ipsum/</id><summary type="html">&lt;h1&gt;Rami tremescere semper&lt;/h1&gt;
 &lt;h2&gt;Vertice amplexus frater corpora aquarum revertitur per&lt;/h2&gt;
 &lt;p&gt;Lorem markdownum terras. &lt;em&gt;Iuventae adstitit vir&lt;/em&gt; protexi, praecipuum, a pedes
 parce quaeque minor, &lt;strong&gt;quis&lt;/strong&gt;. Cythereius fugit; oculos te expers aderisque
