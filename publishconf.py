@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://localhost:8000'
+SITEURL = 'https://syntaxsugar.github.io'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -20,5 +20,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = 'martinbrochhauscom'
-#GOOGLE_ANALYTICS = 'UA-1147761-33'
+#DISQUS_SITENAME = ''
+GOOGLE_ANALYTICS = 'UA-9025902-65'
