@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/08/phpstorm-on-ubuntu/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/05/favorite-django-apps/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/05/how-to-install-bower-on-ubuntu-1404-lts/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/05/things-to-do-after-installing-ubuntu-1404-lts/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/04/bitbucket-shortcuts/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/04/bitbucket-issues-cli/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/04/github-shortcuts/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/04/pycharm-tips-and-tricks/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/03/how-to-import-existing-code-to-github/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/03/how-to-disable-keyboard-shortcut-for-lockscreen/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2014/03/syntax-highlighter/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://syntaxsugar.github.io/posts/2010/12/lorem-ipsum/</loc>
+    <priority>0.8</priority>
+  </url>
+
+
+
+</urlset>

@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>syntaxsugar.github.io</title><link href="https://syntaxsugar.github.io/" rel="alternate"></link><link href="https://syntaxsugar.github.io/feeds/jaromir-fojtu.atom.xml" rel="self"></link><id>https://syntaxsugar.github.io/</id><updated>2014-05-18T16:00:00+02:00</updated><entry><title>Favorite Django Apps</title><link href="https://syntaxsugar.github.io/posts/2014/05/favorite-django-apps/" rel="alternate"></link><updated>2014-05-18T16:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-05-18:posts/2014/05/favorite-django-apps/</id><summary type="html">&lt;h2&gt;django-bower&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>syntaxsugar.github.io</title><link href="https://syntaxsugar.github.io/" rel="alternate"></link><link href="https://syntaxsugar.github.io/feeds/jaromir-fojtu.atom.xml" rel="self"></link><id>https://syntaxsugar.github.io/</id><updated>2014-08-31T00:00:00+02:00</updated><entry><title>PhpStorm on Ubuntu</title><link href="https://syntaxsugar.github.io/posts/2014/08/phpstorm-on-ubuntu/" rel="alternate"></link><updated>2014-08-31T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-08-31:posts/2014/08/phpstorm-on-ubuntu/</id><summary type="html">&lt;p&gt;JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.
+PhpStorm is built on IntelliJ IDEA, which is written in Java.&lt;/p&gt;
+&lt;h2&gt;Install Oracle Java JDK&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Step 1: Remove existing OpenJDK&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get purge openjdk*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Step 2: Install Oracle Java 8&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo add-apt-repository ppa:webupd8team/java
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install oracle-java8-installer
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Step 3: Set Java Environment Variable&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install oracle-java8-set-default
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Download &lt;em&gt;PhpStorm&lt;/em&gt; package and move to /opt directory&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /tmp
+&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/webide/PhpStorm-7.1.4.tar.gz | tar -xz
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv PhpStorm-133.1777 /opt/phpstorm
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Run PhpStorm and Create desktop entry&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;/opt/phpstorm/bin/phpstorm.sh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now run "Tools &amp;gt; Create Desktop entry"&lt;/p&gt;</summary><category term="PhpStorm"></category><category term="PHP"></category><category term="Ubuntu"></category></entry><entry><title>Favorite Django Apps</title><link href="https://syntaxsugar.github.io/posts/2014/05/favorite-django-apps/" rel="alternate"></link><updated>2014-05-18T16:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-05-18:posts/2014/05/favorite-django-apps/</id><summary type="html">&lt;h2&gt;django-bower&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/nvbn/django-bower"&gt;Source on Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://django-bower.readthedocs.org/"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
@@ -154,50 +194,49 @@ for managing multiple virtual Python environments&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h3&gt;Pycharm&lt;/h3&gt;
-&lt;p&gt;For &lt;strong&gt;community&lt;/strong&gt; edition, there is unoficial Pycharm package from getdeb.net&lt;/p&gt;
+&lt;h3&gt;Install Pycharm&lt;/h3&gt;
+&lt;p&gt;The intelligent Python IDE with unique code assistance and analysis, for
+productive Python development on all levels.&lt;/p&gt;
+&lt;p&gt;For &lt;strong&gt;professional&lt;/strong&gt; edition. Follow:&lt;/p&gt;
+&lt;h4&gt;Install Oracle Java JDK&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Add the repository GPG key&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+&lt;p&gt;Step 1: Remove existing OpenJDK&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get purge openjdk*
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Add repository list&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo sh -c &lt;span class="s1"&gt;&amp;#39;echo &amp;quot;deb http://archive.getdeb.net/ubuntu trusty-getdeb apps&amp;quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/getdeb.list&amp;#39;&lt;/span&gt;
+&lt;p&gt;Step 2: Install Oracle Java 8&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo add-apt-repository ppa:webupd8team/java
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install oracle-java8-installer
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Update package lists&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Install Pycharm Community package&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install pycharm
+&lt;p&gt;Step 3: Set Java Environment Variable&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install oracle-java8-set-default
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For &lt;strong&gt;professional&lt;/strong&gt; edition. Follow:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install openjdk-7-jdk
-&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/Downloads
-&lt;span class="nv"&gt;$ &lt;/span&gt;wget http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz
-&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /opt
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo cp ~/Downloads/pycharm-professional-3.1.3.tar.gz .
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo tar xvzf pycharm-professional-3.1.3.tar.gz .
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv pycharm-3.1.3/ pycharm/
-&lt;span class="nv"&gt;$ &lt;/span&gt;/opt/pycharm/bin/pycharm.sh
+&lt;h4&gt;Download Pycharm package and move to /opt directory&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /tmp
+&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz | tar -xz
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv pycharm-3.4.1 /opt/pycharm
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;p&gt;Run PyCharm and Create desktop entry&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;/opt/pycharm/bin/pycharm.sh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now run "Tools &amp;gt; Create Desktop entry"&lt;/p&gt;
 &lt;h2&gt;Google Chrome&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
