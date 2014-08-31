@@ -180,50 +180,49 @@ for managing multiple virtual Python environments</p>
 </pre></div>
 
 
-<h3>Pycharm</h3>
-<p>For <strong>community</strong> edition, there is unoficial Pycharm package from getdeb.net</p>
+<h3>Install Pycharm</h3>
+<p>The intelligent Python IDE with unique code assistance and analysis, for
+productive Python development on all levels.</p>
+<p>For <strong>professional</strong> edition. Follow:</p>
+<h4>Install Oracle Java JDK</h4>
 <ul>
 <li>
-<p>Add the repository GPG key</p>
-<div class="highlight"><pre><span class="nv">$ </span>wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+<p>Step 1: Remove existing OpenJDK</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get purge openjdk*
 </pre></div>
 
 
 </li>
 <li>
-<p>Add repository list</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo sh -c <span class="s1">&#39;echo &quot;deb http://archive.getdeb.net/ubuntu trusty-getdeb apps&quot; &gt;&gt; /etc/apt/sources.list.d/getdeb.list&#39;</span>
+<p>Step 2: Install Oracle Java 8</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo add-apt-repository ppa:webupd8team/java
+<span class="nv">$ </span>sudo apt-get update
+<span class="nv">$ </span>sudo apt-get install oracle-java8-installer
 </pre></div>
 
 
 </li>
 <li>
-<p>Update package lists</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get update
-</pre></div>
-
-
-</li>
-<li>
-<p>Install Pycharm Community package</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install pycharm
+<p>Step 3: Set Java Environment Variable</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install oracle-java8-set-default
 </pre></div>
 
 
 </li>
 </ul>
-<p>For <strong>professional</strong> edition. Follow:</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install openjdk-7-jdk
-<span class="nv">$ </span><span class="nb">cd</span> ~/Downloads
-<span class="nv">$ </span>wget http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz
-<span class="nv">$ </span><span class="nb">cd</span> /opt
-<span class="nv">$ </span>sudo cp ~/Downloads/pycharm-professional-3.1.3.tar.gz .
-<span class="nv">$ </span>sudo tar xvzf pycharm-professional-3.1.3.tar.gz .
-<span class="nv">$ </span>sudo mv pycharm-3.1.3/ pycharm/
-<span class="nv">$ </span>/opt/pycharm/bin/pycharm.sh
+<h4>Download Pycharm package and move to /opt directory</h4>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> /tmp
+<span class="nv">$ </span>curl -s -L http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz | tar -xz
+<span class="nv">$ </span>sudo mv pycharm-3.4.1 /opt/pycharm
 </pre></div>
 
 
+<p>Run PyCharm and Create desktop entry</p>
+<div class="highlight"><pre><span class="nv">$ </span>/opt/pycharm/bin/pycharm.sh
+</pre></div>
+
+
+<p>Now run "Tools &gt; Create Desktop entry"</p>
 <h2>Google Chrome</h2>
 <ol>
 <li>
