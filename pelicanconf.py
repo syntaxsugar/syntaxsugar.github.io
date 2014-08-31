@@ -61,5 +61,9 @@ STATIC_PATHS = [
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/google91e15f50f8a42f37.txt': {'path': 'google91e15f50f8a42f37.html'}
 }
+
+DIRECT_TEMPLATES = ('index', 'tags', 'categories', 'archives', 'sitemap')
+SITEMAP_SAVE_AS = 'sitemap.xml'

@@ -139,43 +139,46 @@ for managing multiple virtual Python environments
     :::bash
     $ sudo apt-get install virtualenvwrapper
 
-### Pycharm
+### Install Pycharm
 
-For **community** edition, there is unoficial Pycharm package from getdeb.net
+The intelligent Python IDE with unique code assistance and analysis, for
+productive Python development on all levels.
 
--   Add the repository GPG key
-
-        :::bash
-        $ wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-
--   Add repository list
-
-        :::bash
-        $ sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'        
-
--   Update package lists
-
-        :::bash
-        $ sudo apt-get update        
-
-- Install Pycharm Community package
-
-        :::bash
-        $ sudo apt-get install pycharm        
-
-
-    
 For **professional** edition. Follow:
 
+#### Install Oracle Java JDK
+
+-   Step 1: Remove existing OpenJDK
+
+        :::bash
+        $ sudo apt-get purge openjdk*
+
+-   Step 2: Install Oracle Java 8
+
+        :::bash
+        $ sudo add-apt-repository ppa:webupd8team/java
+        $ sudo apt-get update
+        $ sudo apt-get install oracle-java8-installer
+
+-   Step 3: Set Java Environment Variable
+
+        :::bash
+        $ sudo apt-get install oracle-java8-set-default
+
+
+#### Download Pycharm package and move to /opt directory
+
     :::bash
-    $ sudo apt-get install openjdk-7-jdk
-    $ cd ~/Downloads
-    $ wget http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz
-    $ cd /opt
-    $ sudo cp ~/Downloads/pycharm-professional-3.1.3.tar.gz .
-    $ sudo tar xvzf pycharm-professional-3.1.3.tar.gz .
-    $ sudo mv pycharm-3.1.3/ pycharm/
+    $ cd /tmp
+    $ curl -s -L http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz | tar -xz
+    $ sudo mv pycharm-3.4.1 /opt/pycharm
+
+Run PyCharm and Create desktop entry
+
+    :::bash
     $ /opt/pycharm/bin/pycharm.sh
+
+Now run "Tools > Create Desktop entry"
 
 
 ## Google Chrome
