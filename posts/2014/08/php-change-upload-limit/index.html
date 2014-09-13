@@ -35,56 +35,85 @@
     </div>
 
     <div class="container">
-        <div class="row articleListItem first">
-            <div class="span3 articleInfo light">
-<p><i class="icon-calendar"></i>&nbsp;Sat, 13 Sep 2014</p>
+<div class="container">
+    <div class="row">
+        <div class="span12 articleDetailHeadline">
+            <h1>PHP Change Upload limit</h1>
+            <h2>How to change upload limit in PHP</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row articleDetail">
+        <div class="span3 articleInfo light">
+<p><i class="icon-calendar"></i>&nbsp;Sun, 31 Aug 2014</p>
     <p class="articleTags">
         <i class="icon-tag"></i>&nbsp;tags:
-            <a href="https://syntaxsugar.github.io/tag/phpfarm.html">PHPFarm</a>
-            <a href="https://syntaxsugar.github.io/tag/apache.html">Apache</a>
             <a href="https://syntaxsugar.github.io/tag/php.html">PHP</a>
             <a href="https://syntaxsugar.github.io/tag/ubuntu.html">Ubuntu</a>
     </p>
-            </div>
-            <div class="span8">
-                <h1><a href="https://syntaxsugar.github.io/posts/2014/09/multiple-php-versions-on-ubuntu/" rel="bookmark" title="Permalink to Multiple PHP versions on Ubuntu">Multiple PHP versions on Ubuntu&nbsp;<i class="icon-chevron-right"></i></a></h1>
-                <h2>How to install multiple PHP versions on Ubuntu 14.04 LTS with PHPFarm</h2>
-                <p class="text-justify"><p>Many of the site which work on, are running on old versions of PHP. Usually is not 
-possible to upgrade. Thats reason, why I need to have several different versions of
-PHP.<br />
-PHPFarm allow multiple versions of PHP to be run concurerentry on the same machine.</p>
-<h2>PHPFarm</h2>
-<p>We install it ...</p></p>
-            </div>
         </div>
-        <div class="row articleListItem">
-            <div class="span3 articleInfo light">
-<p><i class="icon-calendar"></i>&nbsp;Wed, 02 Apr 2014</p>
-    <p class="articleTags">
-        <i class="icon-tag"></i>&nbsp;tags:
-            <a href="https://syntaxsugar.github.io/tag/apache.html">Apache</a>
-            <a href="https://syntaxsugar.github.io/tag/ubuntu.html">Ubuntu</a>
-    </p>
-            </div>
-            <div class="span8">
-                <h1><a href="https://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/" rel="bookmark" title="Permalink to How to enable UserDir in Ubuntu 12.04 LTS">How to enable UserDir in Ubuntu 12.04 LTS&nbsp;<i class="icon-chevron-right"></i></a></h1>
-                <h2></h2>
-                <p class="text-justify"><p>Enable userdir, users can build websites with whis config.</p></p>
-            </div>
+        <div class="span8 articleDetailContent">
+            <p>JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.
+PhpStorm is built on IntelliJ IDEA, which is written in Java.</p>
+<ul>
+<li>Step 1: Locate php.ini files<div class="highlight"><pre>find /etc -name <span class="s1">&#39;php.ini&#39;</span>
+</pre></div>
+
+
+</li>
+</ul>
+<h2>Install Oracle Java JDK</h2>
+<ul>
+<li>
+<p>Step 1: Remove existing OpenJDK</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get purge openjdk*
+</pre></div>
+
+
+</li>
+<li>
+<p>Step 2: Install Oracle Java 8</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo add-apt-repository ppa:webupd8team/java
+<span class="nv">$ </span>sudo apt-get update
+<span class="nv">$ </span>sudo apt-get install oracle-java8-installer
+</pre></div>
+
+
+</li>
+<li>
+<p>Step 3: Set Java Environment Variable</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install oracle-java8-set-default
+</pre></div>
+
+
+</li>
+</ul>
+<h2>Download <em>PhpStorm</em> package and move to /opt directory</h2>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> /tmp
+<span class="nv">$ </span>curl -s -L http://download.jetbrains.com/webide/PhpStorm-7.1.4.tar.gz | tar -xz
+<span class="nv">$ </span>sudo mv PhpStorm-133.1777 /opt/phpstorm
+</pre></div>
+
+
+<h2>Run PhpStorm and Create desktop entry</h2>
+<div class="highlight"><pre><span class="nv">$ </span>/opt/phpstorm/bin/phpstorm.sh
+</pre></div>
+
+
+<p>Now run "Tools &gt; Create Desktop entry"</p>
         </div>
-    <div class="row">
-        <div class="span3"></div>
-        <div class="span6"><div class="pagination pagination-large">
-    <ul>
-            <li class="disabled"><a href="#">&laquo;</a></li>
-
-                <li class="active"><a href=https://syntaxsugar.github.io/tag/apache.html>1</a></li>
-
-            <li class="disabled"><a href="#">&raquo;</a></li>
-    </ul>
-</div>
-</div>
     </div>
+</div>
+
+<div class="container">
+    <div class="row comments">
+        <div class="span3">&nbsp;</div>
+        <div class="span6">
+        </div>
+    </div>
+</div>
     </div>
 
     <div class="footer">

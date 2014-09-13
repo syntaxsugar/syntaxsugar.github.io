@@ -1,5 +1,286 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>syntaxsugar.github.io</title><link>https://syntaxsugar.github.io/</link><description></description><atom:link href="https://syntaxsugar.github.io/feeds/jaromir-fojtu.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 31 Aug 2014 00:00:00 +0200</lastBuildDate><item><title>PhpStorm on Ubuntu</title><link>https://syntaxsugar.github.io/posts/2014/08/phpstorm-on-ubuntu/</link><description>&lt;p&gt;JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>syntaxsugar.github.io</title><link>https://syntaxsugar.github.io/</link><description></description><atom:link href="https://syntaxsugar.github.io/feeds/jaromir-fojtu.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 13 Sep 2014 00:00:00 +0200</lastBuildDate><item><title>Multiple PHP versions on Ubuntu</title><link>https://syntaxsugar.github.io/posts/2014/09/multiple-php-versions-on-ubuntu/</link><description>&lt;p&gt;Many of the site which work on, are running on old versions of PHP. Usually is not 
+possible to upgrade. Thats reason, why I need to have several different versions of
+PHP.&lt;br /&gt;
+PHPFarm allow multiple versions of PHP to be run concurerentry on the same machine.&lt;/p&gt;
+&lt;h2&gt;PHPFarm&lt;/h2&gt;
+&lt;p&gt;We install it into &lt;code&gt;/opt&lt;/code&gt; directory which is for 3rd party software in the linux
+file hirearchy.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo git clone https://github.com/cweiske/phpfarm.git /opt/phpfarm
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Compile Options&lt;/h3&gt;
+&lt;p&gt;Now you are almost ready to compile PHP. The last task is to sort out the compile
+options.&lt;/p&gt;
+&lt;p&gt;For a vanilla PHP you don't need to specify any compile options, however this will
+leave you with a PHP that doesn`t have support for many of the things you need for
+running web applications - such as support for databases, GD, curl, bzip2, etc.&lt;/p&gt;
+&lt;p&gt;Here is my &lt;em&gt;custom-options-5.4.sh&lt;/em&gt; file:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="c"&gt;#gcov=&amp;#39;--enable-gcov&amp;#39;&lt;/span&gt;
+&lt;span class="nv"&gt;configoptions&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;\&lt;/span&gt;
+&lt;span class="s2"&gt;--enable-bcmath \&lt;/span&gt;
+&lt;span class="s2"&gt;--with-mysqli \&lt;/span&gt;
+&lt;span class="s2"&gt;--with-curl \&lt;/span&gt;
+&lt;span class="s2"&gt;--with-gd \&lt;/span&gt;
+&lt;span class="s2"&gt;--enable-calendar \&lt;/span&gt;
+&lt;span class="s2"&gt;--enable-exif \&lt;/span&gt;
+&lt;span class="s2"&gt;--enable-ftp \&lt;/span&gt;
+&lt;span class="s2"&gt;--enable-mbstring \&lt;/span&gt;
+&lt;span class="s2"&gt;--enable-pcntl \&lt;/span&gt;
+&lt;span class="s2"&gt;--enable-soap \&lt;/span&gt;
+&lt;span class="s2"&gt;--enable-sockets \&lt;/span&gt;
+&lt;span class="s2"&gt;--enable-wddx \&lt;/span&gt;
+&lt;span class="s2"&gt;--enable-zip \&lt;/span&gt;
+&lt;span class="s2"&gt;--with-zlib \&lt;/span&gt;
+&lt;span class="s2"&gt;--with-gettext \&lt;/span&gt;
+&lt;span class="s2"&gt;--with-openssl \&lt;/span&gt;
+&lt;span class="s2"&gt;--with-pdo-mysql \&lt;/span&gt;
+&lt;span class="s2"&gt;--with-mcrypt \&lt;/span&gt;
+&lt;span class="s2"&gt;--enable-soap \&lt;/span&gt;
+&lt;span class="s2"&gt;--with-bz2 \&lt;/span&gt;
+&lt;span class="s2"&gt;--with-mysql \&lt;/span&gt;
+&lt;span class="s2"&gt;--with-iconv \&lt;/span&gt;
+&lt;span class="s2"&gt;$gcov&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h3&gt;Compile Time&lt;/h3&gt;
+&lt;p&gt;To now finally compile the version we just have to run the &lt;em&gt;compile.sh&lt;/em&gt; file as root
+and wait for the compile process to finish.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /opt/phpfarm/src
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo ./compile.sh 5.4.32
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This will download PHP 5.4.32 and buil it, using any custom compile options you have
+set up.
+When the compilation is complete you will find the PHP install in the &lt;code&gt;inst&lt;/code&gt; directory
+within PHPFarm and within the &lt;code&gt;bin&lt;/code&gt; directory, which will include symlinks to your
+compiled PHP files.&lt;/p&gt;
+&lt;h3&gt;Verify PHP&lt;/h3&gt;
+&lt;p&gt;To verify we`ve correctly compile our version we can now run the PHP binary.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;/opt/phpfarm/inst/bin/php-5.4.32 -v
+PHP 5.4.32 &lt;span class="o"&gt;(&lt;/span&gt;cli&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;built: Sep 13 2014 21:05:58&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;DEBUG&lt;span class="o"&gt;)&lt;/span&gt;
+Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1997-2014 The PHP Group
+Zend Engine v2.4.0, Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1998-2014 Zend Technologies
+&lt;span class="nv"&gt;$ &lt;/span&gt;/opt/phpfarm/inst/bin/php-cgi-5.4.32 -v
+PHP 5.4.32 &lt;span class="o"&gt;(&lt;/span&gt;cgi-fcgi&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;built: Sep 13 2014 21:06:05&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;DEBUG&lt;span class="o"&gt;)&lt;/span&gt;
+Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1997-2014 The PHP Group
+Zend Engine v2.4.0, Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1998-2014 Zend Technologies
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Setup Apache&lt;/h2&gt;
+&lt;p&gt;Enable the &lt;em&gt;fastcgi&lt;/em&gt; module.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo a2enmod fastcgi
+Enabling module fastcgi.
+To activate the new configuration, you need to run:
+  service apache2 restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Configure Apache&lt;/h3&gt;
+&lt;p&gt;Now we have to configure Apache to use this as a FastCGI Handler. To do this we
+add those lines &lt;em&gt;before&lt;/em&gt; the “IncludeOptional mods-enabled/*.load” line.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo vim /etc/apache2/apache2.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Add this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;FastCgiServer&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;5.4.32&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;idle&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;timeout&lt;/span&gt; &lt;span class="mi"&gt;240&lt;/span&gt;
+&lt;span class="n"&gt;ScriptAlias&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Next we have to comment the second last line of the configuration of the FastCGI
+module in &lt;code&gt;/etc/apache2/mods-available/fastcgi.conf&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo vim /etc/apache2/mods-enabled/fastcgi.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And comment this line:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;FastCgiIpcDir&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;apache2&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;fastcgi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is how the file look now:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;IfModule&lt;/span&gt; &lt;span class="err"&gt;mod_fastcgi.c&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  AddHandler fastcgi-script .fcgi
+  #FastCgiWrapper /usr/lib/apache2/suexec
+  #FastCgiIpcDir /var/lib/apache2/fastcgi
+&lt;span class="nt"&gt;&amp;lt;/IfModule&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Prepare file structure&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /var/www
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If the &lt;code&gt;cgi-bin&lt;/code&gt; isn`t already here create it&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo mkdir cgi-bin
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;For each version of PHP you intend to use make one of these files. Replace the ending with the version number
+For PHP 5.4.32 we make file &lt;code&gt;php-cgi-5.4.32&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo vim /var/www/cgi-bin/php-cgi-5.4.32
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And fill the file with this:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="nv"&gt;PHPRC&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;/opt/phpfarm/src/php-5.4.32/lib/php.ini&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;export &lt;/span&gt;PHPRC
+
+&lt;span class="nv"&gt;PHP_FCGI_CHILDREN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;3
+&lt;span class="nb"&gt;export &lt;/span&gt;PHP_FCGI_CHILDREN
+
+&lt;span class="nv"&gt;PHP_FCGI_MAX_REQUESTS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;5000
+&lt;span class="nb"&gt;export &lt;/span&gt;PHP_FCGI_MAX_REQUESTS
+
+&lt;span class="nb"&gt;exec&lt;/span&gt; /opt/phpfarm/inst/bin/php-cgi-5.4.32
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;We also need to make sure the file is actually executable:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo chmod +x /var/www/cgi-bin/php-cgi-5.4.32
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Setup Virtualhost&lt;/h2&gt;
+&lt;p&gt;The next step is to set up an Apache VirtualHost to use PHPfarm.
+Add this snippet to your virtualhost configuration:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nx"&gt;AddHandler&lt;/span&gt; &lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt; &lt;span class="bp"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;php&lt;/span&gt;
+&lt;span class="nb"&gt;Action&lt;/span&gt; &lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt; &lt;span class="p"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;cgi&lt;/span&gt;&lt;span class="na"&gt;-bin-php&lt;/span&gt;&lt;span class="p"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;5.4.30&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;FilesMatch&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\.php$&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;SetHandler&lt;/span&gt; &lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nx"&gt;FilesMatch&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;For example my file &lt;code&gt;/etc/apache2/sites-available/test.dev.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;VirtualHost&lt;/span&gt; &lt;span class="err"&gt;127.0.0.1:80&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    ServerName test.dev 
+    DocumentRoot /var/www/test/httpdocs
+
+    &lt;span class="nt"&gt;&amp;lt;Directory&lt;/span&gt; &lt;span class="err"&gt;/var/www/test/httpdocs&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        Options Indexes FollowSymlinks Includes ExecCGI
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+        Require all granted
+
+        AddHandler php-cgi .php
+        Action php-cgi /cgi-bin-php/php-cgi-5.4.32
+        &lt;span class="nt"&gt;&amp;lt;FilesMatch&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;\.php$&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            SetHandler php-cgi
+        &lt;span class="nt"&gt;&amp;lt;/FilesMatch&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/Directory&amp;gt;&lt;/span&gt;
+
+    ErrorLog /var/www/test/log/error.log
+    LogLevel info
+    CustomLog /var/www/test/log/access.log combined
+&lt;span class="nt"&gt;&amp;lt;/VirtualHost&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Finish&lt;/h2&gt;
+&lt;p&gt;Activate your site.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo a2ensite test.dev.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Restart Apache&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo service apache2 restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now website test.dev should run on PHP 5.4.32&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sat, 13 Sep 2014 00:00:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-09-13:posts/2014/09/multiple-php-versions-on-ubuntu/</guid><category>PHPFarm</category><category>Apache</category><category>PHP</category><category>Ubuntu</category></item><item><title>PHP Change Upload limit</title><link>https://syntaxsugar.github.io/posts/2014/08/php-change-upload-limit/</link><description>&lt;p&gt;JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.
+PhpStorm is built on IntelliJ IDEA, which is written in Java.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 1: Locate php.ini files&lt;div class="highlight"&gt;&lt;pre&gt;find /etc -name &lt;span class="s1"&gt;&amp;#39;php.ini&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Install Oracle Java JDK&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Step 1: Remove existing OpenJDK&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get purge openjdk*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Step 2: Install Oracle Java 8&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo add-apt-repository ppa:webupd8team/java
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install oracle-java8-installer
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Step 3: Set Java Environment Variable&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install oracle-java8-set-default
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Download &lt;em&gt;PhpStorm&lt;/em&gt; package and move to /opt directory&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /tmp
+&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/webide/PhpStorm-7.1.4.tar.gz | tar -xz
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv PhpStorm-133.1777 /opt/phpstorm
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Run PhpStorm and Create desktop entry&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;/opt/phpstorm/bin/phpstorm.sh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now run "Tools &amp;gt; Create Desktop entry"&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sun, 31 Aug 2014 00:00:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-08-31:posts/2014/08/php-change-upload-limit/</guid><category>PHP</category><category>Ubuntu</category></item><item><title>PhpStorm on Ubuntu</title><link>https://syntaxsugar.github.io/posts/2014/08/phpstorm-on-ubuntu/</link><description>&lt;p&gt;JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.
 PhpStorm is built on IntelliJ IDEA, which is written in Java.&lt;/p&gt;
 &lt;h2&gt;Install Oracle Java JDK&lt;/h2&gt;
 &lt;ul&gt;
