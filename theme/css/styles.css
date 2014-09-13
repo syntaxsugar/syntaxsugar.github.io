@@ -58,7 +58,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Cantora One', sans-serif;
+    font-family: 'Bitter', sans-serif;
 }
 
 .light {
@@ -142,8 +142,8 @@ h2 {
  * ======================================================================== */
 
 .articleDetailHeadline h1 {
-    font-size: 72px;
-    line-height: 72px;
+    font-size: 62px;
+    line-height: 62px;
 }
 
 .articleDetailHeadline h2 {
