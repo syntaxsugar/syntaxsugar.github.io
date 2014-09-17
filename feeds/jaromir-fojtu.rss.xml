@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>syntaxsugar.github.io</title><link>https://syntaxsugar.github.io/</link><description></description><atom:link href="https://syntaxsugar.github.io/feeds/jaromir-fojtu.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 13 Sep 2014 00:00:00 +0200</lastBuildDate><item><title>Multiple PHP versions on Ubuntu</title><link>https://syntaxsugar.github.io/posts/2014/09/multiple-php-versions-on-ubuntu/</link><description>&lt;p&gt;Many of the site which work on, are running on old versions of PHP. Usually is not 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>syntaxsugar.github.io</title><link>https://syntaxsugar.github.io/</link><description></description><atom:link href="https://syntaxsugar.github.io/feeds/jaromir-fojtu.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 17 Sep 2014 00:00:00 +0200</lastBuildDate><item><title>Adminer on Ubuntu</title><link>https://syntaxsugar.github.io/posts/2014/09/adminer-on-ubuntu/</link><description>
+
+&lt;p&gt;Adminer is full-featured database management tool written in PHP. conversely to
+phpMyAdmin, it consisst of a single file ready to deply to the target server.
+Adminer is available for MySQL, PostgreSQL, SQLite, MS SQL and Oracle.
+&lt;/p&gt;
+&lt;h2&gt;Install Adminer on Ubuntu&lt;/h2&gt;
+&lt;p&gt;Install Adminer on Ubuntu is very easy. Just type:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install adminer
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now Adminer should run on http://127.0.0.1/adminer/
+But unfortunately, for same reason don`t run...&lt;/p&gt;
+&lt;p&gt;Need manualy make symlink to &lt;code&gt;/etc/apache2/conf-available/adminer.conf&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo ln -s /etc/apache2/conf-available/adminer.conf /etc/adminer/apache.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And enable this conf.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo a2enconf adminer.conf 
+Enabling conf adminer.
+To activate the new configuration, you need to run:
+  service apache2 reload
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As system say: Reload apache&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo service apache2 reload
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Wed, 17 Sep 2014 00:00:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2014-09-17:posts/2014/09/adminer-on-ubuntu/</guid><category>Apache</category><category>PHP</category><category>Ubuntu</category><category>Database</category></item><item><title>Multiple PHP versions on Ubuntu</title><link>https://syntaxsugar.github.io/posts/2014/09/multiple-php-versions-on-ubuntu/</link><description>&lt;p&gt;Many of the site which work on, are running on old versions of PHP. Usually is not 
 possible to upgrade. Thats reason, why I need to have several different versions of
 PHP.&lt;br /&gt;
 PHPFarm allow multiple versions of PHP to be run concurerentry on the same machine.&lt;/p&gt;
