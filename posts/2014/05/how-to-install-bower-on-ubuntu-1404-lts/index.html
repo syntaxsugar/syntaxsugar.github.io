@@ -65,26 +65,64 @@
     </p>
         </div>
         <div class="span8 articleDetailContent">
-            <h2>Easy way</h2>
+            <p>Bower is package management solution. It runs on Node.js and uses Git to
+fetch and install most packages. In this tutorial we will install Bower on Ubuntu
+14.04 LTS.</p>
+<h2>Install bower on your Ubuntu</h2>
+<p>Bower requires git to be installed as some bower packages require it.
+First thing is to install Git. You can install it with the following command:</p>
 <div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install git-core
-<span class="nv">$ </span>sudo apt-get install nodejs nodejs-legacy
-<span class="nv">$ </span>sudo apt-get install npm
 </pre></div>
 
 
-<ul>
-<li>Install Bower<div class="highlight"><pre><span class="nv">$ </span>sudo npm install -g bower
+<p><em>Bower</em> depends on Node and npm so first you will need install NodeJs.</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install nodejs
 </pre></div>
 
 
-</li>
-</ul>
+<p>Now is NodeJs installed and executable as <code>/usr/bin/nodejs</code></p>
+<p>If you try run <code>/usr/bin/env node</code> this end with error:</p>
+<div class="highlight"><pre><span class="nv">$ </span>/usr/bin/env node
+/usr/bin/env: node: No such file or directory
+</pre></div>
+
+
+<p>Forget something like symlink. (<code>ln -s /usr/bin/nodejs /usr/bin/node</code>)
+Just install <em>nodejs-legacy</em>. This package create a symlink for you.</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install npm-legacy
+</pre></div>
+
+
+<p>Now NodejS work fine.</p>
+<div class="highlight"><pre><span class="nv">$ </span>/usr/bin/env node                 
+&gt;
+</pre></div>
+
+
+<h2>Install npm</h2>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install npm
+</pre></div>
+
+
+<h2>Install Bower</h2>
+<div class="highlight"><pre><span class="nv">$ </span>sudo npm install -g bower
+</pre></div>
+
+
+<p>Check Bower version</p>
+<div class="highlight"><pre><span class="nv">$ </span>bower -v
+1.3.10
+</pre></div>
+
+
 <h2>Reference</h2>
 <ul>
 <li><a href="https://www.digitalocean.com/community/articles/how-to-install-and-use-bower-on-your-vps">How To Install and Use Bower on your VPS</a>        </li>
 <li><a href="https://www.digitalocean.com/community/articles/how-to-install-node-js-on-an-ubuntu-14-04-server">How To Install Node.js on an Ubuntu 14.04 server</a></li>
-<li><a href="http://stackoverflow.com/questions/20886217/browserify-error-usr-bin-env-node-no-such-file-or-directory">error /usr/bin/env: node: No such file or directory</a>
-    Ubuntu specific error. We need to make link <code>ln -s /usr/bin/nodejs /usr/bin/node</code> or better use <em>nodejs-legacy</em> package:<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install nodejs-legacy
+<li>
+<p><a href="http://stackoverflow.com/questions/20886217/browserify-error-usr-bin-env-node-no-such-file-or-directory">error /usr/bin/env: node: No such file or directory</a></p>
+<p>Ubuntu specific error. We need to make link <code>ln -s /usr/bin/nodejs /usr/bin/node</code> or better use <em>nodejs-legacy</em> package:</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install nodejs-legacy
 </pre></div>
 
 
