@@ -4,6 +4,9 @@ from __future__ import unicode_literals
 
 THEME = '/home/fojtu/Projects/pelican-responsive/responsive'
 
+PLUGIN_PATHS = ['/home/fojtu/Projects/pelican-plugins']
+PLUGINS = ['summary',]
+
 AUTHOR = u'Jaromir Fojtu'
 SITENAME = u'syntaxsugar.github.io'
 SITEURL = 'https://syntaxsugar.github.io'
