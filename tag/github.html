@@ -1,100 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    redirect users to the https version of the website.
-    but: only check when on the production domain, as set in _config.yml.
-   -->
-  <script type="text/javascript">
-    var enforce = "syntaxsugar.github.io";
-    if ((enforce == window.location.host) && (window.location.protocol != "https:"))
-      window.location.protocol = "https";
-  </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-    <meta charset="utf-8">
-    <title>syntaxsugar.github.io</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
-    <link href="https://syntaxsugar.github.io/theme/css/github.css" rel="stylesheet" media="screen">
-    <link href="https://syntaxsugar.github.io/theme/css/github-numbers.css" rel="stylesheet" media="screen">
-    <link href="https://syntaxsugar.github.io/theme/css/styles.css" rel="stylesheet" media="screen">
+    <title>syntaxsugar.github.io - Github</title>
+    <meta name="description" content="things i am currently doing re: computers"/>
 
-    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css' >
-    <link href='http://fonts.googleapis.com/css?family=Cantora+One' rel='stylesheet' type='text/css'>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <link href="https://syntaxsugar.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="syntaxsugar.github.io Atom Feed" />
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-9025902-65', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://syntaxsugar.github.io/theme/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="https://syntaxsugar.github.io/theme/css/screen.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400"/>
+    <!-- This is for syntax highlight -->
+    <link rel="stylesheet" type="text/css" href="https://syntaxsugar.github.io/theme/css/syntax.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="https://syntaxsugar.github.io/theme/css/main.css"/>
+    <link href="https://syntaxsugar.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="syntaxsugar.github.io Atom Feed"/>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9025902-65']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
 </head>
-<body>
-    <div class="miniBio">
-        <div class="container">
-            <a class="brand" href="/" title="syntaxsugar.github.io"><img src="https://syntaxsugar.github.io/theme/img/avatar.jpg" /></a>
-            <span class="miniBioText">A Daily PHP programmer, a nightly Python/Django developer</span>
+<body class="home-template">
+
+
+<header class="site-head" style="background-image: url(https://syntaxsugar.github.io/theme/img/banner.png)">
+    <div class="vertical">
+        <div class="site-head-content inner">
+            <a class="blog-logo" href="">
+                <img class="cover-profile" src="https://syntaxsugar.github.io/theme/img/avatar.jpg" alt="Blog Logo"/>
+            </a>
+
+            <h1 class="blog-title">A Daily PHP programmer, a nightly Python/Django developer</h1>
+
+            <h2 class="blog-description"></h2>
         </div>
     </div>
+</header>
 
-    <div class="container">
-        <div class="row articleListItem first">
-            <div class="span3 articleInfo light">
-<p><i class="icon-calendar"></i>&nbsp;Wed, 16 Apr 2014</p>
-    <p class="articleTags">
-        <i class="icon-tag"></i>&nbsp;tags:
-            <a href="https://syntaxsugar.github.io/tag/github.html">Github</a>
-            <a href="https://syntaxsugar.github.io/tag/shortcuts.html">Shortcuts</a>
-    </p>
-            </div>
-            <div class="span8">
-                <h1><a href="https://syntaxsugar.github.io/posts/2014/04/github-shortcuts/" rel="bookmark" title="Permalink to Github Shortcuts">Github Shortcuts&nbsp;<i class="icon-chevron-right"></i></a></h1>
-                <h2></h2>
-                <p class="text-justify"><p>Some useful Github shortcuts.</p></p>
-            </div>
-        </div>
-    <div class="row">
-        <div class="span3"></div>
-        <div class="span6"><div class="pagination pagination-large">
-    <ul>
-            <li class="disabled"><a href="#">&laquo;</a></li>
 
-                <li class="active"><a href=https://syntaxsugar.github.io/tag/github.html>1</a></li>
+<main class="content" role="main">
+<article class="post">
+    <header class="post-header">
 
-            <li class="disabled"><a href="#">&raquo;</a></li>
-    </ul>
-</div>
-</div>
+        <span class="cover-post-title">
+            <a href="https://syntaxsugar.github.io/posts/2014/04/github-shortcuts/">Github Shortcuts</a>
+        </span>
+        <span class="hp-post-meta"><time datetime="16 Apr 2014">16 Apr 2014</time> </span>
+    </header>
+</article>
+
+</main>
+
+
+<footer class="site-footer">
+    <a class="subscribe icon-feed" href="/feeds/jaromir-fojtu.rss.xml"><span class="tooltip">Subscribe!</span></a>
+
+    <div class="inner">
+        <a href="http://syntaxsugar.github.io">
+            <img class="kopimi" src="/assets/images/pages/foot/kopimi.png">
+        </a>
     </div>
-    </div>
+</footer>
 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="span6">
-                    <p><strong>Jaromir Fojtu</strong>. He is doing web development since 2000 and he is in love with Python & Django.</p>
-                </div>
-                <div class="span4">
-                        <p><strong>Say hi!</strong></p>
-                        <ul class="socialLinks">
-                                <li><a href="https://github.com/syntaxsugar"><span class="symbol">&#xe037;</span> Github</a></li>
-                                <li><a href="https://plus.google.com/118025323950244875124/about"><span class="symbol">&#xe039;</span> Google Plus</a></li>
-                                <li><a href="https://twitter.com/jaromirfojtu"><span class="symbol">&#xe086;</span> Twitter</a></li>
-                                <li><a href="https://facebook.com/paiti"><span class="symbol">&#xe027;</span> Facebook</a></li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://syntaxsugar.github.io/theme/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://syntaxsugar.github.io/theme/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="https://syntaxsugar.github.io/theme/js/index.js"></script>
+
 </body>
 </html>
