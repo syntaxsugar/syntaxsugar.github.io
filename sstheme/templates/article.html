@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ article.title }} (by @jaromirfojtu)
+{% endblock %}
+
+{% block main %}
+
+<article class="post">
+    <div class="blog-title">
+        « <a id="blog-logo" href="/">syntaxsugar.github.io</a> <!-- &#x276e; -->
+    </div>
+
+    <header class="post-header">
+    </header>
+    <h1 class="post-title">{{ article.title }}</h1>
+            <span class="post-meta">
+        	<time datetime="{{ article.date }}">{{ article.locale_date }}</time>
+	</span>
+
+
+    <section class="post-content">
+
+        {{ article.content }}
+    </section>
+
+    <footer class="post-footer">
+        <!-- If we want to display author's name and bio -->
+
+        <section class="author">
+            <header><a href=""> <img class="profile" src="{{ SITEURL }}/theme/img/avatar.jpg"
+                                     alt="Author's profile picture"></a></header>
+            <article>
+                <!-- Author Name -->
+                <h4>Jaromir Fojtu</h4>
+                <!-- Author Bio -->
+                <p>
+                    I write things for computers, also people.
+                </p>
+
+                <p>
+                    <i class="fa fa-github-alt"></i>
+                    <a href="http://github.com/syntaxsugar">GitHub</a>
+                </p>
+
+                <p>
+                    <i class="fa fa-twitter"></i>
+                    <a href="http://twitter.com/JaromirFojtu">@JaromirFojtu</a>
+                </p>
+
+                <p>
+                    <i class="fa fa-key"></i>
+                    <a href="http://pool.sks-keyservers.net/pks/lookup?op=get&fingerprint=on&search=0x727257B07CAEC4F2">
+                        7CAEC4F2
+                    </a>
+                </p>
+            </article>
+        </section>
+
+    </footer>
+</article>
+{% endblock %}

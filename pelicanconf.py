@@ -2,10 +2,14 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = '/home/fojtu/Projects/pelican-responsive/responsive'
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+THEME = os.path.join(BASE_DIR, 'syntaxsugar.github.io', 'sstheme')
 
 PLUGIN_PATHS = ['/home/fojtu/Projects/pelican-plugins']
-PLUGINS = ['summary',]
+#PLUGINS = ['summary',]
 
 AUTHOR = u'Jaromir Fojtu'
 SITENAME = u'syntaxsugar.github.io'
@@ -35,7 +39,7 @@ SOCIAL = (
 
 PATH = '/home/fojtu/PycharmProjects/syntaxsugar.github.io/content'
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 0
 
 TAG_CLOUD_MAX_ITEMS = 10
 
@@ -52,7 +56,7 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
 LOCALE = ('en_US.utf8', 'cs_CZ.utf8')
 
 DATE_FORMATS = {
-    'en': ('en_US.utf8', '%a, %d %b %Y'),
+    'en': ('en_US.utf8', '%d %b %Y'),
     'cs': ('cs_CZ.utf8', '%d.%m.%Y'),
 }
 

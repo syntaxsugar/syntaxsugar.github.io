@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <title>{% block title %}{{ SITENAME }} XXX{% endblock %}</title>
+    <meta name="description" content="things i am currently doing re: computers"/>
+
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/screen.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400"/>
+    <!-- This is for syntax highlight -->
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/syntax.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css"/>
+    {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"
+          title="{{ SITENAME }} Atom Feed"/>
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"
+          title="{{ SITENAME }} RSS Feed"/>
+    {% endif %}
+    {% include 'analytics.html' %}
+</head>
+<body class="home-template">
+
+{% block header %}{% endblock %}
+
+<main class="content" role="main">
+    {% block main %}{% endblock %}
+</main>
+
+
+<footer class="site-footer">
+    <a class="subscribe icon-feed" href="/feeds/jaromir-fojtu.rss.xml"><span class="tooltip">Subscribe!</span></a>
+
+    <div class="inner">
+        <a href="http://syntaxsugar.github.io">
+            <img class="kopimi" src="/assets/images/pages/foot/kopimi.png">
+        </a>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="{{ SITEURL }}/theme/js/index.js"></script>
+
+</body>
+</html>
