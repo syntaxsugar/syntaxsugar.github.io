@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>syntaxsugar.github.io</title><link href="https://syntaxsugar.github.io/" rel="alternate"></link><link href="https://syntaxsugar.github.io/feeds/all.atom.xml" rel="self"></link><id>https://syntaxsugar.github.io/</id><updated>2014-09-17T00:00:00+02:00</updated><entry><title>Adminer on Ubuntu</title><link href="https://syntaxsugar.github.io/posts/2014/09/adminer-on-ubuntu/" rel="alternate"></link><updated>2014-09-17T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-09-17:posts/2014/09/adminer-on-ubuntu/</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>syntaxsugar.github.io</title><link href="https://syntaxsugar.github.io/" rel="alternate"></link><link href="https://syntaxsugar.github.io/feeds/all.atom.xml" rel="self"></link><id>https://syntaxsugar.github.io/</id><updated>2014-09-17T00:00:00+02:00</updated><entry><title>Adminer on Ubuntu</title><link href="https://syntaxsugar.github.io/posts/2014/09/adminer-on-ubuntu/" rel="alternate"></link><updated>2014-09-17T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-09-17:posts/2014/09/adminer-on-ubuntu/</id><summary type="html">&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
 
 &lt;p&gt;Adminer is full-featured database management tool written in PHP. conversely to
 phpMyAdmin, it consisst of a single file ready to deply to the target server.
 Adminer is available for MySQL, PostgreSQL, SQLite, MS SQL and Oracle.
-&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;&lt;/p&gt;
 &lt;h2&gt;Install Adminer on Ubuntu&lt;/h2&gt;
 &lt;p&gt;Install Adminer on Ubuntu is very easy. Just type:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install adminer
@@ -96,7 +96,7 @@ running web applications - such as support for databases, GD, curl, bzip2, etc.&
 &lt;span class="s2"&gt;--with-bz2 \&lt;/span&gt;
 &lt;span class="s2"&gt;--with-mysql \&lt;/span&gt;
 &lt;span class="s2"&gt;--with-iconv \&lt;/span&gt;
-&lt;span class="s2"&gt;$gcov&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;$gcov&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
@@ -116,11 +116,11 @@ compiled PHP files.&lt;/p&gt;
 &lt;h3&gt;Verify PHP&lt;/h3&gt;
 &lt;p&gt;To verify we`ve correctly compile our version we can now run the PHP binary.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;/opt/phpfarm/inst/bin/php-5.4.32 -v
-PHP 5.4.32 &lt;span class="o"&gt;(&lt;/span&gt;cli&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;built: Sep 13 2014 21:05:58&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;DEBUG&lt;span class="o"&gt;)&lt;/span&gt;
+PHP 5.4.32 &lt;span class="o"&gt;(&lt;/span&gt;cli&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;built: Sep &lt;span class="m"&gt;13&lt;/span&gt; &lt;span class="m"&gt;2014&lt;/span&gt; 21:05:58&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;DEBUG&lt;span class="o"&gt;)&lt;/span&gt;
 Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1997-2014 The PHP Group
 Zend Engine v2.4.0, Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1998-2014 Zend Technologies
 &lt;span class="nv"&gt;$ &lt;/span&gt;/opt/phpfarm/inst/bin/php-cgi-5.4.32 -v
-PHP 5.4.32 &lt;span class="o"&gt;(&lt;/span&gt;cgi-fcgi&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;built: Sep 13 2014 21:06:05&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;DEBUG&lt;span class="o"&gt;)&lt;/span&gt;
+PHP 5.4.32 &lt;span class="o"&gt;(&lt;/span&gt;cgi-fcgi&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;built: Sep &lt;span class="m"&gt;13&lt;/span&gt; &lt;span class="m"&gt;2014&lt;/span&gt; 21:06:05&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;DEBUG&lt;span class="o"&gt;)&lt;/span&gt;
 Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1997-2014 The PHP Group
 Zend Engine v2.4.0, Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1998-2014 Zend Technologies
 &lt;/pre&gt;&lt;/div&gt;
@@ -143,8 +143,8 @@ add those lines &lt;em&gt;before&lt;/em&gt; the “IncludeOptional mods-enabled/
 
 
 &lt;p&gt;Add this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;FastCgiServer&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;5.4.32&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;idle&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;timeout&lt;/span&gt; &lt;span class="mi"&gt;240&lt;/span&gt;
-&lt;span class="n"&gt;ScriptAlias&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;FastCgiServer /var/www/cgi-bin/php-cgi-5.4.32 -idle-timeout 240
+ScriptAlias /cgi-bin-php/ /var/www/cgi-bin/
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -155,7 +155,7 @@ module in &lt;code&gt;/etc/apache2/mods-available/fastcgi.conf&lt;/code&gt;&lt;/
 
 
 &lt;p&gt;And comment this line:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;FastCgiIpcDir&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;apache2&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;fastcgi&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;FastCgiIpcDir /var/lib/apache2/fastcgi
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -217,11 +217,11 @@ For PHP 5.4.32 we make file &lt;code&gt;php-cgi-5.4.32&lt;/code&gt;&lt;/p&gt;
 &lt;h2&gt;Setup Virtualhost&lt;/h2&gt;
 &lt;p&gt;The next step is to set up an Apache VirtualHost to use PHPfarm.
 Add this snippet to your virtualhost configuration:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nx"&gt;AddHandler&lt;/span&gt; &lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt; &lt;span class="bp"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;php&lt;/span&gt;
-&lt;span class="nb"&gt;Action&lt;/span&gt; &lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt; &lt;span class="p"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;cgi&lt;/span&gt;&lt;span class="na"&gt;-bin-php&lt;/span&gt;&lt;span class="p"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;5.4.30&lt;/span&gt;
-&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;FilesMatch&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\.php$&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class="nx"&gt;SetHandler&lt;/span&gt; &lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt;
-&lt;span class="o"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nx"&gt;FilesMatch&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;AddHandler php-cgi .php
+Action php-cgi /cgi-bin-php/php-cgi-5.4.30
+&lt;span class="nt"&gt;&amp;lt;FilesMatch&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;\.php$&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    SetHandler php-cgi
+&lt;span class="nt"&gt;&amp;lt;/FilesMatch&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -262,54 +262,7 @@ Add this snippet to your virtualhost configuration:&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Now website test.dev should run on PHP 5.4.32&lt;/p&gt;</summary><category term="PHPFarm"></category><category term="Apache"></category><category term="PHP"></category><category term="Ubuntu"></category></entry><entry><title>PHP Change Upload limit</title><link href="https://syntaxsugar.github.io/posts/2014/08/php-change-upload-limit/" rel="alternate"></link><updated>2014-08-31T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-08-31:posts/2014/08/php-change-upload-limit/</id><summary type="html">&lt;p&gt;JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.
-PhpStorm is built on IntelliJ IDEA, which is written in Java.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Step 1: Locate php.ini files&lt;div class="highlight"&gt;&lt;pre&gt;find /etc -name &lt;span class="s1"&gt;&amp;#39;php.ini&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Install Oracle Java JDK&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Step 1: Remove existing OpenJDK&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get purge openjdk*
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Step 2: Install Oracle Java 8&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo add-apt-repository ppa:webupd8team/java
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install oracle-java8-installer
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Step 3: Set Java Environment Variable&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install oracle-java8-set-default
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Download &lt;em&gt;PhpStorm&lt;/em&gt; package and move to /opt directory&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /tmp
-&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/webide/PhpStorm-7.1.4.tar.gz | tar -xz
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv PhpStorm-133.1777 /opt/phpstorm
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h2&gt;Run PhpStorm and Create desktop entry&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;/opt/phpstorm/bin/phpstorm.sh
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Now run "Tools &amp;gt; Create Desktop entry"&lt;/p&gt;</summary><category term="PHP"></category><category term="Ubuntu"></category></entry><entry><title>PhpStorm on Ubuntu</title><link href="https://syntaxsugar.github.io/posts/2014/08/phpstorm-on-ubuntu/" rel="alternate"></link><updated>2014-08-31T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-08-31:posts/2014/08/phpstorm-on-ubuntu/</id><summary type="html">&lt;p&gt;JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.
+&lt;p&gt;Now website test.dev should run on PHP 5.4.32&lt;/p&gt;</summary><category term="PHPFarm"></category><category term="Apache"></category><category term="PHP"></category><category term="Ubuntu"></category></entry><entry><title>PhpStorm on Ubuntu</title><link href="https://syntaxsugar.github.io/posts/2014/08/phpstorm-on-ubuntu/" rel="alternate"></link><updated>2014-08-31T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-08-31:posts/2014/08/phpstorm-on-ubuntu/</id><summary type="html">&lt;p&gt;JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.
 PhpStorm is built on IntelliJ IDEA, which is written in Java.&lt;/p&gt;
 &lt;h2&gt;Install Oracle Java JDK&lt;/h2&gt;
 &lt;ul&gt;
@@ -339,7 +292,7 @@ PhpStorm is built on IntelliJ IDEA, which is written in Java.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Download &lt;em&gt;PhpStorm&lt;/em&gt; package and move to /opt directory&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /tmp
-&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/webide/PhpStorm-7.1.4.tar.gz | tar -xz
+&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/webide/PhpStorm-7.1.4.tar.gz &lt;span class="p"&gt;|&lt;/span&gt; tar -xz
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv PhpStorm-133.1777 /opt/phpstorm
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -488,7 +441,7 @@ extras by yourself. &lt;/p&gt;
 
 &lt;p&gt;This will install &lt;em&gt;zsh&lt;/em&gt; and &lt;em&gt;zsh-common&lt;/em&gt; packages.&lt;/p&gt;
 &lt;h3&gt;Setup &lt;a href="http://ohmyz.sh/"&gt;oh-my-zsh&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget --no-check-certificate http://install.ohmyz.sh -O - &lt;span class="p"&gt;|&lt;/span&gt; sh
 &lt;span class="nv"&gt;$ &lt;/span&gt;chsh -s /bin/zsh
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -501,17 +454,17 @@ extras by yourself. &lt;/p&gt;
 
 &lt;p&gt;If you get this error:
 apache2: Could not determine the server's fully qualified domain name, using 127.0.0.1 for ServerName&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;sh&lt;/span&gt;  &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;echo &amp;#39;ServerName localhost&amp;#39; &amp;gt; /etc/apache2/conf-available/fqdn.conf&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo sh  -c &lt;span class="s2"&gt;&amp;quot;echo &amp;#39;ServerName localhost&amp;#39; &amp;gt; /etc/apache2/conf-available/fqdn.conf&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Enable fqdn config&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;a2enconf&lt;/span&gt; &lt;span class="n"&gt;fqdn&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo a2enconf fqdn
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h3&gt;Install PhpMyAdmin&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;phpmyadmin&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install phpmyadmin
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -520,8 +473,8 @@ apache2: Could not determine the server's fully qualified domain name, using 127
 &lt;p&gt;If you get this error on booton of PhpMyAdmin page:
 &lt;code&gt;The mcrypt extension is missing. Please check your PHP configuration.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Enable &lt;em&gt;mcrypt&lt;/em&gt; extension and restart &lt;em&gt;apache2&lt;/em&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;php5enmod&lt;/span&gt; &lt;span class="n"&gt;mcrypt&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;service&lt;/span&gt; &lt;span class="n"&gt;apache2&lt;/span&gt; &lt;span class="n"&gt;restart&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo php5enmod mcrypt
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo service apache2 restart
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -574,7 +527,7 @@ productive Python development on all levels.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Download Pycharm package and move to /opt directory&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /tmp
-&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz | tar -xz
+&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz &lt;span class="p"&gt;|&lt;/span&gt; tar -xz
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv pycharm-3.4.1 /opt/pycharm
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -589,9 +542,9 @@ productive Python development on all levels.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Download GPG key and install it.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub &lt;span class="p"&gt;|&lt;/span&gt; sudo apt-key add -
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo sh -c &lt;span class="s1"&gt;&amp;#39;echo &amp;quot;deb http://dl.google.com/linux/chrome/deb/ stable main&amp;quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/google-chrome.list&amp;#39;&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo chmod 644 /etc/apt/sources.list.d/google-chrome.list
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo chmod &lt;span class="m"&gt;644&lt;/span&gt; /etc/apt/sources.list.d/google-chrome.list
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -694,7 +647,7 @@ reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;p&gt;If you are using Chrome plugin &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; so you must add exception for
 &lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This will disable &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; on &lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;*:&lt;/span&gt;&lt;span class="c1"&gt;//bitbucket.org/*&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;http*://bitbucket.org/*
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="Bitbucket"></category><category term="Shortcuts"></category></entry><entry><title>Bitbucket Issues - CLI</title><link href="https://syntaxsugar.github.io/posts/2014/04/bitbucket-issues-cli/" rel="alternate"></link><updated>2014-04-16T18:33:20+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-16:posts/2014/04/bitbucket-issues-cli/</id><summary type="html">&lt;p&gt;&lt;a href="https://bitbucket.org/jsmits/bitbucket-issues-cli"&gt;bbi&lt;/a&gt; provides an executable
 called &lt;strong&gt;bbi&lt;/strong&gt;, that can be used to access Bitbuckets issues from CLI.&lt;/p&gt;
 &lt;h2&gt;Installation&lt;/h2&gt;
@@ -705,7 +658,7 @@ called &lt;strong&gt;bbi&lt;/strong&gt;, that can be used to access Bitbuckets i
 
 &lt;p&gt;Add local BIN to $PATH in &lt;em&gt;.zshrc&lt;/em&gt; / &lt;em&gt;.bashrc&lt;/em&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Local BIN directory&lt;/span&gt;
-&lt;span class="o"&gt;[[&lt;/span&gt; -d &lt;span class="s2"&gt;&amp;quot;$HOME/.local/bin&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;:&lt;span class="nv"&gt;$HOME&lt;/span&gt;/.local/bin
+&lt;span class="o"&gt;[[&lt;/span&gt; -d &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/.local/bin&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;:&lt;span class="nv"&gt;$HOME&lt;/span&gt;/.local/bin
 &lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>Github Shortcuts</title><link href="https://syntaxsugar.github.io/posts/2014/04/github-shortcuts/" rel="alternate"></link><updated>2014-04-16T16:43:22+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-16:posts/2014/04/github-shortcuts/</id><summary type="html">&lt;p&gt;Here are some of the shortcuts I try to use often on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; to help
 reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;h2&gt;Useful Shortcuts&lt;/h2&gt;
@@ -719,7 +672,7 @@ reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;p&gt;If you are using Chrome plugin &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; so you must add exception for 
 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This will disable &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;*:&lt;/span&gt;&lt;span class="c1"&gt;//github.com/*&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;http*://github.com/*
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="Github"></category><category term="Shortcuts"></category></entry><entry><title>PyCharm Tips And Tricks</title><link href="https://syntaxsugar.github.io/posts/2014/04/pycharm-tips-and-tricks/" rel="alternate"></link><updated>2014-04-03T17:17:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-03:posts/2014/04/pycharm-tips-and-tricks/</id><summary type="html">&lt;h2&gt;Full Screen Mode&lt;/h2&gt;
 &lt;h3&gt;To enter full screen mode&lt;/h3&gt;
 &lt;ul&gt;

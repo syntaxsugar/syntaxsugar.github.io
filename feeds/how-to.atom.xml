@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>syntaxsugar.github.io</title><link href="https://syntaxsugar.github.io/" rel="alternate"></link><link href="https://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>https://syntaxsugar.github.io/</id><updated>2014-09-17T00:00:00+02:00</updated><entry><title>Adminer on Ubuntu</title><link href="https://syntaxsugar.github.io/posts/2014/09/adminer-on-ubuntu/" rel="alternate"></link><updated>2014-09-17T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-09-17:posts/2014/09/adminer-on-ubuntu/</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>syntaxsugar.github.io</title><link href="https://syntaxsugar.github.io/" rel="alternate"></link><link href="https://syntaxsugar.github.io/feeds/how-to.atom.xml" rel="self"></link><id>https://syntaxsugar.github.io/</id><updated>2014-09-17T00:00:00+02:00</updated><entry><title>Adminer on Ubuntu</title><link href="https://syntaxsugar.github.io/posts/2014/09/adminer-on-ubuntu/" rel="alternate"></link><updated>2014-09-17T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-09-17:posts/2014/09/adminer-on-ubuntu/</id><summary type="html">&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
 
 &lt;p&gt;Adminer is full-featured database management tool written in PHP. conversely to
 phpMyAdmin, it consisst of a single file ready to deply to the target server.
 Adminer is available for MySQL, PostgreSQL, SQLite, MS SQL and Oracle.
-&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;&lt;/p&gt;
 &lt;h2&gt;Install Adminer on Ubuntu&lt;/h2&gt;
 &lt;p&gt;Install Adminer on Ubuntu is very easy. Just type:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install adminer
@@ -162,7 +162,7 @@ extras by yourself. &lt;/p&gt;
 
 &lt;p&gt;This will install &lt;em&gt;zsh&lt;/em&gt; and &lt;em&gt;zsh-common&lt;/em&gt; packages.&lt;/p&gt;
 &lt;h3&gt;Setup &lt;a href="http://ohmyz.sh/"&gt;oh-my-zsh&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget --no-check-certificate http://install.ohmyz.sh -O - &lt;span class="p"&gt;|&lt;/span&gt; sh
 &lt;span class="nv"&gt;$ &lt;/span&gt;chsh -s /bin/zsh
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -175,17 +175,17 @@ extras by yourself. &lt;/p&gt;
 
 &lt;p&gt;If you get this error:
 apache2: Could not determine the server's fully qualified domain name, using 127.0.0.1 for ServerName&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;sh&lt;/span&gt;  &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;echo &amp;#39;ServerName localhost&amp;#39; &amp;gt; /etc/apache2/conf-available/fqdn.conf&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo sh  -c &lt;span class="s2"&gt;&amp;quot;echo &amp;#39;ServerName localhost&amp;#39; &amp;gt; /etc/apache2/conf-available/fqdn.conf&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Enable fqdn config&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;a2enconf&lt;/span&gt; &lt;span class="n"&gt;fqdn&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo a2enconf fqdn
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h3&gt;Install PhpMyAdmin&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;phpmyadmin&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install phpmyadmin
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -194,8 +194,8 @@ apache2: Could not determine the server's fully qualified domain name, using 127
 &lt;p&gt;If you get this error on booton of PhpMyAdmin page:
 &lt;code&gt;The mcrypt extension is missing. Please check your PHP configuration.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Enable &lt;em&gt;mcrypt&lt;/em&gt; extension and restart &lt;em&gt;apache2&lt;/em&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;php5enmod&lt;/span&gt; &lt;span class="n"&gt;mcrypt&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;service&lt;/span&gt; &lt;span class="n"&gt;apache2&lt;/span&gt; &lt;span class="n"&gt;restart&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo php5enmod mcrypt
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo service apache2 restart
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -248,7 +248,7 @@ productive Python development on all levels.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Download Pycharm package and move to /opt directory&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /tmp
-&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz | tar -xz
+&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz &lt;span class="p"&gt;|&lt;/span&gt; tar -xz
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv pycharm-3.4.1 /opt/pycharm
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -263,9 +263,9 @@ productive Python development on all levels.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Download GPG key and install it.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub &lt;span class="p"&gt;|&lt;/span&gt; sudo apt-key add -
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo sh -c &lt;span class="s1"&gt;&amp;#39;echo &amp;quot;deb http://dl.google.com/linux/chrome/deb/ stable main&amp;quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/google-chrome.list&amp;#39;&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo chmod 644 /etc/apt/sources.list.d/google-chrome.list
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo chmod &lt;span class="m"&gt;644&lt;/span&gt; /etc/apt/sources.list.d/google-chrome.list
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -356,7 +356,7 @@ called &lt;strong&gt;bbi&lt;/strong&gt;, that can be used to access Bitbuckets i
 
 &lt;p&gt;Add local BIN to $PATH in &lt;em&gt;.zshrc&lt;/em&gt; / &lt;em&gt;.bashrc&lt;/em&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Local BIN directory&lt;/span&gt;
-&lt;span class="o"&gt;[[&lt;/span&gt; -d &lt;span class="s2"&gt;&amp;quot;$HOME/.local/bin&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;:&lt;span class="nv"&gt;$HOME&lt;/span&gt;/.local/bin
+&lt;span class="o"&gt;[[&lt;/span&gt; -d &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/.local/bin&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;:&lt;span class="nv"&gt;$HOME&lt;/span&gt;/.local/bin
 &lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>How to enable UserDir in Ubuntu 12.04 LTS</title><link href="https://syntaxsugar.github.io/posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/" rel="alternate"></link><updated>2014-04-02T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-02:posts/2014/04/how-to-enable-userdir-in-ubuntu-1204-lts/</id><summary type="html">&lt;h2&gt;Configure for userdir&lt;/h2&gt;
 &lt;p&gt;To enable the UserDir configuration on &lt;a href="http://releases.ubuntu.com/12.04/"&gt;Ubuntu 12.04 LTS&lt;/a&gt;, do the following:
 Enable the userdir mod.&lt;/p&gt;

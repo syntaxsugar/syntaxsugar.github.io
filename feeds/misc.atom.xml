@@ -67,7 +67,7 @@ running web applications - such as support for databases, GD, curl, bzip2, etc.&
 &lt;span class="s2"&gt;--with-bz2 \&lt;/span&gt;
 &lt;span class="s2"&gt;--with-mysql \&lt;/span&gt;
 &lt;span class="s2"&gt;--with-iconv \&lt;/span&gt;
-&lt;span class="s2"&gt;$gcov&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;$gcov&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
@@ -87,11 +87,11 @@ compiled PHP files.&lt;/p&gt;
 &lt;h3&gt;Verify PHP&lt;/h3&gt;
 &lt;p&gt;To verify we`ve correctly compile our version we can now run the PHP binary.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;/opt/phpfarm/inst/bin/php-5.4.32 -v
-PHP 5.4.32 &lt;span class="o"&gt;(&lt;/span&gt;cli&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;built: Sep 13 2014 21:05:58&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;DEBUG&lt;span class="o"&gt;)&lt;/span&gt;
+PHP 5.4.32 &lt;span class="o"&gt;(&lt;/span&gt;cli&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;built: Sep &lt;span class="m"&gt;13&lt;/span&gt; &lt;span class="m"&gt;2014&lt;/span&gt; 21:05:58&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;DEBUG&lt;span class="o"&gt;)&lt;/span&gt;
 Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1997-2014 The PHP Group
 Zend Engine v2.4.0, Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1998-2014 Zend Technologies
 &lt;span class="nv"&gt;$ &lt;/span&gt;/opt/phpfarm/inst/bin/php-cgi-5.4.32 -v
-PHP 5.4.32 &lt;span class="o"&gt;(&lt;/span&gt;cgi-fcgi&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;built: Sep 13 2014 21:06:05&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;DEBUG&lt;span class="o"&gt;)&lt;/span&gt;
+PHP 5.4.32 &lt;span class="o"&gt;(&lt;/span&gt;cgi-fcgi&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;built: Sep &lt;span class="m"&gt;13&lt;/span&gt; &lt;span class="m"&gt;2014&lt;/span&gt; 21:06:05&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;DEBUG&lt;span class="o"&gt;)&lt;/span&gt;
 Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1997-2014 The PHP Group
 Zend Engine v2.4.0, Copyright &lt;span class="o"&gt;(&lt;/span&gt;c&lt;span class="o"&gt;)&lt;/span&gt; 1998-2014 Zend Technologies
 &lt;/pre&gt;&lt;/div&gt;
@@ -114,8 +114,8 @@ add those lines &lt;em&gt;before&lt;/em&gt; the “IncludeOptional mods-enabled/
 
 
 &lt;p&gt;Add this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;FastCgiServer&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;5.4.32&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;idle&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;timeout&lt;/span&gt; &lt;span class="mi"&gt;240&lt;/span&gt;
-&lt;span class="n"&gt;ScriptAlias&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;FastCgiServer /var/www/cgi-bin/php-cgi-5.4.32 -idle-timeout 240
+ScriptAlias /cgi-bin-php/ /var/www/cgi-bin/
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -126,7 +126,7 @@ module in &lt;code&gt;/etc/apache2/mods-available/fastcgi.conf&lt;/code&gt;&lt;/
 
 
 &lt;p&gt;And comment this line:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;FastCgiIpcDir&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;apache2&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;fastcgi&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;FastCgiIpcDir /var/lib/apache2/fastcgi
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -188,11 +188,11 @@ For PHP 5.4.32 we make file &lt;code&gt;php-cgi-5.4.32&lt;/code&gt;&lt;/p&gt;
 &lt;h2&gt;Setup Virtualhost&lt;/h2&gt;
 &lt;p&gt;The next step is to set up an Apache VirtualHost to use PHPfarm.
 Add this snippet to your virtualhost configuration:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nx"&gt;AddHandler&lt;/span&gt; &lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt; &lt;span class="bp"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;php&lt;/span&gt;
-&lt;span class="nb"&gt;Action&lt;/span&gt; &lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt; &lt;span class="p"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;cgi&lt;/span&gt;&lt;span class="na"&gt;-bin-php&lt;/span&gt;&lt;span class="p"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;5.4.30&lt;/span&gt;
-&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;FilesMatch&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\.php$&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class="nx"&gt;SetHandler&lt;/span&gt; &lt;span class="nx"&gt;php&lt;/span&gt;&lt;span class="na"&gt;-cgi&lt;/span&gt;
-&lt;span class="o"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nx"&gt;FilesMatch&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;AddHandler php-cgi .php
+Action php-cgi /cgi-bin-php/php-cgi-5.4.30
+&lt;span class="nt"&gt;&amp;lt;FilesMatch&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;\.php$&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    SetHandler php-cgi
+&lt;span class="nt"&gt;&amp;lt;/FilesMatch&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -233,54 +233,7 @@ Add this snippet to your virtualhost configuration:&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Now website test.dev should run on PHP 5.4.32&lt;/p&gt;</summary><category term="PHPFarm"></category><category term="Apache"></category><category term="PHP"></category><category term="Ubuntu"></category></entry><entry><title>PHP Change Upload limit</title><link href="https://syntaxsugar.github.io/posts/2014/08/php-change-upload-limit/" rel="alternate"></link><updated>2014-08-31T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-08-31:posts/2014/08/php-change-upload-limit/</id><summary type="html">&lt;p&gt;JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.
-PhpStorm is built on IntelliJ IDEA, which is written in Java.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Step 1: Locate php.ini files&lt;div class="highlight"&gt;&lt;pre&gt;find /etc -name &lt;span class="s1"&gt;&amp;#39;php.ini&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Install Oracle Java JDK&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Step 1: Remove existing OpenJDK&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get purge openjdk*
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Step 2: Install Oracle Java 8&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo add-apt-repository ppa:webupd8team/java
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install oracle-java8-installer
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Step 3: Set Java Environment Variable&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install oracle-java8-set-default
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Download &lt;em&gt;PhpStorm&lt;/em&gt; package and move to /opt directory&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /tmp
-&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/webide/PhpStorm-7.1.4.tar.gz | tar -xz
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv PhpStorm-133.1777 /opt/phpstorm
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h2&gt;Run PhpStorm and Create desktop entry&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;/opt/phpstorm/bin/phpstorm.sh
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Now run "Tools &amp;gt; Create Desktop entry"&lt;/p&gt;</summary><category term="PHP"></category><category term="Ubuntu"></category></entry><entry><title>PhpStorm on Ubuntu</title><link href="https://syntaxsugar.github.io/posts/2014/08/phpstorm-on-ubuntu/" rel="alternate"></link><updated>2014-08-31T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-08-31:posts/2014/08/phpstorm-on-ubuntu/</id><summary type="html">&lt;p&gt;JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.
+&lt;p&gt;Now website test.dev should run on PHP 5.4.32&lt;/p&gt;</summary><category term="PHPFarm"></category><category term="Apache"></category><category term="PHP"></category><category term="Ubuntu"></category></entry><entry><title>PhpStorm on Ubuntu</title><link href="https://syntaxsugar.github.io/posts/2014/08/phpstorm-on-ubuntu/" rel="alternate"></link><updated>2014-08-31T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-08-31:posts/2014/08/phpstorm-on-ubuntu/</id><summary type="html">&lt;p&gt;JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.
 PhpStorm is built on IntelliJ IDEA, which is written in Java.&lt;/p&gt;
 &lt;h2&gt;Install Oracle Java JDK&lt;/h2&gt;
 &lt;ul&gt;
@@ -310,7 +263,7 @@ PhpStorm is built on IntelliJ IDEA, which is written in Java.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Download &lt;em&gt;PhpStorm&lt;/em&gt; package and move to /opt directory&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /tmp
-&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/webide/PhpStorm-7.1.4.tar.gz | tar -xz
+&lt;span class="nv"&gt;$ &lt;/span&gt;curl -s -L http://download.jetbrains.com/webide/PhpStorm-7.1.4.tar.gz &lt;span class="p"&gt;|&lt;/span&gt; tar -xz
 &lt;span class="nv"&gt;$ &lt;/span&gt;sudo mv PhpStorm-133.1777 /opt/phpstorm
 &lt;/pre&gt;&lt;/div&gt;
 
