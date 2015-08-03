@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>syntaxsugar.github.io</title><link href="https://syntaxsugar.github.io/" rel="alternate"></link><link href="https://syntaxsugar.github.io/feeds/jaromir-fojtu.atom.xml" rel="self"></link><id>https://syntaxsugar.github.io/</id><updated>2014-09-17T00:00:00+02:00</updated><entry><title>Adminer on Ubuntu</title><link href="https://syntaxsugar.github.io/posts/2014/09/adminer-on-ubuntu/" rel="alternate"></link><updated>2014-09-17T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-09-17:posts/2014/09/adminer-on-ubuntu/</id><summary type="html">&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>syntaxsugar.github.io</title><link href="https://syntaxsugar.github.io/" rel="alternate"></link><link href="https://syntaxsugar.github.io/feeds/jaromir-fojtu.atom.xml" rel="self"></link><id>https://syntaxsugar.github.io/</id><updated>2015-09-03T00:00:00+02:00</updated><entry><title>How To install Phalcon on Ubuntu 14.04 LTS</title><link href="https://syntaxsugar.github.io/posts/2015/09/how-to-install-phalcon-on-ubuntu-1404-lts/" rel="alternate"></link><updated>2015-09-03T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2015-09-03:posts/2015/09/how-to-install-phalcon-on-ubuntu-1404-lts/</id><summary type="html">&lt;p&gt;Install the requirements for Phalcon.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install php5-dev libpcre3-dev gcc make php5-mysql git-core autoconf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Clone the framework repo onto your system.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone git://github.com/phalcon/cphalcon.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Compile extension.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;cphalcon/build
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo ./install
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Add extension to PHP and enable phalcon&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;extension=phalcon.so&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; /etc/php5/mods-available/phalcon.ini
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo php5enmod phalcon
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Restart Apache2&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo service apache2 restart
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>Adminer on Ubuntu</title><link href="https://syntaxsugar.github.io/posts/2014/09/adminer-on-ubuntu/" rel="alternate"></link><updated>2014-09-17T00:00:00+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-09-17:posts/2014/09/adminer-on-ubuntu/</id><summary type="html">&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
 
 &lt;p&gt;Adminer is full-featured database management tool written in PHP. conversely to
 phpMyAdmin, it consisst of a single file ready to deply to the target server.
