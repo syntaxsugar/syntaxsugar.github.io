@@ -6,7 +6,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-THEME = os.path.abspath(os.path.join(BASE_DIR, 'sstheme'))
+THEME = '/home/paiti/PycharmProjects/syntaxsugar.github.io/sstheme'
 
 PLUGIN_PATHS = ['/home/fojtu/Projects/pelican-plugins']
 #PLUGINS = ['summary',]
