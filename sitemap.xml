@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>https://syntaxsugar.github.io/posts/2015/10/install-php-extension-yaml/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://syntaxsugar.github.io/posts/2015/09/how-to-install-phalcon-on-ubuntu-1404-lts/</loc>
     <priority>0.8</priority>
   </url>
