@@ -28,3 +28,24 @@ Restart Apache2
     
     :::bash
     $ sudo service apache2 restart    
+
+Install specific version.
+
+    :::bash
+    $ git tag
+    
+    phalcon-v1.3.3
+    phalcon-v1.3.4
+    phalcon-v2.0.0
+    phalcon-v2.0.7
+    phalcon-v2.0.8
+
+    $ git checkout tag/phalcon-v2.0.0
+
+Install 2.0.2 version
+
+    :::bash
+    $ wget https://github.com/phalcon/cphalcon/archive/phalcon-v2.0.2.tar.gz
+    $ tar xvzf phalcon-v2.0.2/
+    $ cd build/
+    $ sudo ./install
