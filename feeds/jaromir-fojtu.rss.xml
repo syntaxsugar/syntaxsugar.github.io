@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>syntaxsugar.github.io</title><link>https://syntaxsugar.github.io/</link><description></description><atom:link href="https://syntaxsugar.github.io/feeds/jaromir-fojtu.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 03 Sep 2015 00:00:00 +0200</lastBuildDate><item><title>How To install Phalcon on Ubuntu 14.04 LTS</title><link>https://syntaxsugar.github.io/posts/2015/09/how-to-install-phalcon-on-ubuntu-1404-lts/</link><description>&lt;p&gt;Install the requirements for Phalcon.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>syntaxsugar.github.io</title><link>https://syntaxsugar.github.io/</link><description></description><atom:link href="https://syntaxsugar.github.io/feeds/jaromir-fojtu.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 04 Oct 2015 00:00:00 +0200</lastBuildDate><item><title>Install PHP Extension YAML</title><link>https://syntaxsugar.github.io/posts/2015/10/install-php-extension-yaml/</link><description>&lt;p&gt;Install the requirements&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install php-pear libyaml-dev
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pecl install yaml
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Add extension to PHP and enable YAML&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo sh -c &lt;span class="s2"&gt;&amp;quot;echo &amp;#39;extension=yaml.so&amp;#39; &amp;gt;&amp;gt; /etc/php5/mods-available/yaml.ini&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo php5enmod yaml
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Restart Apache2&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo service apache2 restart
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Sun, 04 Oct 2015 00:00:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2015-10-04:posts/2015/10/install-php-extension-yaml/</guid></item><item><title>How To install Phalcon on Ubuntu 14.04 LTS</title><link>https://syntaxsugar.github.io/posts/2015/09/how-to-install-phalcon-on-ubuntu-1404-lts/</link><description>&lt;p&gt;Install the requirements for Phalcon.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install php5-dev libpcre3-dev gcc make php5-mysql git-core autoconf
 &lt;/pre&gt;&lt;/div&gt;
 
