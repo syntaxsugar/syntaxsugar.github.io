@@ -23,6 +23,27 @@
 
 &lt;p&gt;Restart Apache2&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo service apache2 restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Install specific version.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git tag
+
+phalcon-v1.3.3
+phalcon-v1.3.4
+phalcon-v2.0.0
+phalcon-v2.0.7
+phalcon-v2.0.8
+
+&lt;span class="nv"&gt;$ &lt;/span&gt;git checkout tag/phalcon-v2.0.0
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Install 2.0.2 version&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget https://github.com/phalcon/cphalcon/archive/phalcon-v2.0.2.tar.gz
+&lt;span class="nv"&gt;$ &lt;/span&gt;tar xvzf phalcon-v2.0.2/
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;build/
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo ./install
 &lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jaromir Fojtu</dc:creator><pubDate>Thu, 03 Sep 2015 00:00:00 +0200</pubDate><guid>tag:syntaxsugar.github.io,2015-09-03:posts/2015/09/how-to-install-phalcon-on-ubuntu-1404-lts/</guid></item><item><title>Adminer on Ubuntu</title><link>https://syntaxsugar.github.io/posts/2014/09/adminer-on-ubuntu/</link><description>&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
 
 &lt;p&gt;Adminer is full-featured database management tool written in PHP. conversely to
