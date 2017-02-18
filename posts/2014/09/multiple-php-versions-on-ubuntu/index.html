@@ -48,7 +48,7 @@
     </header>
     <h1 class="post-title">Multiple PHP versions on Ubuntu</h1>
             <span class="post-meta">
-        	<time datetime="2014-09-13 00:00:00+02:00">13 Sep 2014</time>
+        	<time datetime="2014-09-13 00:00:00">13 Sep 2014</time>
 	</span>
 
 
@@ -122,7 +122,7 @@ running web applications - such as support for databases, GD, curl, bzip2, etc.<
 <span class="s2">--with-bz2 \</span>
 <span class="s2">--with-mysql \</span>
 <span class="s2">--with-iconv \</span>
-<span class="nv">$gcov</span><span class="s2">&quot;</span>
+<span class="s2">$gcov&quot;</span>
 </pre></div>
 </td></tr></table>
 
@@ -142,11 +142,11 @@ compiled PHP files.</p>
 <h3>Verify PHP</h3>
 <p>To verify we`ve correctly compile our version we can now run the PHP binary.</p>
 <div class="highlight"><pre><span class="nv">$ </span>/opt/phpfarm/inst/bin/php-5.4.32 -v
-PHP 5.4.32 <span class="o">(</span>cli<span class="o">)</span> <span class="o">(</span>built: Sep <span class="m">13</span> <span class="m">2014</span> 21:05:58<span class="o">)</span> <span class="o">(</span>DEBUG<span class="o">)</span>
+PHP 5.4.32 <span class="o">(</span>cli<span class="o">)</span> <span class="o">(</span>built: Sep 13 2014 21:05:58<span class="o">)</span> <span class="o">(</span>DEBUG<span class="o">)</span>
 Copyright <span class="o">(</span>c<span class="o">)</span> 1997-2014 The PHP Group
 Zend Engine v2.4.0, Copyright <span class="o">(</span>c<span class="o">)</span> 1998-2014 Zend Technologies
 <span class="nv">$ </span>/opt/phpfarm/inst/bin/php-cgi-5.4.32 -v
-PHP 5.4.32 <span class="o">(</span>cgi-fcgi<span class="o">)</span> <span class="o">(</span>built: Sep <span class="m">13</span> <span class="m">2014</span> 21:06:05<span class="o">)</span> <span class="o">(</span>DEBUG<span class="o">)</span>
+PHP 5.4.32 <span class="o">(</span>cgi-fcgi<span class="o">)</span> <span class="o">(</span>built: Sep 13 2014 21:06:05<span class="o">)</span> <span class="o">(</span>DEBUG<span class="o">)</span>
 Copyright <span class="o">(</span>c<span class="o">)</span> 1997-2014 The PHP Group
 Zend Engine v2.4.0, Copyright <span class="o">(</span>c<span class="o">)</span> 1998-2014 Zend Technologies
 </pre></div>
@@ -169,8 +169,8 @@ add those lines <em>before</em> the “IncludeOptional mods-enabled/*.load” li
 
 
 <p>Add this:</p>
-<div class="highlight"><pre>FastCgiServer /var/www/cgi-bin/php-cgi-5.4.32 -idle-timeout 240
-ScriptAlias /cgi-bin-php/ /var/www/cgi-bin/
+<div class="highlight"><pre><span class="n">FastCgiServer</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">cgi</span><span class="o">-</span><span class="n">bin</span><span class="o">/</span><span class="n">php</span><span class="o">-</span><span class="n">cgi</span><span class="o">-</span><span class="mf">5.4.32</span> <span class="o">-</span><span class="n">idle</span><span class="o">-</span><span class="n">timeout</span> <span class="mi">240</span>
+<span class="n">ScriptAlias</span> <span class="o">/</span><span class="n">cgi</span><span class="o">-</span><span class="n">bin</span><span class="o">-</span><span class="n">php</span><span class="o">/</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">cgi</span><span class="o">-</span><span class="n">bin</span><span class="o">/</span>
 </pre></div>
 
 
@@ -181,7 +181,7 @@ module in <code>/etc/apache2/mods-available/fastcgi.conf</code></p>
 
 
 <p>And comment this line:</p>
-<div class="highlight"><pre>FastCgiIpcDir /var/lib/apache2/fastcgi
+<div class="highlight"><pre><span class="n">FastCgiIpcDir</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apache2</span><span class="o">/</span><span class="n">fastcgi</span>
 </pre></div>
 
 
@@ -243,11 +243,11 @@ For PHP 5.4.32 we make file <code>php-cgi-5.4.32</code></p>
 <h2>Setup Virtualhost</h2>
 <p>The next step is to set up an Apache VirtualHost to use PHPfarm.
 Add this snippet to your virtualhost configuration:</p>
-<div class="highlight"><pre>AddHandler php-cgi .php
-Action php-cgi /cgi-bin-php/php-cgi-5.4.30
-<span class="nt">&lt;FilesMatch</span> <span class="err">&quot;\.php$&quot;</span><span class="nt">&gt;</span>
-    SetHandler php-cgi
-<span class="nt">&lt;/FilesMatch&gt;</span>
+<div class="highlight"><pre><span class="nx">AddHandler</span> <span class="nx">php</span><span class="na">-cgi</span> <span class="bp">.</span><span class="nx">php</span>
+<span class="nb">Action</span> <span class="nx">php</span><span class="na">-cgi</span> <span class="p">/</span><span class="nx">cgi</span><span class="na">-bin-php</span><span class="p">/</span><span class="nx">php</span><span class="na">-cgi</span><span class="o">-</span><span class="mf">5.4.30</span>
+<span class="o">&lt;</span><span class="nx">FilesMatch</span> <span class="s2">&quot;\.php$&quot;</span><span class="o">&gt;</span>
+    <span class="nx">SetHandler</span> <span class="nx">php</span><span class="na">-cgi</span>
+<span class="o">&lt;/</span><span class="nx">FilesMatch</span><span class="o">&gt;</span>
 </pre></div>
 
 

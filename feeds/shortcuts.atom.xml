@@ -21,7 +21,7 @@ reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;p&gt;If you are using Chrome plugin &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; so you must add exception for
 &lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This will disable &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; on &lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;http*://bitbucket.org/*
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;*:&lt;/span&gt;&lt;span class="c1"&gt;//bitbucket.org/*&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="Bitbucket"></category><category term="Shortcuts"></category></entry><entry><title>Github Shortcuts</title><link href="https://syntaxsugar.github.io/posts/2014/04/github-shortcuts/" rel="alternate"></link><updated>2014-04-16T16:43:22+02:00</updated><author><name>Jaromir Fojtu</name></author><id>tag:syntaxsugar.github.io,2014-04-16:posts/2014/04/github-shortcuts/</id><summary type="html">&lt;p&gt;Here are some of the shortcuts I try to use often on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; to help
 reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;h2&gt;Useful Shortcuts&lt;/h2&gt;
@@ -35,5 +35,5 @@ reduce the amount of the time I am on there.&lt;/p&gt;
 &lt;p&gt;If you are using Chrome plugin &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; so you must add exception for 
 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This will disable &lt;a href="http://vimium.github.io/"&gt;Vimium&lt;/a&gt; on &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;http*://github.com/*
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;*:&lt;/span&gt;&lt;span class="c1"&gt;//github.com/*&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="Github"></category><category term="Shortcuts"></category></entry></feed>
