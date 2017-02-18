@@ -48,7 +48,7 @@
     </header>
     <h1 class="post-title">Things to do after installing ubuntu 14.04 LTS</h1>
             <span class="post-meta">
-        	<time datetime="2014-05-06 00:00:00+02:00">06 May 2014</time>
+        	<time datetime="2014-05-06 00:00:00">06 May 2014</time>
 	</span>
 
 
@@ -126,7 +126,7 @@ extras by yourself. </p>
 
 <p>This will install <em>zsh</em> and <em>zsh-common</em> packages.</p>
 <h3>Setup <a href="http://ohmyz.sh/">oh-my-zsh</a></h3>
-<div class="highlight"><pre><span class="nv">$ </span>wget --no-check-certificate http://install.ohmyz.sh -O - <span class="p">|</span> sh
+<div class="highlight"><pre><span class="nv">$ </span>wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 <span class="nv">$ </span>chsh -s /bin/zsh
 </pre></div>
 
@@ -139,17 +139,17 @@ extras by yourself. </p>
 
 <p>If you get this error:
 apache2: Could not determine the server's fully qualified domain name, using 127.0.0.1 for ServerName</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo sh  -c <span class="s2">&quot;echo &#39;ServerName localhost&#39; &gt; /etc/apache2/conf-available/fqdn.conf&quot;</span>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">sudo</span> <span class="n">sh</span>  <span class="o">-</span><span class="n">c</span> <span class="s">&quot;echo &#39;ServerName localhost&#39; &gt; /etc/apache2/conf-available/fqdn.conf&quot;</span>
 </pre></div>
 
 
 <p>Enable fqdn config</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo a2enconf fqdn
+<div class="highlight"><pre><span class="err">$</span> <span class="n">sudo</span> <span class="n">a2enconf</span> <span class="n">fqdn</span>
 </pre></div>
 
 
 <h3>Install PhpMyAdmin</h3>
-<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install phpmyadmin
+<div class="highlight"><pre><span class="err">$</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">phpmyadmin</span>
 </pre></div>
 
 
@@ -158,8 +158,8 @@ apache2: Could not determine the server's fully qualified domain name, using 127
 <p>If you get this error on booton of PhpMyAdmin page:
 <code>The mcrypt extension is missing. Please check your PHP configuration.</code></p>
 <p>Enable <em>mcrypt</em> extension and restart <em>apache2</em></p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo php5enmod mcrypt
-<span class="nv">$ </span>sudo service apache2 restart
+<div class="highlight"><pre><span class="err">$</span> <span class="n">sudo</span> <span class="n">php5enmod</span> <span class="n">mcrypt</span>
+<span class="err">$</span> <span class="n">sudo</span> <span class="n">service</span> <span class="n">apache2</span> <span class="n">restart</span>
 </pre></div>
 
 
@@ -212,7 +212,7 @@ productive Python development on all levels.</p>
 </ul>
 <h4>Download Pycharm package and move to /opt directory</h4>
 <div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> /tmp
-<span class="nv">$ </span>curl -s -L http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz <span class="p">|</span> tar -xz
+<span class="nv">$ </span>curl -s -L http://download.jetbrains.com/python/pycharm-professional-3.1.3.tar.gz | tar -xz
 <span class="nv">$ </span>sudo mv pycharm-3.4.1 /opt/pycharm
 </pre></div>
 
@@ -227,9 +227,9 @@ productive Python development on all levels.</p>
 <ol>
 <li>
 <p>Download GPG key and install it.</p>
-<div class="highlight"><pre><span class="nv">$ </span>wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub <span class="p">|</span> sudo apt-key add -
+<div class="highlight"><pre><span class="nv">$ </span>wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 <span class="nv">$ </span>sudo sh -c <span class="s1">&#39;echo &quot;deb http://dl.google.com/linux/chrome/deb/ stable main&quot; &gt;&gt; /etc/apt/sources.list.d/google-chrome.list&#39;</span>
-<span class="nv">$ </span>sudo chmod <span class="m">644</span> /etc/apt/sources.list.d/google-chrome.list
+<span class="nv">$ </span>sudo chmod 644 /etc/apt/sources.list.d/google-chrome.list
 </pre></div>
 
 

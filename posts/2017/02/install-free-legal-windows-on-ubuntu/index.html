@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-    <title>    Python style guide checker (by @jaromirfojtu)
+    <title>    Install free legal Windows on Ubuntu (by @jaromirfojtu)
 </title>
     <meta name="description" content="things i am currently doing re: computers"/>
 
@@ -46,18 +46,47 @@
 
     <header class="post-header">
     </header>
-    <h1 class="post-title">Python style guide checker</h1>
+    <h1 class="post-title">Install free legal Windows on Ubuntu</h1>
             <span class="post-meta">
-        	<time datetime="2014-03-20 00:00:00">20 Mar 2014</time>
+        	<time datetime="2017-02-18 00:00:00">18 Feb 2017</time>
 	</span>
 
 
     <section class="post-content">
 
-        <p>Remove metadata attribute <em>Status</em></p>
-<h2>Install pep8</h2>
-<div class="highlight"><pre><span class="err">$</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">pep8</span>
+        <!-- PELICAN_BEGIN_SUMMARY -->
+
+<p>Install a free legal Windows in VirtualBox in Linux
+<!-- PELICAN_END_SUMMARY --></p>
+<p>1) First install VirtualBoxand its extensions pack.</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install virtualbox virtualbox-qt virtualbox-ext-pack
 </pre></div>
+
+
+<p>2) Add yourself to the group vboxusers</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo adduser USERNAME vboxusers
+</pre></div>
+
+
+<p>3) Now download a free legal VM with Windows 7 Enterprise (IE17 on Win7).</p>
+<p><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/">https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/</a></p>
+<p>You can use this legal VM with Windows 7 for 90 days. After those 90 days, you
+can etend the activation five times. So you can use the Windows 7 VM legally for
+6 x 90 = 540 days on total.</p>
+<p>Select Virtual machine: <em>IE11 on win7</em>
+Select platform: <em>VirtualBox</em></p>
+<p>Now click on <em>Download .zip</em></p>
+<p>4) Unzip the VM (it`s a .ova file).</p>
+<div class="highlight"><pre><span class="nv">$ </span>unzip IE11.Win7.For.Windows.VirtualBox.zip
+</pre></div>
+
+
+<p>5) Launch Oracle VM Virtualbox and select in its panel:
+    File - Import Appliance...</p>
+<p>Import the <em>.ova</em> file.</p>
+<p>6) Click on the import VM - click Settings - USB - select <em>USB 2.0 (EHCI) Controller</em></p>
+<p>7) Now click on Snapshots and create a snapshot - for renewed activation when the
+five activation extensions have been exhausted.</p>
     </section>
 
     <footer class="post-footer">
